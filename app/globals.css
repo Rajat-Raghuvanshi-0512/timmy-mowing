@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+@font-face {
+  font-family: 'acid Grotesk';
+  src: url('/fonts/acid-grotesk-normal.otf') format('opentype');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'acid Grotesk';
+  src: url('/fonts/acid-grotesk-regular.otf') format('opentype');
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'acid Grotesk';
+  src: url('/fonts/acid-grotesk-medium.otf') format('opentype');
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'acid Grotesk';
+  src: url('/fonts/acid-grotesk-medium.otf') format('opentype');
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'acid Grotesk';
+  src: url('/fonts/acid-grotesk-bold.otf') format('opentype');
+  font-weight: 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'acid Grotesk';
+  src: url('/fonts/AcidGrotesk-Bold.otf') format('opentype');
+  font-weight: 900;
+  font-display: swap;
+}
+
+body {
+  font-family: 'acid Grotesk';
+}
+
+.review-box::-webkit-scrollbar {
+  display: none;
+}
