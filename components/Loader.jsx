@@ -3,7 +3,7 @@ import React from 'react';
 
 const LoadingPage = () => {
   return (
-    <section className="flex justify-center items-center w-screen py-10 h-screen">
+    <section className="flex justify-center items-center w-screen py-10 h-screen fixed bg-white z-50">
       <div className="border-green-base flex-col flex items-center rounded-2xl justify-center border-2 p-10 m-10 w-full h-full">
         <h1 className="text-6xl text-green-base font-bold">
           TIMMY&apos;S <br /> MOWING

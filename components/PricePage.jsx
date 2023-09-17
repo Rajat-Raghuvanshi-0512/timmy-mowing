@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Button from './custom/Button';
 import { pricePageData } from '@/constants';
 
-const PricePage = () => {
+const PricePage = ({ openModal }) => {
   const [selected, setSelected] = useState('Experience');
   return (
     <section>
@@ -81,7 +81,10 @@ const PricePage = () => {
               Customer Satisfaction Guaranteed
             </li>
           </ul>
-          <Button className="md:w-72 lg:w-80 !md:px-6 lg:!px-10 ml-auto">
+          <Button
+            className="md:w-72 lg:w-80 !md:px-6 lg:!px-10 ml-auto"
+            onClick={openModal}
+          >
             get an instant price
           </Button>
         </div>

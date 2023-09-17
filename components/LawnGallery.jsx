@@ -19,6 +19,7 @@ const LawnGallery = () => {
             unoptimized
             height={50}
             className="w-full"
+            loading="eager"
           />
         </div>
         <div>
@@ -36,6 +37,7 @@ const LawnGallery = () => {
             unoptimized
             height={50}
             className="w-full"
+            loading="eager"
           />
         </div>
         <div>
@@ -46,6 +48,7 @@ const LawnGallery = () => {
             unoptimized
             height={50}
             className="w-full"
+            loading="eager"
           />
         </div>
         <div className="flex flex-col justify-between">
@@ -56,6 +59,7 @@ const LawnGallery = () => {
             unoptimized
             height={50}
             className="w-full"
+            loading="eager"
           />
           <Image
             src={'/lawn-gallery/layer1img5.png'}
@@ -64,6 +68,7 @@ const LawnGallery = () => {
             unoptimized
             height={50}
             className="w-full"
+            loading="eager"
           />
         </div>
         <div>
@@ -74,6 +79,7 @@ const LawnGallery = () => {
             unoptimized
             height={50}
             className="w-full"
+            loading="eager"
           />
         </div>
         <div>
@@ -84,6 +90,7 @@ const LawnGallery = () => {
             unoptimized
             height={50}
             className="w-full"
+            loading="eager"
           />
         </div>
         <div className="col-span-2">
@@ -94,6 +101,7 @@ const LawnGallery = () => {
             unoptimized
             height={50}
             className="w-full"
+            loading="eager"
           />
         </div>
       </div>

@@ -27,7 +27,7 @@ const FaqData = [
   },
 ];
 
-const FAQ = () => {
+const FAQ = ({ openModal }) => {
   const [selected, setSelected] = useState('General');
   return (
     <section className="px-10 md:px-14">
@@ -77,7 +77,9 @@ const FAQ = () => {
           </button>
 
           <div className="w-full h-[2px] bg-green-base" />
-          <Button className="text-base mt-0">get a quote</Button>
+          <Button className="text-base mt-0" onClick={openModal}>
+            get a quote
+          </Button>
         </div>
         <div className="w-full flex-[1.4]">
           {FaqData.map((item) => (

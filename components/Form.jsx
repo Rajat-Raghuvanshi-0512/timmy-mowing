@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-const Input = ({ type, placeholder }) => {
+export const Input = ({ type, placeholder }) => {
   return (
     <input
       type={type}
@@ -16,6 +16,7 @@ const Form = ({
   desc = 'Request A Free Quote Today & Get 10% Discount',
   bgImg,
   btnText = 'get a free quote',
+  openModal,
 }) => {
   return (
     <div
@@ -38,7 +39,10 @@ const Form = ({
         <Input type="email" placeholder={'email address'} />
       </div>
       <Input type="text" placeholder={'address and pin code'} />
-      <button className="uppercase bg-white font-semibold text-xs text-black w-full rounded-xl py-3 mt-5">
+      <button
+        onClick={openModal}
+        className="uppercase bg-white font-semibold text-xs text-black w-full rounded-xl py-3 mt-5"
+      >
         {btnText}
       </button>
     </div>

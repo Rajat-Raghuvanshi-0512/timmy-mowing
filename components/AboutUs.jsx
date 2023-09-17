@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-const AboutUs = () => {
+const AboutUs = ({ openModal }) => {
   return (
     <section className="p-5 md:px-10">
       <h2 className="text-green-base text-4xl font-medium lg:text-5xl">
@@ -59,7 +59,10 @@ const AboutUs = () => {
               gardening,
             </p>
           </div>
-          <button className="uppercase text-white bg-green-base md:ml-20 lg:ml-40 md:mt-5 lg:mt-14 md:px-10 lg:px-20 rounded-3xl md:py-2 lg:py-4">
+          <button
+            className="uppercase text-white bg-green-base md:ml-20 lg:ml-40 md:mt-5 lg:mt-14 md:px-10 lg:px-20 rounded-3xl md:py-2 lg:py-4"
+            onClick={openModal}
+          >
             get a quote
           </button>
         </div>
