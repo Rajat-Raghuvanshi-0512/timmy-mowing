@@ -35,14 +35,20 @@ const FAQ = () => {
       <div className="mx-5 mt-5 flex gap-5 pr-5 md:mt-10 md:gap-10 md:pr-10 lg:gap-20 lg:pr-20 2xl:pr-40">
         <div className="md:text-2xl lg:text-4xl flex flex-col items-start md:gap-6 lg:gap-10 font-medium flex-[0.6] mt-5">
           <button
-            className={selected === 'General' && 'font-bold'}
+            className={
+              selected === 'General' &&
+              'font-bold duration-300 translate-x-7 text-green-base'
+            }
             onClick={() => setSelected('General')}
           >
             General
           </button>
           <div className="w-full h-[2px] bg-green-base" />
           <button
-            className={selected === 'Service' && 'font-bold'}
+            className={
+              selected === 'Service' &&
+              'font-bold duration-300 translate-x-7 text-green-base'
+            }
             onClick={() => setSelected('Service')}
           >
             After Service
@@ -50,7 +56,10 @@ const FAQ = () => {
 
           <div className="w-full h-[2px] bg-green-base" />
           <button
-            className={selected === 'Pricing' && 'font-bold'}
+            className={
+              selected === 'Pricing' &&
+              'font-bold duration-300 translate-x-7 text-green-base'
+            }
             onClick={() => setSelected('Pricing')}
           >
             Pricing
@@ -58,7 +67,10 @@ const FAQ = () => {
 
           <div className="w-full h-[2px] bg-green-base" />
           <button
-            className={selected === 'Lawn' && 'font-bold'}
+            className={
+              selected === 'Lawn' &&
+              'font-bold duration-300 translate-x-7 text-green-base'
+            }
             onClick={() => setSelected('Lawn')}
           >
             Lawn Care

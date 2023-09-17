@@ -57,3 +57,16 @@ body {
 .review-box::-webkit-scrollbar {
   display: none;
 }
+
+.loader-animation {
+  animation: loader linear forwards 1.5s;
+}
+
+@keyframes loader {
+  from {
+    translate: 0px;
+  }
+  to {
+    translate: 200px;
+  }
+}

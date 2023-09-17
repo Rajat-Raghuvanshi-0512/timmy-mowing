@@ -1,7 +1,18 @@
+'use client';
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import LoadingPage from './Loader';
 
 const Navbar = () => {
+  const [showLoading, setShowLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setShowLoading(false);
+    }, 1500);
+  }, []);
+  if (showLoading) {
+    return <LoadingPage />;
+  }
   return (
     <nav className="md:px-10 lg:px-14 md:py-3 lg:py-5 flex justify-between border-b-[1.5px] border-green-base">
       <div className="flex items-center">

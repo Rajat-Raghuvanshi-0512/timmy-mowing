@@ -15,6 +15,7 @@ const MapForm = () => {
           width={100}
           height={100}
           className="w-full object-contain object-top"
+          unoptimized
         />
         <div className="flex flex-col items-end text-right p-5 text-3xl gap-10 text-green-base">
           <p>

@@ -11,7 +11,6 @@ import MapForm from '@/components/MapBottom';
 import Navbar from '@/components/Navbar';
 import PricePage from '@/components/PricePage';
 import Reviews from '@/components/Reviews';
-import React from 'react';
 
 const Home = () => {
   return (
