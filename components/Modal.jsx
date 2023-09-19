@@ -12,11 +12,15 @@ const Modal = ({
   return (
     <>
       <div
-        className={`${
-          !isOpen && 'scale-0'
-        } fixed w-screen top-0 left-0 h-screen z-50 select-none bg-black bg-opacity-40`}
+        className={` fixed w-screen top-0 left-0 h-screen z-50 select-none bg-black bg-opacity-40 ${
+          !isOpen ? 'bg-transparent -z-50' : 'bg-black'
+        }`}
       >
-        <div className="relative max-w-md h-auto shadow border-2 lg:border-4 border-white/50 bg-[#243d13] rounded-3xl  top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] ease-out scale-100">
+        <div
+          className={`relative max-w-md h-auto shadow border-2 lg:border-4 border-white/50 bg-[#243d13] rounded-3xl  top-[50%] left-[50%] duration-200 translate-y-[-50%] translate-x-[-50%] ease-out scale-100 ${
+            !isOpen ? '!scale-0' : 'scale-100'
+          }`}
+        >
           <div className="px-10 py-4 rounded-t">
             <h3 className="text-4xl lg:text-5xl uppercase font-bold !leading-snug text-gray-900 dark:text-white">
               {title}
