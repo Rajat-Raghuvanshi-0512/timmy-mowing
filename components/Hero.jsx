@@ -28,6 +28,7 @@ const Hero = () => {
           alt="banner"
           height={550}
           width={1200}
+          loading="eager"
         />
         <div className="absolute right-0 top-0">
           <Form />

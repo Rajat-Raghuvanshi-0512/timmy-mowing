@@ -13,7 +13,7 @@ const LawnGallery = () => {
         <div></div>
         <div>
           <Image
-            src={'/lawn-gallery/layer1img1.png'}
+            src={'/lawn-gallery/layer1img1.webp'}
             alt="lawn"
             width={50}
             unoptimized
@@ -31,7 +31,7 @@ const LawnGallery = () => {
         </div>
         <div className="flex items-end">
           <Image
-            src={'/lawn-gallery/layer1img2.png'}
+            src={'/lawn-gallery/layer1img2.webp'}
             alt="lawn"
             width={50}
             unoptimized
@@ -42,7 +42,7 @@ const LawnGallery = () => {
         </div>
         <div>
           <Image
-            src={'/lawn-gallery/layer1img3.png'}
+            src={'/lawn-gallery/layer1img3.webp'}
             alt="lawn"
             width={50}
             unoptimized
@@ -53,7 +53,7 @@ const LawnGallery = () => {
         </div>
         <div className="flex flex-col justify-between">
           <Image
-            src={'/lawn-gallery/layer1img4.png'}
+            src={'/lawn-gallery/layer1img4.webp'}
             alt="lawn"
             width={50}
             unoptimized
@@ -62,18 +62,7 @@ const LawnGallery = () => {
             loading="eager"
           />
           <Image
-            src={'/lawn-gallery/layer1img5.png'}
-            alt="lawn"
-            width={50}
-            unoptimized
-            height={50}
-            className="w-full"
-            loading="eager"
-          />
-        </div>
-        <div>
-          <Image
-            src={'/lawn-gallery/layer1img6.png'}
+            src={'/lawn-gallery/layer1img5.webp'}
             alt="lawn"
             width={50}
             unoptimized
@@ -84,7 +73,18 @@ const LawnGallery = () => {
         </div>
         <div>
           <Image
-            src={'/lawn-gallery/layer1img7.png'}
+            src={'/lawn-gallery/layer1img6.webp'}
+            alt="lawn"
+            width={50}
+            unoptimized
+            height={50}
+            className="w-full"
+            loading="eager"
+          />
+        </div>
+        <div>
+          <Image
+            src={'/lawn-gallery/layer1img7.webp'}
             alt="lawn"
             width={50}
             unoptimized
@@ -95,7 +95,7 @@ const LawnGallery = () => {
         </div>
         <div className="col-span-2">
           <Image
-            src={'/lawn-gallery/layer1img8.png'}
+            src={'/lawn-gallery/layer1img8.webp'}
             alt="lawn"
             width={50}
             unoptimized
