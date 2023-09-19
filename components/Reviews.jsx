@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import Heading from './custom/Heading';
 import Image from 'next/image';
 import { reviews } from '@/constants';
+import Navigation from './custom/Navigation';
 
 const ReviewCard = ({ imageUrl, name, type, desc }) => {
   return (
@@ -23,10 +24,28 @@ const ReviewCard = ({ imageUrl, name, type, desc }) => {
 };
 
 const Reviews = () => {
+  const [xPos, setXpos] = useState(0);
+  const ref = useRef();
+  // const nextFn = (e) => {
+  //   setXpos((prev) => prev + 300);
+  //   ref.current.style.transform = `translateX(-${xPos}px)`;
+  //   console.log(ref.current.style);
+  // };
+  // const prevFn = (e) => {
+  //   setXpos((prev) => prev - 300);
+  //   ref.current.style.transform = `translateX(-${xPos}px)`;
+  //   console.log(ref.current.style);
+  // };
   return (
     <section className="px-10">
-      <Heading content={'What do our clients say?'} />
-      <div className="review-box flex gap-[50px] w-[90vw] 2xl:w-[75vw] !overflow-x-auto">
+      <div className="flex justify-between">
+        <Heading content={'What do our clients say?'} />
+        <Navigation />
+      </div>
+      <div
+        className={`review-box duration-300 flex gap-[50px] w-[90vw] 2xl:w-[75vw] !overflow-x-auto`}
+        ref={ref}
+      >
         {reviews.map((item) => (
           <ReviewCard key={item.id} {...item} />
         ))}

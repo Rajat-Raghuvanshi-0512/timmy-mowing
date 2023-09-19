@@ -12,11 +12,14 @@ const GalleryItem = ({
   width2,
   width3,
   isThree,
+  section1Data,
+  section2Data,
+  section3Data,
 }) => {
   return (
     <div className="flex gap-5 mb-5">
       <div
-        className={`relative h-[300px] peer hover:z-10 hover:!w-full duration-300 rounded-xl overflow-clip`}
+        className={`relative h-[300px] peer hover:z-10 hover:!w-full group duration-300 rounded-xl overflow-clip`}
         style={{ width: `${width1}%` }}
       >
         <Image
@@ -25,10 +28,16 @@ const GalleryItem = ({
           width={400}
           height={400}
           className="w-full h-full object-cover"
+          unoptimized
         />
-        <div className="absolute bottom-0 w-fit px-5 pb-3">
-          <h5 className="font-medium text-3xl">{heading}</h5>
+        <div className="absolute bottom-0 w-full px-5 pb-3 bg-black/30 flex flex-col justify-end min-h-full translate-y-[20%] hover:translate-y-0 duration-500 pt-[480px]">
+          <h5 className="font-medium text-3xl mt-auto">{heading}</h5>
           <p className="text-sm mt-2">{desc}</p>
+          <ul className="flex flex-col flex-wrap group-hover:translate-y-0 duration-300 translate-y-[120%] h-[150px] mt-5 list-disc ml-5 hover:flex">
+            {section1Data?.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
         </div>
       </div>
       <div
@@ -41,10 +50,16 @@ const GalleryItem = ({
           width={400}
           height={400}
           className="w-full h-full object-cover"
+          unoptimized
         />
-        <div className="absolute bottom-0 w-fit px-5 pb-3">
+        <div className="absolute bottom-0 w-full px-5 pb-3 bg-black/30 flex flex-col justify-end min-h-full translate-y-[20%] hover:translate-y-0 duration-500 pt-[480px]">
           <h5 className="font-medium text-3xl">{heading}</h5>
           <p className="text-sm mt-2">{desc}</p>
+          <ul className="flex flex-col flex-wrap group-hover:translate-y-0 duration-300 translate-y-[10%] hover:translate-y-0 h-[150px] mt-5 list-disc ml-5 hover:flex">
+            {section2Data?.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
         </div>
       </div>
       {isThree && (
@@ -58,10 +73,16 @@ const GalleryItem = ({
             width={400}
             height={400}
             className="w-full h-full object-cover"
+            unoptimized
           />
-          <div className="absolute bottom-0 w-fit px-5 pb-3">
+          <div className="absolute bottom-0 w-full px-5 pb-3 bg-black/30 flex flex-col justify-end min-h-full translate-y-[20%] hover:translate-y-0 duration-500 pt-[480px]">
             <h5 className="font-medium text-3xl">{heading}</h5>
             <p className="text-sm mt-2">{desc}</p>
+            <ul className="flex flex-col flex-wrap group-hover:translate-y-0 duration-300 translate-y-[10%] h-[150px] mt-5 list-disc ml-5 hover:flex hover:translate-y-0">
+              {section3Data.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
           </div>
         </div>
       )}

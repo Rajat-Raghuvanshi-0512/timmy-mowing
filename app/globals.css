@@ -61,6 +61,10 @@ body {
 .loader-animation {
   animation: loader linear forwards 1.5s;
 }
+.active {
+  max-height: 100rem !important;
+  transition: max-height 0.25s ease-in !important;
+}
 
 @keyframes loader {
   from {

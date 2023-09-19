@@ -9,9 +9,8 @@ const Accordion = ({ heading, body }) => {
       <div className="md:py-10 py-5">
         <div className="flex justify-between gap-5">
           <h3
-            className={`font-metropolis text-base md:text-xl lg:text-2xl text-green-base ${
-              showBody ? 'font-bold' : 'font-medium'
-            } `}
+            className={`font-metropolis text-base md:text-xl lg:text-2xl text-green-base font-medium hover:cursor-pointer`}
+            onClick={() => setShowBody(!showBody)}
           >
             {heading}
           </h3>
@@ -39,11 +38,19 @@ const Accordion = ({ heading, body }) => {
           </div>
         </div>
         <div
-          className={`py-5 font-montserrat text-xs font-medium md:text-base text-[#6F6C90] ${
-            !showBody && 'hidden'
+          className={`py-5 font-montserrat !duration-500 !transition-all h-auto overflow-auto text-xs font-medium md:text-base text-[#6F6C90] accord${
+            !showBody && '!h-0 !overflow-hidden accord !py-0'
           } `}
         >
-          {body}
+          <div
+            className={`${
+              showBody
+                ? 'opacity-100 h-auto overflow-auto'
+                : 'opacity-0 h-0 overflow-hidden'
+            } delay-75 duration-300`}
+          >
+            {body}
+          </div>
         </div>
       </div>
       <hr />
