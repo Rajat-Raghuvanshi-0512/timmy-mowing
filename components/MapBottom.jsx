@@ -1,34 +1,53 @@
 import Image from 'next/image';
 import React from 'react';
-import Form from './Form';
+import Form, { Input } from './Form';
+import Button from './custom/Button';
 
 const MapForm = () => {
   return (
-    <section className="m-10 border-2 flex border-green-base rounded-2xl">
-      <div className="flex-[0.7] flex gap-16 p-10">
-        <Form bgImg={'/form-bg.png'} />
-      </div>
-      <div className="flex-[1.3]">
-        <Image
-          src={'/map-bottom.png'}
-          alt="map"
-          width={100}
-          height={100}
-          className="w-full object-contain object-top"
-          unoptimized
-        />
-        <div className="flex flex-col items-end text-right p-5 text-3xl gap-10 text-green-base">
-          <p>
-            SECOND SERVICE <strong>FREE</strong>
-          </p>
-          <p>
-            NO CALL OUT <strong>FEES</strong>
-          </p>
-          <p>
-            100% SATISFACTION <br /> <strong>GUARANTEE</strong>
-          </p>
+    <section className="m-3 md:m-6 bg-green-base md:bg-white lg:m-10 md:border-2 md:border-green-base rounded-2xl p-5">
+      <div className="flex gap-5">
+        <div className="flex-[0.7] gap-16 p-10 hidden md:flex">
+          <Form bgImg={'/form-bg.png'} />
+        </div>
+        <div className="md:hidden">
+          <h3 className="text-white">
+            MELBOURNE LAWN CARE AND GARDENING SPECIALISTS
+          </h3>
+          <form className="mt-5">
+            <Input type={'text'} placeholder={'name'} />
+            <div className="flex gap-3 my-4">
+              <Input type={'phone'} placeholder={'phone'} />
+              <Input type={'email'} placeholder={'email'} />
+            </div>
+            <Input type={'text'} placeholder={'address'} />
+          </form>
+        </div>
+        <div className="md:flex-[1.3]">
+          <Image
+            src={'/map-bottom.png'}
+            alt="map"
+            width={100}
+            height={100}
+            className="w-full object-contain object-top hidden md:block"
+            unoptimized
+          />
+          <div className="flex flex-col items-end text-right md:p-5 text-sm md:text-2xl lg:text-3xl gap-10 text-white md:text-green-base mt-5 md:mt-0">
+            <p>
+              SECOND SERVICE <strong>FREE</strong>
+            </p>
+            <p>
+              NO CALL OUT <strong>FEES</strong>
+            </p>
+            <p>
+              100% SATISFACTION <br /> <strong>GUARANTEE</strong>
+            </p>
+          </div>
         </div>
       </div>
+      <Button className="w-full bg-white py-3 !text-green-base md:hidden">
+        get a free quote
+      </Button>
     </section>
   );
 };

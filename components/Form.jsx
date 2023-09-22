@@ -6,7 +6,7 @@ export const Input = ({ type, placeholder }) => {
     <input
       type={type}
       placeholder={placeholder}
-      className="outline-none border-[1.5px] rounded-xl placeholder:uppercase w-full placeholder:text-white/90 border-white bg-transparent p-2 text-sm placeholder:text-xs"
+      className="outline-none border-[1.5px] rounded-md md:rounded-xl placeholder:uppercase w-full placeholder:text-white/90 border-white bg-transparent p-2 text-sm placeholder:text-xs"
     />
   );
 };

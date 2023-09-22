@@ -8,8 +8,8 @@ const PricePage = ({ openModal }) => {
   const [selected, setSelected] = useState('Experience');
   return (
     <section>
-      <div className="bg-green-base mx-10 mt-20 rounded-3xl p-10">
-        <div className="flex justify-center  gap-20 w-full items-center text-white md:text-2xl lg:text-4xl uppercase">
+      <div className="bg-green-base mx-3 md:mx-6 lg:mx-10 mt-20 rounded-3xl p-4 md:p-7 lg:p-10">
+        <div className="flex justify-center  lg:gap-20 w-full items-center text-white md:text-2xl lg:text-4xl uppercase">
           <button
             className={selected === 'Experience' ? 'font-bold' : undefined}
             onClick={() => setSelected('Experience')}

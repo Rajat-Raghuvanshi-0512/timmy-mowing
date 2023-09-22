@@ -14,7 +14,7 @@ const Navbar = () => {
     return <LoadingPage />;
   }
   return (
-    <nav className="md:px-10 lg:px-14 md:py-3 lg:py-5 flex justify-between border-b-[1.5px] border-green-base">
+    <nav className="p-5 md:px-10 lg:px-14 md:py-3 lg:py-5 flex justify-between md:border-b-[1.5px] md:border-green-base">
       <div className="flex items-center">
         <Image
           src={'/logo.png'}
@@ -24,7 +24,7 @@ const Navbar = () => {
           className="w-[60px] md:w-[70px] lg:w-[100px]"
         />
       </div>
-      <div className="flex gap-10 items-center">
+      <div className="hidden md:flex gap-10 items-center">
         <ul className="flex gap-10 md:text-sm lg:text-xl text-[#757575]">
           <li className="cursor-pointer">Services</li>
           <li className="cursor-pointer">About</li>
@@ -40,7 +40,7 @@ const Navbar = () => {
           Get a quote
         </button>
       </div>
-      <div className="flex gap-3">
+      <div className="hidden md:flex gap-3">
         <Image
           src={'/call.png'}
           className="object-contain w-[20px] lg:w-[35px]"

@@ -4,7 +4,7 @@ import Form from './Form';
 
 const Hero = () => {
   return (
-    <section className="p-5 md:px-10 lg:px-14 md:pt-10 relative">
+    <section className="hidden md:block p-5 md:px-10 lg:px-14 md:pt-10 relative">
       <Image
         src={'/stamp.png'}
         className="object-contain absolute right-0 top-10 -z-10 md:w-[180px] lg:w-[240px]"

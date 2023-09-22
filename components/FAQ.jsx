@@ -30,54 +30,69 @@ const FaqData = [
 const FAQ = ({ openModal }) => {
   const [selected, setSelected] = useState('General');
   return (
-    <section className="px-10 md:px-14">
+    <section className="px-5 md:px-14">
       <Heading content={'How it works?'} />
-      <div className="mx-5 mt-5 flex gap-5 pr-5 md:mt-10 md:gap-10 md:pr-10 lg:gap-20 lg:pr-20 2xl:pr-40">
-        <div className="md:text-2xl lg:text-4xl flex flex-col items-start md:gap-6 lg:gap-10 font-medium flex-[0.6] mt-5">
+      <div className="md:mx-5 mt-5 flex flex-col md:flex-row gap-5 pr-5 md:mt-10 md:gap-10 md:pr-10 lg:gap-20 lg:pr-20 2xl:pr-40">
+        <div className="md:text-2xl lg:text-4xl flex md:flex-col items-start gap-1 md:gap-6 lg:gap-10 font-medium md:flex-[0.6] mt-5">
           <button
-            className={
-              selected === 'General' &&
-              'font-bold duration-300 translate-x-7 text-green-base'
-            }
+            className={`
+              ${
+                selected === 'General' &&
+                'font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-7 md:text-green-base'
+              }
+                px-3 rounded text-xs md:text-2xl lg:text-3xl
+            `}
             onClick={() => setSelected('General')}
           >
             General
           </button>
-          <div className="w-full h-[2px] bg-green-base" />
+          <div className="w-full h-[2px] bg-green-base hidden md:block" />
           <button
-            className={
-              selected === 'Service' &&
-              'font-bold duration-300 translate-x-7 text-green-base'
-            }
+            className={`
+           ${
+             selected === 'Service' &&
+             'font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-7 md:text-green-base'
+           }
+             px-3 rounded text-xs md:text-2xl lg:text-3xl
+         `}
             onClick={() => setSelected('Service')}
           >
             After Service
           </button>
 
-          <div className="w-full h-[2px] bg-green-base" />
+          <div className="w-full h-[2px] bg-green-base hidden md:block" />
           <button
-            className={
+            className={`
+            ${
               selected === 'Pricing' &&
-              'font-bold duration-300 translate-x-7 text-green-base'
+              'font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-7 md:text-green-base'
             }
+              px-3 rounded text-xs md:text-2xl lg:text-3xl
+          `}
             onClick={() => setSelected('Pricing')}
           >
             Pricing
           </button>
 
-          <div className="w-full h-[2px] bg-green-base" />
+          <div className="w-full h-[2px] bg-green-base hidden md:block" />
           <button
-            className={
-              selected === 'Lawn' &&
-              'font-bold duration-300 translate-x-7 text-green-base'
-            }
+            className={`
+           ${
+             selected === 'Lawn' &&
+             'font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-7 md:text-green-base'
+           }
+             px-3 rounded text-xs md:text-2xl lg:text-3xl
+         `}
             onClick={() => setSelected('Lawn')}
           >
             Lawn Care
           </button>
 
-          <div className="w-full h-[2px] bg-green-base" />
-          <Button className="text-base mt-0" onClick={openModal}>
+          <div className="w-full h-[2px] bg-green-base hidden md:block" />
+          <Button
+            className="text-base mt-0 hidden md:block"
+            onClick={openModal}
+          >
             get a quote
           </Button>
         </div>
@@ -87,6 +102,12 @@ const FAQ = ({ openModal }) => {
           ))}
         </div>
       </div>
+      <Button
+        className="text-base mt-0 md:hidden w-full py-2"
+        onClick={openModal}
+      >
+        get a quote
+      </Button>
     </section>
   );
 };

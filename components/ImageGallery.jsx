@@ -90,15 +90,38 @@ const GalleryItem = ({
   );
 };
 
+const GalleryItemSm = ({ heading }) => {
+  return (
+    <div>
+      <div className="flex justify-between text-green-base items-center p-2">
+        <h2>{heading}</h2>
+        <div>
+          <Image src={'/plus.svg'} alt="plus" width={15} height={15} />
+        </div>
+      </div>
+      <div className="h-[1px] w-full bg-gray-500" />
+    </div>
+  );
+};
+
 const ImageGallery = () => {
   return (
     <section className="p-5 md:px-10" id="#services">
-      <h2 className="text-3xl md:text-4xl lg:text-[2.5rem] text-green-base mb-14 font-semibold">
+      <h2 className="text-2xl md:text-4xl lg:text-[2.5rem] text-green-base mb-5 md:mb-10 lg:mb-14 font-semibold">
         What can we do for you?
       </h2>
-      <div className="border-2 border-green-base rounded-xl p-5 flex-wrap text-white">
+      <div className="hidden md:block border-2 border-green-base rounded-xl p-5 flex-wrap text-white">
         {galleryInfo.map((item) => (
           <GalleryItem key={item.id} {...item} />
+        ))}
+      </div>
+      <div className="bg-[#EFF0F2] md:hidden rounded-lg px-4 py-7">
+        <h3 className="text-2xl font-medium mb-3 text-green-base">
+          Residential Services
+        </h3>
+        <div className="h-[1px] w-full bg-gray-500" />
+        {galleryInfo.map((item) => (
+          <GalleryItemSm key={item.id} {...item} />
         ))}
       </div>
     </section>
