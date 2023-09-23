@@ -1,0 +1,22 @@
+import React from 'react';
+import Button from './custom/Button';
+
+const GetInTouchForm = () => {
+  return (
+    <div className="bg-white rounded-lg p-3">
+      <h2 className="text-green-base text-3xl">Get in touch</h2>
+      <p className="w-[70%] text-xs my-4">
+        Keep Your Property Looking Beautiful with Our professional Lawn Care &
+        Gardening Services.
+      </p>
+      <input
+        type="text"
+        placeholder="address and pincode"
+        className="outline-none mt-2 border-[1.5px] rounded-md md:rounded-xl placeholder:uppercase w-full placeholder:text-green-base/90 border-green-base bg-transparent p-2 text-sm placeholder:text-xs"
+      />
+      <Button className={'py-3 w-full'}>get a free quote</Button>
+    </div>
+  );
+};
+
+export default GetInTouchForm;

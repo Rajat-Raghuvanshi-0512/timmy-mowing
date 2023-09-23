@@ -2,9 +2,28 @@ import Image from 'next/image';
 import React from 'react';
 import Navigation from './custom/Navigation';
 
-const LawnGallery = () => {
+const LawnGallerySm = () => {
   return (
-    <section className="m-10">
+    <section className="md:hidden relative pb-5">
+      <Image
+        src={'/mobile-lawn-gallery.png'}
+        alt="gallery"
+        width={100}
+        height={100}
+        className="w-full h-full object-contain -mt-14"
+        unoptimized
+      />
+      <p className="mb-5 col-span-2 absolute left-0 top-44 w-[50%] text-xs">
+        Keep Your Property Looking Beautiful with Our professional Lawn Care &
+        Gardening Services.
+      </p>
+    </section>
+  );
+};
+
+const LawnGalleryLg = () => {
+  return (
+    <section className="m-10 hidden md:block">
       <div className="grid grid-cols-4 gap-1 md:gap-3">
         <div className="capitalize text-green-base text-3xl md:text-4xl lg:text-5xl font-semibold !leading-snug col-span-2 md:col-span-1">
           We love it <br /> when <br /> you love it
@@ -106,6 +125,15 @@ const LawnGallery = () => {
         </div>
       </div>
     </section>
+  );
+};
+
+const LawnGallery = () => {
+  return (
+    <>
+      <LawnGalleryLg />
+      <LawnGallerySm />
+    </>
   );
 };
 

@@ -3,15 +3,22 @@ import React from 'react';
 
 const Guarantee = () => {
   return (
-    <section className="m-4 md:m-6 lg:m-10">
-      <div className="md:border md:border-green-base text-green-base rounded-2xl grid md:grid-cols-2 py-5 md:py-8 px-10 lg:px-20">
+    <section className="mt-4 md:m-6 lg:m-10 bg-green-base text-white md:bg-transparent md:text-green-base">
+      <div className="md:border md:border-green-base text-white md:text-green-base rounded-2xl grid md:grid-cols-2 py-5 md:py-8 px-10 lg:px-20">
         <div className="flex gap-8 md:gap-5 md:ml-10 ">
           <Image
             src={'/satisfaction.svg'}
             alt="satisfy"
             width={80}
             height={80}
-            className="w-[100px] md:w-[80px]"
+            className="w-[100px] md:w-[80px] hidden md:block"
+          />
+          <Image
+            src={'/satisfaction-white.svg'}
+            alt="satisfy"
+            width={80}
+            height={80}
+            className="w-[100px] md:w-[80px] md:hidden"
           />
           <div>
             <h5 className=" font-semibold text-lg md:text-xl py-3">
@@ -29,7 +36,14 @@ const Guarantee = () => {
             alt="satisfy"
             width={80}
             height={80}
-            className="w-[100px] md:w-[80px]"
+            className="w-[100px] md:w-[80px] hidden md:block"
+          />
+          <Image
+            src={'/bonded-white.svg'}
+            alt="satisfy"
+            width={80}
+            height={80}
+            className="w-[100px] md:w-[80px] md:hidden"
           />
           <div>
             <h5 className=" font-semibold text-lg md:text-xl py-3">

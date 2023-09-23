@@ -4,36 +4,40 @@ import React from 'react';
 const FooterSm = () => {
   return (
     <div className="md:hidden">
-      <h2 className="uppercase text-6xl text-center font-bold">
-        Timmy&apos;s <br /> MOWing{' '}
-      </h2>
-      <p className="my-5 text-xs uppercase text-center font-light">
-        Cultivating beautiful lawns and lasting memories Timmy&apos;s Mowing,
-        your trusted partner in outdoor excellence
-      </p>
-      <ul className="flex justify-evenly my-10">
-        <li>Home</li>
-        <li>Services</li>
-        <li>About</li>
-        <li>Pricing</li>
-      </ul>
-      <div className="flex items-center justify-center">
-        <Image src={'/footer-design.png'} alt="footer" width={80} height={80} />
+      <div className="flex justify-between items-center">
+        <h2 className="uppercase text-5xl text-center font-bold">TM</h2>
+        <div>
+          <Image src={'/socials.svg'} alt="socials" width={160} height={30} />
+        </div>
       </div>
-      <div className="text-center my-10">
-        <p className="font-extralight">Let&apos;s Team Up!</p>
-        <p>hello@rabenrifaie.com</p>
-        <p className="font-extralight">ou ligue para</p>
-        <p>+ 48 697 404 323</p>
+      <div className="flex justify-between my-5">
+        <div>
+          <p>SYDNEY | Wetherill Park</p>
+          <p>02 9725 1990</p>
+        </div>
+        <div>
+          <p>hello@rabenrifaie.com</p>
+          <p>+ 48 697 404 323</p>
+        </div>
       </div>
-      <div className="flex items-center justify-center">
-        <Image src={'/footer-design.png'} alt="footer" width={80} height={80} />
+      <div className="h-[1px] w-full bg-white"></div>
+      <div className="justify-between flex my-5">
+        <ul className="flex flex-col gap-3 justify-evenly my-5">
+          <li>Home</li>
+          <li>Services</li>
+          <li>About</li>
+          <li>Pricing</li>
+        </ul>
+        <div className="flex flex-col gap-4">
+          <h2 className="uppercase font-bold text-3xl">
+            Timmy&apos;s <br /> MOWing{' '}
+          </h2>
+          <p className="w-40 text-xs font-light">
+            © 2023 Copyright Bloom Design and Landscaping Website by PixySquare.
+          </p>
+        </div>
       </div>
-      <div className="icons flex justify-center gap-4 mt-5">
-        <Image src={'/facebook-icon.svg'} alt="icon" width={15} height={15} />
-        <Image src={'/twitter-icon.svg'} alt="icon" width={35} height={35} />
-        <Image src={'/socialbehance.svg'} alt="icon" width={35} height={35} />
-      </div>
+      <div className="h-[1px] w-full bg-white"></div>
     </div>
   );
 };

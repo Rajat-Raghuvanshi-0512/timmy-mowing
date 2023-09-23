@@ -8,8 +8,10 @@ import { Input } from '@/components/Form';
 import Guarantee from '@/components/Guarantee';
 import Hero from '@/components/Hero';
 import ImageGallery from '@/components/ImageGallery';
+import LastForm from '@/components/LastForm';
 import LawnGallery from '@/components/LawnGallery';
 import MapForm from '@/components/MapBottom';
+import MobileSlider from '@/components/MobileSlider';
 import Modal from '@/components/Modal';
 import Navbar from '@/components/Navbar';
 import PricePage from '@/components/PricePage';
@@ -52,7 +54,7 @@ const Home = () => {
       <Navbar />
       <PopUpModal isOpen={isOpen} closeModal={closeModal} />
       <main className="2xl:px-32">
-        <Hero openModal={openModal} />
+        <Hero />
         <ImageGallery />
         <CallSection />
         <AboutUs openModal={openModal} />
@@ -61,8 +63,14 @@ const Home = () => {
         <FAQ openModal={openModal} />
         <Guarantee />
         <Cities />
-        <MapForm />
+        <div className="md:hidden">
+          <MobileSlider />
+        </div>
+        <div className="hidden md:block">
+          <MapForm />
+        </div>
         <LawnGallery />
+        <LastForm />
       </main>
       <Footer />
     </>

@@ -33,14 +33,14 @@ const FAQ = ({ openModal }) => {
     <section className="px-5 md:px-14">
       <Heading content={'How it works?'} />
       <div className="md:mx-5 mt-5 flex flex-col md:flex-row gap-5 pr-5 md:mt-10 md:gap-10 md:pr-10 lg:gap-20 lg:pr-20 2xl:pr-40">
-        <div className="md:text-2xl lg:text-4xl flex md:flex-col items-start gap-1 md:gap-6 lg:gap-10 font-medium md:flex-[0.6] mt-5">
+        <div className="md:text-2xl lg:text-4xl justify-center md:justify-normal flex md:flex-col items-start gap-3 md:gap-6 lg:gap-10 font-medium md:flex-[0.6] mt-5">
           <button
             className={`
               ${
                 selected === 'General' &&
-                'font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-7 md:text-green-base'
+                'font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-7 md:text-green-base border-none'
               }
-                px-3 rounded text-xs md:text-2xl lg:text-3xl
+                px-3 rounded text-lg border border-black md:text-2xl lg:text-3xl
             `}
             onClick={() => setSelected('General')}
           >
@@ -51,9 +51,9 @@ const FAQ = ({ openModal }) => {
             className={`
            ${
              selected === 'Service' &&
-             'font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-7 md:text-green-base'
+             'font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-7 md:text-green-base border-none'
            }
-             px-3 rounded text-xs md:text-2xl lg:text-3xl
+             px-3 rounded text-lg border border-black md:text-2xl lg:text-3xl
          `}
             onClick={() => setSelected('Service')}
           >
@@ -65,9 +65,9 @@ const FAQ = ({ openModal }) => {
             className={`
             ${
               selected === 'Pricing' &&
-              'font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-7 md:text-green-base'
+              'font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-7 md:text-green-base border-none'
             }
-              px-3 rounded text-xs md:text-2xl lg:text-3xl
+              px-3 rounded text-lg border border-black md:text-2xl lg:text-3xl
           `}
             onClick={() => setSelected('Pricing')}
           >
@@ -79,9 +79,9 @@ const FAQ = ({ openModal }) => {
             className={`
            ${
              selected === 'Lawn' &&
-             'font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-7 md:text-green-base'
+             'font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-7 md:text-green-base border-none'
            }
-             px-3 rounded text-xs md:text-2xl lg:text-3xl
+             px-3 rounded text-xs md:text-2xl lg:text-3xl hidden md:block
          `}
             onClick={() => setSelected('Lawn')}
           >

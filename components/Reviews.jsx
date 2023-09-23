@@ -38,7 +38,7 @@ const Reviews = () => {
   // };
   return (
     <section className="px-10">
-      <div className="flex justify-between">
+      <div className="flex justify-between py-4 md:py-0">
         <Heading content={'What do our clients say?'} />
         <Navigation />
       </div>

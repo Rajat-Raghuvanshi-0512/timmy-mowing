@@ -9,7 +9,7 @@ const Navigation = ({
   totalSlide = 24,
 }) => {
   return (
-    <div className="flex items-center gap-5">
+    <div className=" items-center gap-5 hidden md:flex">
       <button onClick={prevClick}>
         <Image src={'/left-arrow.png'} alt="larrow" width={45} height={10} />
       </button>

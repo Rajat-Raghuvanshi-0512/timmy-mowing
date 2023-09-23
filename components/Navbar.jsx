@@ -15,13 +15,35 @@ const Navbar = () => {
   }
   return (
     <nav className="p-5 md:px-10 lg:px-14 md:py-3 lg:py-5 flex justify-between md:border-b-[1.5px] md:border-green-base">
-      <div className="flex items-center">
+      <div className="hidden md:flex items-center">
         <Image
           src={'/logo.png'}
           alt="logo"
           height={55}
           width={100}
-          className="w-[60px] md:w-[70px] lg:w-[100px]"
+          className="w-[80px] md:w-[70px] lg:w-[100px]"
+        />
+      </div>
+      <div className="flex items-center">
+        <Image
+          src={'/logo-white.png'}
+          alt="logo"
+          height={55}
+          width={100}
+          className="w-[80px] md:w-[70px] lg:w-[100px]"
+        />
+      </div>
+      <div className="flex gap-5 md:hidden">
+        <div className="flex items-center gap-2 bg-green-base px-2 rounded-md">
+          <Image src={'/call-white.png'} alt="menu" width={20} height={20} />
+          <div className="text-xs text-white">CALL US</div>
+        </div>
+        <Image
+          src={'/burger-menu.png'}
+          alt="menu"
+          width={30}
+          height={30}
+          className="object-contain"
         />
       </div>
       <div className="hidden md:flex gap-10 items-center">

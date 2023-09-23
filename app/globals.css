@@ -66,6 +66,45 @@ body {
   transition: max-height 0.25s ease-in !important;
 }
 
+.animate-infinite {
+  width: 300vw;
+  animation: rotateInfinite 5s linear infinite;
+}
+@keyframes rotateInfinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-150vw));
+  }
+}
+
+.animate-infinite-1 {
+  width: 420vw;
+  animation: rotateInfinite1 8s linear infinite;
+}
+@keyframes rotateInfinite1 {
+  0% {
+    transform: translateX(0vw);
+  }
+  100% {
+    transform: translateX(calc(-210vw));
+  }
+}
+
+.animate-infinite-2 {
+  width: 240vw;
+  animation: rotateInfinite2 5s linear infinite;
+}
+@keyframes rotateInfinite2 {
+  0% {
+    transform: translateX(-120vw);
+  }
+  100% {
+    transform: translateX(calc(0vw));
+  }
+}
+
 @keyframes loader {
   from {
     translate: 0px;
