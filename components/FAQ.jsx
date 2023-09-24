@@ -40,7 +40,7 @@ const FAQ = ({ openModal }) => {
                 selected === 'General' &&
                 'font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-7 md:text-green-base border-none'
               }
-                px-3 rounded text-lg border border-black md:text-2xl lg:text-3xl
+                px-3 rounded text-lg border border-black md:border-none md:text-2xl lg:text-3xl
             `}
             onClick={() => setSelected('General')}
           >
@@ -53,7 +53,7 @@ const FAQ = ({ openModal }) => {
              selected === 'Service' &&
              'font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-7 md:text-green-base border-none'
            }
-             px-3 rounded text-lg border border-black md:text-2xl lg:text-3xl
+             px-3 rounded text-lg border border-black md:border-none md:text-2xl lg:text-3xl
          `}
             onClick={() => setSelected('Service')}
           >
@@ -67,7 +67,7 @@ const FAQ = ({ openModal }) => {
               selected === 'Pricing' &&
               'font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-7 md:text-green-base border-none'
             }
-              px-3 rounded text-lg border border-black md:text-2xl lg:text-3xl
+              px-3 rounded text-lg border border-black md:border-none md:text-2xl lg:text-3xl
           `}
             onClick={() => setSelected('Pricing')}
           >

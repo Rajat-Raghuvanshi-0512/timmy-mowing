@@ -46,7 +46,7 @@ const PricePage = ({ openModal }) => {
       </div>
       <div className="md:mx-14 flex flex-col md:flex-row">
         <div className="md:flex-1 lg:flex-[1.2]">
-          <div className="flex justify-center md:justify-normal -mt-32">
+          <div className="flex justify-center md:justify-normal -mt-32 md:mt-0">
             <Image
               src={'/price.png'}
               alt="price"

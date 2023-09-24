@@ -1,12 +1,15 @@
 import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
+import { Autocomplete } from '@react-google-maps/api';
+import { sendMail } from '@/helpers/sendMail';
 
-export const Input = ({ type, placeholder }) => {
+export const Input = ({ type, placeholder, ...props }) => {
   return (
     <input
       type={type}
       placeholder={placeholder}
       className="outline-none border-[1.5px] rounded-md md:rounded-xl placeholder:uppercase w-full placeholder:text-white/90 border-white bg-transparent p-2 text-sm placeholder:text-xs"
+      {...props}
     />
   );
 };
@@ -18,33 +21,95 @@ const Form = ({
   btnText = 'get a free quote',
   openModal,
 }) => {
+  const [data, setData] = useState({
+    name: '',
+    phone: '',
+    email: '',
+    address: '',
+  });
+
+  const onChange = (e) => {
+    setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    sendMail({
+      to_name: 'Dakshay Singla',
+      from_name: data.name,
+      from_number: data.phone,
+      from_email: data.email,
+      from_address: data.address,
+      from_reason: 'Request for free quote',
+    });
+    setData({
+      name: '',
+      phone: '',
+      email: '',
+      address: '',
+    });
+  };
   return (
     <div
-      className={`bg-[#060505]/50 w-[33vw] text-white rounded-2xl px-7 lg:px-10 relative py-10 min-h-[455px]`}
+      className={` w-[33vw] text-white z-20 rounded-2xl px-7 lg:px-10 relative py-10 min-h-[455px]`}
     >
       {bgImg && (
-        <Image
-          src={bgImg}
-          alt="bg"
-          width={40}
-          height={40}
-          className="absolute w-full h-full -z-10 left-0 top-0"
-        />
+        <>
+          <Image
+            src={bgImg}
+            alt="bg"
+            width={40}
+            height={40}
+            className="absolute w-full -z-20 h-full left-0 top-0"
+          />
+          <div className="bg-black/50 absolute w-full h-full -z-10 top-0 left-0 rounded-3xl"></div>
+        </>
       )}
       <h5 className="uppercase text-xl font-medium mt-5">{title}</h5>
       <p className="my-5 text-sm">{desc}</p>
-      <Input type="text" placeholder={'name'} />
-      <div className="flex gap-2 my-4">
-        <Input type="number" placeholder={'phone number'} />
-        <Input type="email" placeholder={'email address'} />
-      </div>
-      <Input type="text" placeholder={'address and pin code'} />
-      <button
-        onClick={openModal}
-        className="uppercase bg-white font-semibold text-xs text-black w-full rounded-xl py-3 mt-5"
-      >
-        {btnText}
-      </button>
+      <form onSubmit={handleSubmit}>
+        <Input
+          type="text"
+          placeholder={'name'}
+          name="name"
+          onChange={onChange}
+          value={data.name}
+          required
+        />
+        <div className="flex gap-2 my-4">
+          <Input
+            type="number"
+            placeholder={'phone number'}
+            name="phone"
+            onChange={onChange}
+            value={data.phone}
+            required
+          />
+          <Input
+            type="email"
+            placeholder={'email address'}
+            name="email"
+            onChange={onChange}
+            value={data.email}
+            required
+          />
+        </div>
+        <Autocomplete>
+          <Input
+            type="text"
+            placeholder={'address and pin code'}
+            name="address"
+            onChange={onChange}
+            value={data.address}
+            required
+          />
+        </Autocomplete>
+        <button
+          type="submit"
+          className="uppercase bg-white font-semibold text-xs text-black w-full rounded-xl py-3 mt-5"
+        >
+          {btnText}
+        </button>
+      </form>
     </div>
   );
 };

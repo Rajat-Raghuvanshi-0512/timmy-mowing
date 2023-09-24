@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from './custom/Button';
+import { Autocomplete } from '@react-google-maps/api';
 
 const GetInTouchForm = () => {
   return (
@@ -9,11 +10,13 @@ const GetInTouchForm = () => {
         Keep Your Property Looking Beautiful with Our professional Lawn Care &
         Gardening Services.
       </p>
-      <input
-        type="text"
-        placeholder="address and pincode"
-        className="outline-none mt-2 border-[1.5px] rounded-md md:rounded-xl placeholder:uppercase w-full placeholder:text-green-base/90 border-green-base bg-transparent p-2 text-sm placeholder:text-xs"
-      />
+      <Autocomplete>
+        <input
+          type="text"
+          placeholder="address and pincode"
+          className="outline-none mt-2 border-[1.5px] rounded-md md:rounded-xl placeholder:uppercase w-full placeholder:text-green-base/90 border-green-base bg-transparent p-2 text-sm placeholder:text-xs"
+        />
+      </Autocomplete>
       <Button className={'py-3 w-full'}>get a free quote</Button>
     </div>
   );
