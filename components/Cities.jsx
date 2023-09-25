@@ -9,7 +9,7 @@ const Cities = () => {
       <div className="md:hidden">
         <Heading content={'Popular Suburbs'} />
       </div>
-      <div className="hidden md:blockmd:absolute md:right-5 md:bottom-5 md:!text-white">
+      <div className="hidden md:block md:absolute md:right-5 md:bottom-5 md:!text-white">
         <h2 className="text-6xl font-semibold">Popular Suburbs</h2>
       </div>
       <div className="flex">
