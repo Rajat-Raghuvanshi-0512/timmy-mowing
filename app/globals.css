@@ -19,36 +19,6 @@ input[type='number'] {
   font-weight: 400;
   font-display: swap;
 }
-@font-face {
-  font-family: 'acid Grotesk';
-  src: url('/fonts/acid-grotesk-regular.otf') format('opentype');
-  font-weight: 500;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'acid Grotesk';
-  src: url('/fonts/acid-grotesk-medium.otf') format('opentype');
-  font-weight: 600;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'acid Grotesk';
-  src: url('/fonts/acid-grotesk-Bold.otf') format('opentype');
-  font-weight: 700;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'acid Grotesk';
-  src: url('/fonts/acid-grotesk-Bold.otf') format('opentype');
-  font-weight: 800;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'acid Grotesk';
-  src: url('/fonts/AcidGrotesk-Bold.otf') format('opentype');
-  font-weight: 900;
-  font-display: swap;
-}
 * {
   font-family: 'acid Grotesk';
   scroll-behavior: smooth;
