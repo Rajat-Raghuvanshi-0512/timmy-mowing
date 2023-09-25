@@ -21,7 +21,7 @@ const CallSection = () => {
   };
   return (
     <section className="m-5 md:m-10 bg-green-base rounded-lg md:rounded-2xl flex flex-col justify-center items-center h-[300px] text-white px-5 md:p-0">
-      <h3 className="text-xl md:text-4xl lg:text-5xl !leading-snug font-medium md:w-[60%]">
+      <h3 className="text-xl md:text-4xl lg:text-5xl !leading-snug font-semibold md:w-[60%]">
         Let us cultivate beauty right at your doorstep.
       </h3>
       <form
@@ -46,7 +46,7 @@ const CallSection = () => {
         />
         <button
           type="submit"
-          className="text-green-base bg-[#D9D9D9] rounded-lg md:rounded-3xl uppercase px-10 py-2 font-medium"
+          className="text-green-base bg-[#D9D9D9] rounded-lg md:rounded-3xl uppercase px-10 py-2 font-semibold"
         >
           Request a call
         </button>

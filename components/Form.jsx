@@ -50,7 +50,7 @@ const Form = ({
   };
   return (
     <div
-      className={` w-[33vw] text-white z-20 rounded-2xl px-7 lg:px-10 relative py-10 min-h-[455px]`}
+      className={`drop-shadow bg-black/50 w-[33vw] text-white z-20 rounded-3xl px-7 lg:px-10 relative py-10 min-h-[455px]`}
     >
       {bgImg && (
         <>
@@ -64,7 +64,7 @@ const Form = ({
           <div className="bg-black/50 absolute w-full h-full -z-10 top-0 left-0 rounded-3xl"></div>
         </>
       )}
-      <h5 className="uppercase text-xl font-medium mt-5">{title}</h5>
+      <h5 className="uppercase text-xl font-semibold mt-5">{title}</h5>
       <p className="my-5 text-sm">{desc}</p>
       <form onSubmit={handleSubmit}>
         <Input

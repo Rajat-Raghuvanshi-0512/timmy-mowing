@@ -29,16 +29,17 @@ const FaqData = [
 
 const FAQ = ({ openModal }) => {
   const [selected, setSelected] = useState('General');
+  const [active, setActive] = useState(0);
   return (
     <section className="px-5 md:px-14">
       <Heading content={'How it works?'} />
       <div className="md:mx-5 mt-5 flex flex-col md:flex-row gap-5 pr-5 md:mt-10 md:gap-10 md:pr-10 lg:gap-20 lg:pr-20 2xl:pr-40">
-        <div className="md:text-2xl lg:text-4xl justify-center md:justify-normal flex md:flex-col items-start gap-3 md:gap-6 lg:gap-10 font-medium md:flex-[0.6] mt-5">
+        <div className="md:text-2xl lg:text-4xl justify-center md:justify-normal flex md:flex-col items-start gap-3 md:gap-6 lg:gap-10 font-semibold md:flex-[0.6] mt-5">
           <button
             className={`
               ${
                 selected === 'General' &&
-                'md:font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-7 md:text-green-base border-transparent'
+                'md:font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-4 md:text-green-base border-transparent'
               }
                 px-3 rounded text-lg border border-black md:border-none md:text-2xl lg:text-3xl
             `}
@@ -51,7 +52,7 @@ const FAQ = ({ openModal }) => {
             className={`
            ${
              selected === 'Service' &&
-             'md:font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-7 md:text-green-base border-none'
+             'md:font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-4 md:text-green-base border-none'
            }
              px-3 rounded text-lg border border-black md:border-none md:text-2xl lg:text-3xl
          `}
@@ -65,27 +66,13 @@ const FAQ = ({ openModal }) => {
             className={`
             ${
               selected === 'Pricing' &&
-              'md:font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-7 md:text-green-base border-none'
+              'md:font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-4 md:text-green-base border-none'
             }
               px-3 rounded text-lg border border-black md:border-none md:text-2xl lg:text-3xl
           `}
             onClick={() => setSelected('Pricing')}
           >
             Pricing
-          </button>
-
-          <div className="w-full h-[2px] bg-green-base hidden md:block" />
-          <button
-            className={`
-           ${
-             selected === 'Lawn' &&
-             'md:font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-7 md:text-green-base border-none'
-           }
-             px-3 rounded text-xs md:text-2xl lg:text-3xl hidden md:block
-         `}
-            onClick={() => setSelected('Lawn')}
-          >
-            Lawn Care
           </button>
 
           <div className="w-full h-[2px] bg-green-base hidden md:block" />
@@ -97,8 +84,14 @@ const FAQ = ({ openModal }) => {
           </Button>
         </div>
         <div className="w-full flex-[1.4]">
-          {FaqData.map((item) => (
-            <Accordion key={item.heading} {...item} />
+          {FaqData.map((item, id) => (
+            <Accordion
+              key={item.heading}
+              {...item}
+              active={active}
+              id={id}
+              setActive={setActive}
+            />
           ))}
         </div>
       </div>

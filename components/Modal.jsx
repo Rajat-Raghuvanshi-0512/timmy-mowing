@@ -32,7 +32,7 @@ const Modal = ({
                 alt="cross"
                 width={60}
                 height={60}
-                className="mt-4"
+                className="mt-4 cursor-pointer"
                 onClick={closeModal}
               />
             </div>

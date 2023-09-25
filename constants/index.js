@@ -213,6 +213,9 @@ export const pricePageData = {
 
   Quality:
     'We understand each participants needs are different and will work with you to provide the gardening you require.3',
+  img1: '/price.png',
+  img2: '/price1.png',
+  img3: '/price2.png',
 };
 
 export const galleryInfoSm = [

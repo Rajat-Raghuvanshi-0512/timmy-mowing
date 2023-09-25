@@ -2,8 +2,9 @@
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import LoadingPage from './Loader';
+import Link from 'next/link';
 
-const Navbar = () => {
+const Navbar = ({ openModal }) => {
   const [showLoading, setShowLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => {
@@ -50,15 +51,22 @@ const Navbar = () => {
       </div>
       <div className="hidden md:flex gap-10 items-center">
         <ul className="flex gap-10 md:text-sm lg:text-xl text-[#757575]">
-          <li className="cursor-pointer">Services</li>
-          <li className="cursor-pointer">About</li>
-          <li className="cursor-pointer">Gallery</li>
+          <li className="cursor-pointer">
+            <Link href="#services">Services</Link>
+          </li>
+          <li className="cursor-pointer">
+            <Link href="#about">About</Link>
+          </li>
+          <li className="cursor-pointer">
+            <Link href="#gallery">Gallery</Link>
+          </li>
         </ul>
         <button
           style={{
             filter:
               'drop-shadow(0.9375px 5.625px 4.6875px rgba(0, 0, 0, 0.35))',
           }}
+          onClick={openModal}
           className=" bg-green-base text-white px-5 rounded-2xl uppercase text-xs md:py-2 lg:py-3 hover:scale-95 hover:duration-300"
         >
           Get a quote

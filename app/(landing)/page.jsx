@@ -111,7 +111,7 @@ const Home = () => {
   }
   return (
     <>
-      <Navbar />
+      <Navbar openModal={openModal} />
       <PopUpModal isOpen={isOpen} closeModal={closeModal} />
       <main className="2xl:px-32">
         <Hero />

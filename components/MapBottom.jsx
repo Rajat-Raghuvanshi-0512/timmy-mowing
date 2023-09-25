@@ -5,9 +5,9 @@ import Button from './custom/Button';
 
 const MapForm = () => {
   return (
-    <section className="m-3 md:m-6 bg-green-base md:bg-white lg:m-10 md:border-2 md:border-green-base rounded-2xl p-5">
+    <section className="m-3 md:m-6 bg-green-base md:bg-white lg:m-10 md:border-2 md:border-green-base rounded-2xl lg:rounded-3xl p-5 md:p-0 md:pr-5">
       <div className="flex gap-5">
-        <div className="flex-[0.7] gap-16 p-10 hidden md:flex">
+        <div className="flex-[0.7] gap-16 hidden md:flex">
           <Form bgImg={'/form-bg.png'} />
         </div>
         <div className="md:hidden">

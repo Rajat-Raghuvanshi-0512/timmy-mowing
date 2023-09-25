@@ -2,23 +2,24 @@
 import { useState } from 'react';
 import Image from 'next/image';
 
-const Accordion = ({ heading, body }) => {
-  const [showBody, setShowBody] = useState(false);
+const Accordion = ({ heading, body, active, setActive, id }) => {
   return (
     <div>
       <div className="md:py-10 py-5">
         <div className="flex justify-between gap-5">
           <h3
-            className={`font-metropolis text-base md:text-xl lg:text-2xl text-green-base font-medium hover:cursor-pointer`}
-            onClick={() => setShowBody(!showBody)}
+            className={`font-metropolis text-base md:text-xl lg:text-2xl text-green-base font-semibold hover:cursor-pointer`}
+            onClick={() => setActive(id)}
           >
             {heading}
           </h3>
           <div
             className="flex cursor-pointer items-center justify-center"
-            onClick={() => setShowBody(!showBody)}
+            onClick={() => {
+              active === id ? setActive(-1) : setActive(id);
+            }}
           >
-            {showBody ? (
+            {active === id ? (
               <Image
                 src={'/minus.svg'}
                 alt="plus"
@@ -38,13 +39,13 @@ const Accordion = ({ heading, body }) => {
           </div>
         </div>
         <div
-          className={`py-5 font-montserrat !duration-500 !transition-all h-auto overflow-auto text-xs font-medium md:text-base text-[#6F6C90] accord${
-            !showBody && '!h-0 !overflow-hidden accord !py-0'
+          className={`py-5 font-montserrat !duration-500 !transition-all h-auto overflow-auto text-xs font-semibold md:text-base text-[#6F6C90] accord${
+            active !== id && '!h-0 !overflow-hidden accord !py-0'
           } `}
         >
           <div
             className={`${
-              showBody
+              active === id
                 ? 'opacity-100 h-auto overflow-auto'
                 : 'opacity-0 h-0 overflow-hidden'
             } delay-75 duration-300`}

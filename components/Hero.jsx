@@ -14,7 +14,7 @@ const HeroLg = () => {
         width={240}
       />
       <div className="w-[75%] md:mb-10">
-        <h2 className="md:text-4xl lg:text-5xl font-medium !leading-snug">
+        <h2 className="md:text-4xl lg:text-5xl font-semibold !leading-snug">
           Unveil the Beauty of Your Lawn with Our Professional Care.
         </h2>
         <p className="md:text-3xl font-light md:pt-5">
@@ -50,7 +50,7 @@ const HeroSm = () => {
         className="w-full h-[87vh] object-cover -z-20 absolute left-0 top-0"
       />
       <div className="bg-black/50 w-full h-[87vh] absolute top-0 left-0 -z-10"></div>
-      <h1 className="text-5xl !leading-tight font-medium mt-3 text-[#FFFADE] uppercase">
+      <h1 className="text-5xl !leading-tight font-semibold mt-3 text-[#FFFADE] uppercase">
         Professional Lawn Care & Gardening
       </h1>
       <ul className="flex flex-col text-lg gap-4 my-10 text-[#FFFADE]">

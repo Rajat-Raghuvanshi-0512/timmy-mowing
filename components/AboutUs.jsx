@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import React from 'react';
+import Button from './custom/Button';
 
 const AboutUs = ({ openModal }) => {
   return (
-    <section className="p-5 md:px-10">
-      <h2 className="text-green-base text-4xl font-medium lg:text-5xl">
+    <section className="p-5 md:px-10" id="about">
+      <h2 className="text-green-base text-4xl font-semibold lg:text-5xl">
         Who are we?
       </h2>
       <div className="mt-5 md:mt-10 flex gap-5 md:gap-10">
@@ -22,7 +23,7 @@ const AboutUs = ({ openModal }) => {
             alt="greenside"
             width={200}
             height={200}
-            className="absolute w-[100px]  md:w-[120px] lg:w-[200px] md:bottom-16 lg:bottom-0 bottom-0 right-0 translate-x-[30%] translate-y-[-20%] md:translate-x-[50%] md:translate-y-[30%]"
+            className="absolute w-[100px]  md:w-[120px] lg:w-[200px] md:bottom-16 lg:bottom-0 bottom-0 right-0 translate-x-[30%] translate-y-[-5%] md:translate-x-[50%] md:translate-y-[30%]"
             unoptimized
           />
         </div>
@@ -37,7 +38,7 @@ const AboutUs = ({ openModal }) => {
             revolves around delivering the utmost care to every lawn, and
             that&apos;s precisely what we offer
           </p>
-          <div className=" ml-8 md:ml-20 lg:ml-40 md:mt-5 lg:mt-14 text-green-base md:flex items-center font-medium lg:text-xl gap-5 leading-5">
+          <div className=" ml-8 md:ml-20 lg:ml-40 md:mt-5 lg:mt-14 text-green-base md:flex items-center font-semibold lg:text-xl gap-5 leading-5">
             <div className="flex gap-3 text-xs md:text-base">
               <Image
                 src={'/trees.png'}
@@ -67,12 +68,12 @@ const AboutUs = ({ openModal }) => {
               </p>
             </div>
           </div>
-          <button
+          <Button
             className="uppercase text-white bg-green-base md:ml-20 lg:ml-40 md:mt-5 lg:mt-14 md:px-10 lg:px-20 rounded-3xl md:py-2 lg:py-4 hidden md:flex"
             onClick={openModal}
           >
             get a quote
-          </button>
+          </Button>
         </div>
       </div>
       <div className="text-xs mt-4 md:hidden">
@@ -84,12 +85,12 @@ const AboutUs = ({ openModal }) => {
           that&apos;s precisely what we offer
         </p>
       </div>
-      <button
-        className="uppercase text-white w-full bg-green-base mt-3 rounded-xl  py-4 md:hidden"
+      <Button
+        className="uppercase text-white w-full bg-green-base mt-3 rounded-xl  py-3 md:hidden"
         onClick={openModal}
       >
         get a free quote
-      </button>
+      </Button>
     </section>
   );
 };

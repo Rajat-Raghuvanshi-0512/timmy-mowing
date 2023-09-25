@@ -4,7 +4,7 @@ import Navigation from './custom/Navigation';
 
 const LawnGallerySm = () => {
   return (
-    <section className="md:hidden relative pb-5">
+    <section className="md:hidden relative pb-5" id="gallery">
       <Image
         src={'/mobile-lawn-gallery.png'}
         alt="gallery"
@@ -23,7 +23,7 @@ const LawnGallerySm = () => {
 
 const LawnGalleryLg = () => {
   return (
-    <section className="m-10 hidden md:block">
+    <section className="m-10 hidden md:block" id="gallery">
       <div className="grid grid-cols-4 gap-1 md:gap-3">
         <div className="capitalize text-green-base text-3xl md:text-4xl lg:text-5xl font-semibold !leading-snug col-span-2 md:col-span-1">
           We love it <br /> when <br /> you love it

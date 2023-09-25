@@ -31,7 +31,7 @@ const GalleryItem = ({
           unoptimized
         />
         <div className="absolute bottom-0 w-full px-5 pb-3 bg-black/30 flex flex-col justify-end min-h-full translate-y-[20%] hover:translate-y-0 duration-500 pt-[480px]">
-          <h5 className="font-medium text-3xl mt-auto">{heading}</h5>
+          <h5 className="font-semibold text-3xl mt-auto">{heading}</h5>
           <p className="text-sm mt-2">{desc}</p>
           <ul className="flex flex-col flex-wrap group-hover:translate-y-0 duration-300 translate-y-[120%] h-[150px] mt-5 list-disc ml-5 hover:flex">
             {section1Data?.map((item) => (
@@ -53,7 +53,7 @@ const GalleryItem = ({
           unoptimized
         />
         <div className="absolute bottom-0 w-full px-5 pb-3 bg-black/30 flex flex-col justify-end min-h-full translate-y-[20%] hover:translate-y-0 duration-500 pt-[480px]">
-          <h5 className="font-medium text-3xl">{heading}</h5>
+          <h5 className="font-semibold text-3xl">{heading}</h5>
           <p className="text-sm mt-2">{desc}</p>
           <ul className="flex flex-col flex-wrap group-hover:translate-y-0 duration-300 translate-y-[10%] hover:translate-y-0 h-[150px] mt-5 list-disc ml-5 hover:flex">
             {section2Data?.map((item) => (
@@ -76,7 +76,7 @@ const GalleryItem = ({
             unoptimized
           />
           <div className="absolute bottom-0 w-full px-5 pb-3 bg-black/30 flex flex-col justify-end min-h-full translate-y-[20%] hover:translate-y-0 duration-500 pt-[480px]">
-            <h5 className="font-medium text-3xl">{heading}</h5>
+            <h5 className="font-semibold text-3xl">{heading}</h5>
             <p className="text-sm mt-2">{desc}</p>
             <ul className="flex flex-col flex-wrap group-hover:translate-y-0 duration-300 translate-y-[10%] h-[150px] mt-5 list-disc ml-5 hover:flex hover:translate-y-0">
               {section3Data.map((item) => (
@@ -106,7 +106,7 @@ const GalleryItemSm = ({ heading }) => {
 
 const ImageGallery = () => {
   return (
-    <section className="p-5 md:px-10" id="#services">
+    <section className="p-5 md:px-10" id="services">
       <h2 className="text-2xl md:text-4xl lg:text-[2.5rem] text-green-base mb-5 md:mb-10 lg:mb-14 font-semibold">
         What can we do for you?
       </h2>
@@ -116,7 +116,7 @@ const ImageGallery = () => {
         ))}
       </div>
       <div className="bg-[#EFF0F2] md:hidden rounded-lg px-4 py-7">
-        <h3 className="text-2xl font-medium mb-3 text-green-base">
+        <h3 className="text-2xl font-semibold mb-3 text-green-base">
           Residential Services
         </h3>
         <div className="h-[1px] w-full bg-gray-500" />

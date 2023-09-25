@@ -46,13 +46,19 @@ const PricePage = ({ openModal }) => {
       </div>
       <div className="md:mx-14 flex flex-col md:flex-row">
         <div className="md:flex-1 lg:flex-[1.2]">
-          <div className="flex justify-center md:justify-normal -mt-32 md:mt-0">
+          <div className="flex justify-center md:justify-normal -mt-36 md:mt-0">
             <Image
-              src={'/price.png'}
+              src={
+                selected === 'Experience'
+                  ? pricePageData.img1
+                  : selected === 'Reliability'
+                  ? pricePageData.img2
+                  : pricePageData.img3
+              }
               alt="price"
               width={550}
               height={400}
-              className="md:ml-7 md:-mt-14 lg:-mt-24 w-[300px] md:w-[400px] lg:w-[550px]"
+              className="md:ml-7 md:-mt-14 lg:-mt-24 w-[330px] md:w-[400px] lg:w-[550px]"
             />
           </div>
         </div>
@@ -92,6 +98,10 @@ const PricePage = ({ openModal }) => {
               Customer Satisfaction Guaranteed
             </li>
           </ul>
+          <p className="md:hidden p-2 mt-4 text-green-base font-semibold leading-4">
+            We understand each participants needs are different and will work
+            with you to provide the gardening you require.
+          </p>
           <Button
             className="w-full py-3 md:w-72 lg:w-80 !md:px-6 lg:!px-10 ml-auto"
             onClick={openModal}
