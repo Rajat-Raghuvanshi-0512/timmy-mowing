@@ -38,7 +38,7 @@ const FAQ = ({ openModal }) => {
             className={`
               ${
                 selected === 'General' &&
-                'font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-7 md:text-green-base border-none'
+                'md:font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-7 md:text-green-base border-transparent'
               }
                 px-3 rounded text-lg border border-black md:border-none md:text-2xl lg:text-3xl
             `}
@@ -51,7 +51,7 @@ const FAQ = ({ openModal }) => {
             className={`
            ${
              selected === 'Service' &&
-             'font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-7 md:text-green-base border-none'
+             'md:font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-7 md:text-green-base border-none'
            }
              px-3 rounded text-lg border border-black md:border-none md:text-2xl lg:text-3xl
          `}
@@ -65,7 +65,7 @@ const FAQ = ({ openModal }) => {
             className={`
             ${
               selected === 'Pricing' &&
-              'font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-7 md:text-green-base border-none'
+              'md:font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-7 md:text-green-base border-none'
             }
               px-3 rounded text-lg border border-black md:border-none md:text-2xl lg:text-3xl
           `}
@@ -79,7 +79,7 @@ const FAQ = ({ openModal }) => {
             className={`
            ${
              selected === 'Lawn' &&
-             'font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-7 md:text-green-base border-none'
+             'md:font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-7 md:text-green-base border-none'
            }
              px-3 rounded text-xs md:text-2xl lg:text-3xl hidden md:block
          `}

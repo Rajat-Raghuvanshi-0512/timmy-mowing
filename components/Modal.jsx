@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const Modal = ({
@@ -21,32 +22,22 @@ const Modal = ({
             !isOpen ? '!scale-0' : '!scale-100'
           }`}
         >
-          <div className="px-10 py-4 rounded-t">
+          <div className="px-10 py-4 rounded-t flex justify-between">
             <h3 className="text-4xl lg:text-5xl uppercase font-bold !leading-snug text-gray-900 dark:text-white">
               {title}
             </h3>
+            <div>
+              <Image
+                src={'/cross.svg'}
+                alt="cross"
+                width={60}
+                height={60}
+                className="mt-4"
+                onClick={closeModal}
+              />
+            </div>
           </div>
           <div>{children}</div>
-          {closeModal && (
-            <div className="flex items-center p-6 space-x-2 rounded-b border-t border-gray-200">
-              {submitText && onClick && (
-                <button
-                  type="submit"
-                  className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700  w-full"
-                  onClick={onClick}
-                >
-                  {submitText}
-                </button>
-              )}
-              <button
-                type="button"
-                className="text-gray-500 bg-white hover:bg-red-500 hover:text-white focus:outline-none rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5  focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-red-500  w-full"
-                onClick={closeModal}
-              >
-                {closeText ? closeText : 'Cancel'}
-              </button>
-            </div>
-          )}
         </div>
       </div>
     </>

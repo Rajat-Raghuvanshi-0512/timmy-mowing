@@ -41,16 +41,16 @@ const HeroLg = () => {
 
 const HeroSm = () => {
   return (
-    <section className=" px-5 h-[90vh]">
+    <section className="h-[80vh] px-5">
       <Image
         src={'/mobile-banner-bg.png'}
         alt="banner"
         width={100}
         height={400}
-        className="w-full h-screen object-cover -z-20 absolute left-0 top-0"
+        className="w-full h-[87vh] object-cover -z-20 absolute left-0 top-0"
       />
-      <div className="bg-black/50 w-full h-screen absolute top-0 left-0 -z-10"></div>
-      <h1 className="text-5xl !leading-snug font-medium mt-10 text-[#FFFADE] uppercase">
+      <div className="bg-black/50 w-full h-[87vh] absolute top-0 left-0 -z-10"></div>
+      <h1 className="text-5xl !leading-tight font-medium mt-3 text-[#FFFADE] uppercase">
         Professional Lawn Care & Gardening
       </h1>
       <ul className="flex flex-col text-lg gap-4 my-10 text-[#FFFADE]">

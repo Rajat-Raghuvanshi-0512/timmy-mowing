@@ -15,13 +15,15 @@ const AboutUs = ({ openModal }) => {
             width={470}
             height={500}
             className="relative w-full"
+            unoptimized
           />
           <Image
             src={'/aboutus-side.png'}
             alt="greenside"
             width={200}
             height={200}
-            className="absolute w-[80px]  md:w-[120px] lg:w-[200px] md:bottom-16 lg:bottom-0 bottom-0 right-0 translate-x-[50%] translate-y-[30%]"
+            className="absolute w-[100px]  md:w-[120px] lg:w-[200px] md:bottom-16 lg:bottom-0 bottom-0 right-0 translate-x-[30%] translate-y-[-20%] md:translate-x-[50%] md:translate-y-[30%]"
+            unoptimized
           />
         </div>
         <div className="flex-[0.6] md:flex-[1.2]">
@@ -73,7 +75,7 @@ const AboutUs = ({ openModal }) => {
           </button>
         </div>
       </div>
-      <div className="md:hidden">
+      <div className="text-xs mt-4 md:hidden">
         <p>
           At Timmy’s Mowing, we understand that your lawn is more than just
           grass. it&apos;s a space for relaxation, family playtime,

@@ -19,6 +19,7 @@ const Navbar = () => {
         <Image
           src={'/logo.png'}
           alt="logo"
+          unoptimized
           height={55}
           width={100}
           className="w-[80px] md:w-[70px] lg:w-[100px]"
@@ -28,9 +29,10 @@ const Navbar = () => {
         <Image
           src={'/logo-white.png'}
           alt="logo"
+          unoptimized
           height={55}
           width={100}
-          className="w-[80px] md:w-[70px] lg:w-[100px]"
+          className="w-[80px] object-contain md:w-[70px] lg:w-[100px]"
         />
       </div>
       <div className="flex gap-5 md:hidden">

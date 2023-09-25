@@ -214,3 +214,15 @@ export const pricePageData = {
   Quality:
     'We understand each participants needs are different and will work with you to provide the gardening you require.3',
 };
+
+export const galleryInfoSm = [
+  'Lawn Care',
+  'Garden Design',
+  'Weed Control',
+  'Planting, Grassing & Bedding',
+  'Seasonal Cleanup',
+  'Hedge & Tree Care',
+  'Consultstion & Maintainance',
+  'Pest Management',
+  'Waste Removal Services',
+];

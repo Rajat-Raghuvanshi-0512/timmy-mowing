@@ -45,11 +45,8 @@ const PopUpModal = ({ isOpen, closeModal }) => {
     closeModal();
   };
   return (
-    <Modal isOpen={isOpen} title={'Timmy’s MOWING'}>
+    <Modal isOpen={isOpen} closeModal={closeModal} title={'Timmy’s MOWING'}>
       <div className="p-5 px-10 pb-10 text-white">
-        <div className="text-sm ">
-          Request A Free Quote Today & Get 10% Discount
-        </div>
         <div className="text-sm  mb-10">
           Request A Free Quote Today & Get 10% Discount
         </div>

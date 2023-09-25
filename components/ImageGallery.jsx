@@ -1,4 +1,4 @@
-import { galleryInfo } from '@/constants';
+import { galleryInfo, galleryInfoSm } from '@/constants';
 import Image from 'next/image';
 import React from 'react';
 
@@ -120,8 +120,8 @@ const ImageGallery = () => {
           Residential Services
         </h3>
         <div className="h-[1px] w-full bg-gray-500" />
-        {galleryInfo.map((item) => (
-          <GalleryItemSm key={item.id} {...item} />
+        {galleryInfoSm.map((item) => (
+          <GalleryItemSm key={item.id} heading={item} />
         ))}
       </div>
     </section>
