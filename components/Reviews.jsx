@@ -6,15 +6,17 @@ import Navigation from './custom/Navigation';
 
 const ReviewCard = ({ imageUrl, name, type, desc }) => {
   return (
-    <div className="border border-green-base min-w-[300px] p-5 rounded-2xl flex-1">
-      <div className="flex gap-3 p-3 !w-full">
+    <div className="border border-green-base min-w-[280px] p-5 rounded-2xl flex-1">
+      <div className="flex gap-3 p-1 !w-full">
         <Image src={imageUrl} alt="review" width={50} height={50} />
         <div>
           <h6 className="font-semibold">{name}</h6>
-          <p className="text-xs">{type}</p>
+          <p className="text-xs capitalize">{type}</p>
         </div>
       </div>
-      <p className="font-light text-xs py-2">{desc}</p>
+      <p className=" text-lg md:text-sm md:font-normal py-2">
+        {desc.slice(0, 160)}
+      </p>
       <div className="flex w-full">
         <Image src={'/icons/facebook.svg'} alt="fb" width={20} height={20} />
         <Image src={'/icons/linkedin.svg'} alt="fb" width={20} height={20} />

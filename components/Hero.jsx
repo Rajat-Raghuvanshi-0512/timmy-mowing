@@ -49,7 +49,7 @@ const HeroSm = () => {
         height={400}
         className="w-full h-[90svh] object-cover -z-20 absolute left-0 top-0"
       />
-      <div className="bg-black/50 w-full h-[87svh] absolute top-0 left-0 -z-10"></div>
+      <div className="bg-black/50 w-full h-[90svh] absolute top-0 left-0 -z-10"></div>
       <h1 className="text-[2.5rem] !leading-tight font-bold mt-3 text-[#FFFADE] uppercase">
         Professional Lawn Care & Gardening
       </h1>

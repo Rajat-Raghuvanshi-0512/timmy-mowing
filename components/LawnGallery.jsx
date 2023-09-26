@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
 import Navigation from './custom/Navigation';
-import Heading from './custom/Heading';
 
 const LawnGallerySm = () => {
   return (
@@ -11,14 +10,14 @@ const LawnGallerySm = () => {
         alt="gallery"
         width={100}
         height={100}
-        className="w-full h-full object-contain -mt-10"
+        className="w-full h-full p-2 object-contain -mt-10"
         unoptimized
       />
-      <h2 className="capitalize absolute left-0 -top-2 w-[70%] text-green-base text-[2.5rem] leading-snug font-semibold">
+      <h2 className="capitalize absolute left-2 -top-2 w-[70%] text-green-base text-[2.5rem] leading-snug font-semibold">
         <span className="text-white">We love it</span> <br /> when <br /> you
         love it
       </h2>
-      <p className="mb-5 col-span-2 absolute left-0 top-44 w-[50%] text-xs">
+      <p className="mb-5 col-span-2 left-2 absolute  top-44 w-[45%] text-xs">
         Keep Your Property Looking Beautiful with Our professional Lawn Care &
         Gardening Services.
       </p>

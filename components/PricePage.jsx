@@ -14,7 +14,7 @@ const PricePage = ({ openModal }) => {
             className={`${
               selected === 'Experience' &&
               'md:font-bold bg-white text-green-base md:bg-transparent md:text-white'
-            } border md:border-none px-2 py-1 rounded-lg`}
+            } border md:border-none px-2 py-1 rounded-lg w-28`}
             onClick={() => setSelected('Experience')}
           >
             EXPERIENCE
@@ -24,7 +24,7 @@ const PricePage = ({ openModal }) => {
             className={`${
               selected === 'Reliability' &&
               'md:font-bold bg-white text-green-base md:bg-transparent md:text-white'
-            } border md:border-none px-2 py-1 rounded-lg`}
+            } border md:border-none px-2 py-1 rounded-lg w-28`}
             onClick={() => setSelected('Reliability')}
           >
             RELIABILITY
@@ -34,7 +34,7 @@ const PricePage = ({ openModal }) => {
             className={`${
               selected === 'Quality' &&
               'md:font-bold bg-white text-green-base md:bg-transparent md:text-white'
-            } border md:border-none px-2 py-1 rounded-lg`}
+            } border md:border-none px-2 py-1 rounded-lg w-28`}
             onClick={() => setSelected('Quality')}
           >
             QUALITY

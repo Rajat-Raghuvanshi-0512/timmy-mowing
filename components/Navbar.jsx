@@ -40,7 +40,7 @@ const Navbar = ({ openModal }) => {
   return (
     <nav
       className={`p-5 md:px-10 lg:px-14 md:py-3 lg:py-5 flex justify-between md:border-b-[1.5px] md:border-green-base fixed top-0 left-0 md:static w-full z-50 ${
-        isScrolled ? 'bg-white shadow-2xl' : ''
+        isScrolled ? 'bg-white shadow-2xl duration-500' : ''
       }`}
     >
       <div className="hidden md:flex items-center">
