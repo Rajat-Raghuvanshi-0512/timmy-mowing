@@ -34,14 +34,14 @@ const FAQ = ({ openModal }) => {
     <section className="px-5 md:px-14">
       <Heading content={'How it works?'} />
       <div className="md:mx-5 mt-5 flex flex-col md:flex-row gap-5 pr-5 md:mt-10 md:gap-10 md:pr-10 lg:gap-20 lg:pr-20 2xl:pr-40">
-        <div className="md:text-2xl lg:text-4xl justify-center md:justify-normal flex md:flex-col items-start gap-3 md:gap-6 lg:gap-10 font-semibold md:flex-[0.6] mt-5">
+        <div className="md:text-2xl lg:text-4xl justify-center md:justify-normal flex md:flex-col items-start gap-5 md:gap-6 lg:gap-10 font-semibold md:flex-[0.6] mt-5">
           <button
             className={`
               ${
                 selected === 'General' &&
                 'md:font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-4 md:text-green-base border-transparent'
               }
-                px-3 rounded text-lg border border-black md:border-none md:text-2xl lg:text-3xl
+                px-3 rounded-lg text-lg border border-black md:border-none md:text-2xl lg:text-3xl
             `}
             onClick={() => setSelected('General')}
           >
@@ -54,7 +54,7 @@ const FAQ = ({ openModal }) => {
              selected === 'Service' &&
              'md:font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-4 md:text-green-base border-none'
            }
-             px-3 rounded text-lg border border-black md:border-none md:text-2xl lg:text-3xl
+             px-3 rounded-lg text-lg border border-black md:border-none md:text-2xl lg:text-3xl
          `}
             onClick={() => setSelected('Service')}
           >
@@ -68,7 +68,7 @@ const FAQ = ({ openModal }) => {
               selected === 'Pricing' &&
               'md:font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-4 md:text-green-base border-none'
             }
-              px-3 rounded text-lg border border-black md:border-none md:text-2xl lg:text-3xl
+              px-3 rounded-lg text-lg border border-black md:border-none md:text-2xl lg:text-3xl
           `}
             onClick={() => setSelected('Pricing')}
           >
@@ -96,7 +96,7 @@ const FAQ = ({ openModal }) => {
         </div>
       </div>
       <Button
-        className="text-base mt-0 md:hidden w-full py-2"
+        className="text-base mt-0 md:hidden w-full py-3"
         onClick={openModal}
       >
         get a quote

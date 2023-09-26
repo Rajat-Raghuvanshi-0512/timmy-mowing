@@ -41,25 +41,25 @@ const HeroLg = () => {
 
 const HeroSm = () => {
   return (
-    <section className="h-[80vh] px-5">
+    <section className="h-[90svh] pt-20 px-5">
       <Image
         src={'/mobile-banner-bg.png'}
         alt="banner"
         width={100}
         height={400}
-        className="w-full h-[87vh] object-cover -z-20 absolute left-0 top-0"
+        className="w-full h-[90svh] object-cover -z-20 absolute left-0 top-0"
       />
-      <div className="bg-black/50 w-full h-[87vh] absolute top-0 left-0 -z-10"></div>
-      <h1 className="text-5xl !leading-tight font-semibold mt-3 text-[#FFFADE] uppercase">
+      <div className="bg-black/50 w-full h-[87svh] absolute top-0 left-0 -z-10"></div>
+      <h1 className="text-[2.5rem] !leading-tight font-bold mt-3 text-[#FFFADE] uppercase">
         Professional Lawn Care & Gardening
       </h1>
-      <ul className="flex flex-col text-lg gap-4 my-10 text-[#FFFADE]">
+      <ul className="flex flex-col gap-3  my-10 text-[#FFFADE]">
         <li className="flex gap-5 items-center">
           <Image
             src={'/checkmark.png'}
             alt="checkmark"
-            width={40}
-            height={40}
+            width={30}
+            height={30}
           />
           <div>100% SATISFACTION GUARANTEE</div>
         </li>
@@ -67,8 +67,8 @@ const HeroSm = () => {
           <Image
             src={'/checkmark.png'}
             alt="checkmark"
-            width={40}
-            height={40}
+            width={30}
+            height={30}
           />
           <div>NO CALL OUT FEES</div>
         </li>
@@ -76,8 +76,8 @@ const HeroSm = () => {
           <Image
             src={'/checkmark.png'}
             alt="checkmark"
-            width={40}
-            height={40}
+            width={30}
+            height={30}
           />
           <div>SECOND SERVICE FREE</div>
         </li>

@@ -21,7 +21,7 @@ const Guarantee = () => {
             className="w-[100px] md:w-[80px] md:hidden"
           />
           <div>
-            <h5 className=" font-semibold text-lg md:text-xl py-3">
+            <h5 className=" font-bold text-lg md:text-xl py-3">
               Our Total Guarantee
             </h5>
             <p className="text-xs md:text-base lg:w-[60%] pb-3">
@@ -46,7 +46,7 @@ const Guarantee = () => {
             className="w-[100px] md:w-[80px] md:hidden"
           />
           <div>
-            <h5 className=" font-semibold text-lg md:text-xl py-3">
+            <h5 className=" font-bold text-lg md:text-xl py-3">
               Bonded & Insured
             </h5>
             <p className="text-xs md:text-base lg:w-[60%] pb-3">

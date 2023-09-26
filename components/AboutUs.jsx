@@ -1,13 +1,12 @@
 import Image from 'next/image';
 import React from 'react';
 import Button from './custom/Button';
+import Heading from './custom/Heading';
 
 const AboutUs = ({ openModal }) => {
   return (
     <section className="p-5 md:px-10" id="about">
-      <h2 className="text-green-base text-4xl font-semibold lg:text-5xl">
-        Who are we?
-      </h2>
+      <Heading content={'Who are we?'} />
       <div className="mt-5 md:mt-10 flex gap-5 md:gap-10">
         <div className="w-full flex-[1.4] md:flex-[0.8] relative md:h-[350px] lg:h-[490px]">
           <Image
@@ -38,7 +37,7 @@ const AboutUs = ({ openModal }) => {
             revolves around delivering the utmost care to every lawn, and
             that&apos;s precisely what we offer
           </p>
-          <div className=" ml-8 md:ml-20 lg:ml-40 md:mt-5 lg:mt-14 text-green-base md:flex items-center font-semibold lg:text-xl gap-5 leading-5">
+          <div className=" ml-6 md:ml-20 lg:ml-40 md:mt-5 lg:mt-14 text-green-base md:flex items-center font-semibold lg:text-xl gap-5 leading-5">
             <div className="flex gap-3 text-xs md:text-base">
               <Image
                 src={'/trees.png'}

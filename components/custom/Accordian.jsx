@@ -8,13 +8,13 @@ const Accordion = ({ heading, body, active, setActive, id }) => {
       <div className="md:py-10 py-5">
         <div className="flex justify-between gap-5">
           <h3
-            className={`font-metropolis text-base md:text-xl lg:text-2xl text-green-base font-semibold hover:cursor-pointer`}
+            className={`font-metropolis text-base md:text-xl lg:text-2xl text-green-base font-semibold hover:cursor-pointer flex-[1.8] md:flex-none`}
             onClick={() => setActive(id)}
           >
             {heading}
           </h3>
           <div
-            className="flex cursor-pointer items-center justify-center"
+            className="flex flex-[0.2] md:flex-none cursor-pointer items-center justify-center"
             onClick={() => {
               active === id ? setActive(-1) : setActive(id);
             }}
@@ -25,7 +25,7 @@ const Accordion = ({ heading, body, active, setActive, id }) => {
                 alt="plus"
                 width={40}
                 height={40}
-                className="w-[10px] md:w-[20px]"
+                className="w-[14px] md:w-[20px]"
               />
             ) : (
               <Image
@@ -33,7 +33,7 @@ const Accordion = ({ heading, body, active, setActive, id }) => {
                 alt="plus"
                 width={40}
                 height={40}
-                className="w-[10px] md:w-[20px]"
+                className="w-[14px] md:w-[20px]"
               />
             )}
           </div>
@@ -46,7 +46,7 @@ const Accordion = ({ heading, body, active, setActive, id }) => {
           <div
             className={`${
               active === id
-                ? 'opacity-100 h-auto overflow-auto'
+                ? 'opacity-140 h-auto overflow-auto'
                 : 'opacity-0 h-0 overflow-hidden'
             } delay-75 duration-300`}
           >

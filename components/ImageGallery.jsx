@@ -1,6 +1,8 @@
 import { galleryInfo, galleryInfoSm } from '@/constants';
 import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
+import Heading from './custom/Heading';
+import ServiceAccordianMobile from './custom/ServiceAccordianMobile';
 
 const GalleryItem = ({
   link1,
@@ -90,26 +92,11 @@ const GalleryItem = ({
   );
 };
 
-const GalleryItemSm = ({ heading }) => {
-  return (
-    <div>
-      <div className="flex justify-between text-green-base items-center p-2">
-        <h2>{heading}</h2>
-        <div>
-          <Image src={'/plus.svg'} alt="plus" width={15} height={15} />
-        </div>
-      </div>
-      <div className="h-[1px] w-full bg-gray-500" />
-    </div>
-  );
-};
-
 const ImageGallery = () => {
+  const [active, setActive] = useState(0);
   return (
     <section className="p-5 md:px-10" id="services">
-      <h2 className="text-2xl md:text-4xl lg:text-[2.5rem] text-green-base mb-5 md:mb-10 lg:mb-14 font-semibold">
-        What can we do for you?
-      </h2>
+      <Heading content={'What can we do for you?'} />
       <div className="hidden md:block border-2 border-green-base rounded-xl p-5 flex-wrap text-white">
         {galleryInfo.map((item) => (
           <GalleryItem key={item.id} {...item} />
@@ -120,8 +107,15 @@ const ImageGallery = () => {
           Residential Services
         </h3>
         <div className="h-[1px] w-full bg-gray-500" />
-        {galleryInfoSm.map((item) => (
-          <GalleryItemSm key={item.id} heading={item} />
+        {galleryInfoSm.map((item, id) => (
+          <ServiceAccordianMobile
+            key={item.heading}
+            heading={item.heading}
+            list={item.list}
+            active={active}
+            setActive={setActive}
+            id={id}
+          />
         ))}
       </div>
     </section>

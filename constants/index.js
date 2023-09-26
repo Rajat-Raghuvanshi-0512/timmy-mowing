@@ -219,13 +219,55 @@ export const pricePageData = {
 };
 
 export const galleryInfoSm = [
-  'Lawn Care',
-  'Garden Design',
-  'Weed Control',
-  'Planting, Grassing & Bedding',
-  'Seasonal Cleanup',
-  'Hedge & Tree Care',
-  'Consultstion & Maintainance',
-  'Pest Management',
-  'Waste Removal Services',
+  {
+    heading: 'Lawn Care',
+    list: [
+      'Mowing',
+      'Edging',
+      'Fertilization',
+      'Topiary Services',
+      'Mulching Services',
+      'Aeration',
+      'Lawn',
+      'Detaching',
+      'Slashing',
+    ],
+  },
+  {
+    heading: 'Garden Design',
+    list: ['Custom Design', 'Theme gardens', 'Landscaping'],
+  },
+  {
+    heading: 'Weed Control',
+    list: ['Weeding', 'Herbicide', 'Application'],
+  },
+  {
+    heading: 'Planting, Grassing & Bedding',
+    list: ['Flower Bed Design', 'Plant Installation'],
+  },
+  {
+    heading: 'Seasonal Cleanup',
+    list: ['Fall Clean up', 'Spring Clean up'],
+  },
+  {
+    heading: 'Hedge & Tree Care',
+    list: [
+      'Prunning and Trimming',
+      'Tree Lopping',
+      'Stump removal',
+      'Topiary Services',
+    ],
+  },
+  {
+    heading: 'Consultstion & Maintainance',
+    list: ['Site Evaluation'],
+  },
+  {
+    heading: 'Pest Management',
+    list: ['Identification', 'Treatment'],
+  },
+  {
+    heading: 'Waste Removal Services',
+    list: ['Green waste removal', 'Other waste removal', 'Leaf blowing'],
+  },
 ];

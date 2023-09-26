@@ -18,12 +18,12 @@ const Modal = ({
         }`}
       >
         <div
-          className={`relative max-w-md h-auto shadow border-2 lg:border-4 border-white/50 bg-[#243d13] rounded-3xl  top-[50%] left-[50%] duration-200 translate-y-[-50%] translate-x-[-50%] ease-out scale-100 ${
+          className={`relative max-w-sm md:max-w-md h-auto shadow border-2 lg:border-4 border-white/50 bg-[#243d13] rounded-3xl  top-[50%] left-[50%] duration-200 translate-y-[-50%] translate-x-[-50%] ease-out scale-100 ${
             !isOpen ? '!scale-0' : '!scale-100'
           }`}
         >
           <div className="px-10 py-4 rounded-t flex justify-between">
-            <h3 className="text-4xl lg:text-5xl uppercase font-bold !leading-snug text-gray-900 dark:text-white">
+            <h3 className="text-4xl lg:text-5xl uppercase font-bold !leading-snug text-white">
               {title}
             </h3>
             <div>

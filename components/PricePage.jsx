@@ -14,7 +14,7 @@ const PricePage = ({ openModal }) => {
             className={`${
               selected === 'Experience' &&
               'md:font-bold bg-white text-green-base md:bg-transparent md:text-white'
-            } border md:border-none px-2 py-1 rounded`}
+            } border md:border-none px-2 py-1 rounded-lg`}
             onClick={() => setSelected('Experience')}
           >
             EXPERIENCE
@@ -24,7 +24,7 @@ const PricePage = ({ openModal }) => {
             className={`${
               selected === 'Reliability' &&
               'md:font-bold bg-white text-green-base md:bg-transparent md:text-white'
-            } border md:border-none px-2 py-1 rounded`}
+            } border md:border-none px-2 py-1 rounded-lg`}
             onClick={() => setSelected('Reliability')}
           >
             RELIABILITY
@@ -34,7 +34,7 @@ const PricePage = ({ openModal }) => {
             className={`${
               selected === 'Quality' &&
               'md:font-bold bg-white text-green-base md:bg-transparent md:text-white'
-            } border md:border-none px-2 py-1 rounded`}
+            } border md:border-none px-2 py-1 rounded-lg`}
             onClick={() => setSelected('Quality')}
           >
             QUALITY
@@ -66,7 +66,7 @@ const PricePage = ({ openModal }) => {
           <h4 className="md:text-center text-green-base font-bold text-xl lg:text-3xl">
             Get things done the right way.
           </h4>
-          <ul className="text-green-base lg:mt-10 font-semibold md:text-xs lg:text-sm flex flex-col gap-3 mt-5 lg:gap-5 md:ml-10">
+          <ul className="text-[#455330] lg:mt-10 font-semibold md:text-xs lg:text-sm flex flex-col gap-3 mt-5 lg:gap-5 md:ml-10">
             <li className="flex items-center gap-3">
               <Image
                 src={'/icons/dollar.svg'}
