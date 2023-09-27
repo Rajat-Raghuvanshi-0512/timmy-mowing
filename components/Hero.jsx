@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
 import Form from './Form';
 import GetInTouchForm from './GetInTouchForm';
 
@@ -40,16 +40,25 @@ const HeroLg = ({ setShowThankyou }) => {
 };
 
 const HeroSm = ({ setShowThankyou }) => {
+  const [increaseSize, setIncreaseSize] = useState(false);
   return (
-    <section className="h-[90svh] pt-20 px-5">
+    <section
+      className={`${increaseSize ? 'h-[105svh]' : 'h-[90svh]'} pt-20 px-5`}
+    >
       <Image
         src={'/mobile-banner-bg.png'}
         alt="banner"
         width={100}
         height={400}
-        className="w-full h-[90svh] object-cover -z-20 absolute left-0 top-0"
+        className={`w-full ${
+          increaseSize ? 'h-[105svh]' : 'h-[90svh]'
+        } object-cover -z-20 absolute left-0 top-0`}
       />
-      <div className="bg-black/50 w-full h-[90svh] absolute top-0 left-0 -z-10"></div>
+      <div
+        className={`bg-black/50 w-full ${
+          increaseSize ? 'h-[105svh]' : 'h-[90svh]'
+        } absolute top-0 left-0 -z-10`}
+      ></div>
       <h1 className="text-[2.5rem] !leading-tight font-bold mt-3 text-[#FFFADE] uppercase">
         Professional Lawn Care & Gardening
       </h1>
@@ -82,7 +91,10 @@ const HeroSm = ({ setShowThankyou }) => {
           <div>SECOND SERVICE FREE</div>
         </li>
       </ul>
-      <GetInTouchForm setShowThankyou={setShowThankyou} />
+      <GetInTouchForm
+        setShowThankyou={setShowThankyou}
+        setIncreaseSize={setIncreaseSize}
+      />
     </section>
   );
 };

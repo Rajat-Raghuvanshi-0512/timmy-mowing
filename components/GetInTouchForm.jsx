@@ -3,7 +3,7 @@ import Button from './custom/Button';
 import { Autocomplete } from '@react-google-maps/api';
 import { sendMail } from '@/helpers/sendMail';
 
-const GetInTouchForm = ({ setShowThankyou }) => {
+const GetInTouchForm = ({ setShowThankyou, setIncreaseSize = () => {} }) => {
   const autoCompleteRef = useRef();
   const [data, setData] = useState({
     name: '',
@@ -36,8 +36,9 @@ const GetInTouchForm = ({ setShowThankyou }) => {
       const place = await autoCompleteRef.current.getPlace();
       setData((prev) => ({ ...prev, address: inputRef.current.value }));
       setShowInputs(true);
+      setIncreaseSize(true);
     });
-  }, []);
+  }, [setIncreaseSize]);
 
   return (
     <div className="bg-white rounded-lg p-3">
@@ -54,6 +55,7 @@ const GetInTouchForm = ({ setShowThankyou }) => {
             ref={inputRef}
             onChange={onChange}
             value={data.address}
+            required
             name="address"
             className="outline-none mt-2 border-[1.5px] rounded-md md:rounded-xl placeholder:uppercase w-full placeholder:text-green-base/90 border-green-base bg-transparent p-2 text-sm placeholder:text-xs"
           />
@@ -66,12 +68,14 @@ const GetInTouchForm = ({ setShowThankyou }) => {
               name="name"
               onChange={onChange}
               value={data.name}
+              required
               className="outline-none mt-2 border-[1.5px] rounded-md md:rounded-xl placeholder:uppercase w-full placeholder:text-green-base/90 border-green-base bg-transparent p-2 text-sm placeholder:text-xs"
             />
             <input
               type="tel"
               placeholder="phone number"
               name="phone"
+              required
               onChange={onChange}
               value={data.phone}
               className="outline-none mt-2 border-[1.5px] rounded-md md:rounded-xl placeholder:uppercase w-full placeholder:text-green-base/90 border-green-base bg-transparent p-2 text-sm placeholder:text-xs"

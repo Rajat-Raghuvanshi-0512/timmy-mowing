@@ -39,13 +39,13 @@ const Reviews = () => {
   //   console.log(ref.current.style);
   // };
   return (
-    <section className="px-5 md:px-10">
-      <div className="flex justify-between py-4 md:py-0">
+    <section className="sm:px-5 md:px-10">
+      <div className="flex justify-between px-3 py-4 md:py-0">
         <Heading content={'What do our clients say?'} />
         <Navigation />
       </div>
       <div
-        className={`review-box duration-300 flex gap-[50px] w-[90vw] 2xl:w-[75vw] !overflow-x-auto`}
+        className={`review-box duration-300 px-3 flex gap-[50px] md:w-[90vw] 2xl:w-[75vw] !overflow-x-auto`}
         ref={ref}
       >
         {reviews.map((item) => (

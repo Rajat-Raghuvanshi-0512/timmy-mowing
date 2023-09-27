@@ -41,7 +41,7 @@ const FAQ = ({ openModal }) => {
                 selected === 'General' &&
                 'bg-green-base text-white md:bg-transparent duration-300 md:translate-x-4 md:text-green-base border-transparent'
               }
-                px-3 rounded-lg text-lg border border-black md:border-none md:text-2xl lg:text-3xl md:font-bold
+                px-3 rounded-lg text-sm py-1 w-28 h-8 md:w-auto md:h-auto border border-black md:border-none md:text-2xl lg:text-3xl md:font-bold
             `}
             onClick={() => setSelected('General')}
           >
@@ -54,7 +54,7 @@ const FAQ = ({ openModal }) => {
              selected === 'Service' &&
              'bg-green-base text-white md:bg-transparent duration-300 md:translate-x-4 md:text-green-base border-none'
            }
-             px-3 rounded-lg text-lg border border-black md:border-none md:text-2xl lg:text-3xl md:font-bold
+             px-1 rounded-lg text-sm py-1 w-28 h-8 md:w-auto md:h-auto border border-black md:border-none md:text-2xl lg:text-3xl md:font-bold
          `}
             onClick={() => setSelected('Service')}
           >
@@ -68,7 +68,7 @@ const FAQ = ({ openModal }) => {
               selected === 'Pricing' &&
               'bg-green-base text-white md:bg-transparent duration-300 md:translate-x-4 md:text-green-base border-none'
             }
-              px-3 rounded-lg text-lg border border-black md:border-none md:text-2xl lg:text-3xl md:font-bold
+              px-3 rounded-lg text-sm py-1 w-28 h-8 md:w-auto md:h-auto border border-black md:border-none md:text-2xl lg:text-3xl md:font-bold
           `}
             onClick={() => setSelected('Pricing')}
           >
