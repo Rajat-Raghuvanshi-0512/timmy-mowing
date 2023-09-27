@@ -39,13 +39,13 @@ const Cities = () => {
             ))}
           </ul>
         </div>
-        <div className="flex-[1.3] hidden md:block">
+        <div className="flex-[1] hidden md:block absolute -right-7 top-0">
           <Image
             src={'/map-top.png'}
             alt="map"
             width={100}
             height={100}
-            className="w-full object-contain"
+            className="w-[85%] ml-auto"
             unoptimized
           />
         </div>

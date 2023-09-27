@@ -7,7 +7,13 @@ const MapForm = ({ setShowThankyou }) => {
     <section className="m-3 md:m-6 bg-green-base md:bg-white lg:m-10 md:border-2 md:border-green-base rounded-2xl lg:rounded-3xl p-5 md:p-0 md:pr-5">
       <div className="flex gap-5">
         <div className="flex-[0.7] gap-16 hidden md:flex">
-          <Form setShowThankyou={setShowThankyou} bgImg={'/form-bg.png'} />
+          <Form
+            className="min-w-[460px]"
+            setShowThankyou={setShowThankyou}
+            bgImg={'/thankyou-bg.png'}
+            title="MELBOURNE LAWN CARE AND GARDENING SPECIALISTS"
+            desc="Let us create your Stunning Garden."
+          />
         </div>
         <div className="md:flex-[1.3]">
           <Image

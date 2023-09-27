@@ -8,7 +8,9 @@ const GalleryItem = ({
   link1,
   link2,
   link3,
-  heading,
+  heading1,
+  heading2,
+  heading3,
   desc,
   width1,
   width2,
@@ -32,10 +34,10 @@ const GalleryItem = ({
           className="w-full h-full object-cover"
           unoptimized
         />
-        <div className="absolute bottom-0 w-full px-5 pb-3 bg-black/30 flex flex-col justify-end min-h-full translate-y-[20%] hover:translate-y-0 duration-500 pt-[480px]">
-          <h5 className="font-semibold text-3xl mt-auto">{heading}</h5>
+        <div className="absolute bottom-0 w-full px-5 pb-3 bg-black/30 flex flex-col justify-end min-h-full translate-y-[20%] hover:translate-y-0 duration-500 pt-[550px]">
+          <h5 className="font-semibold text-3xl mt-auto">{heading1}</h5>
           <p className="text-sm mt-2">{desc}</p>
-          <ul className="flex flex-col flex-wrap group-hover:translate-y-0 duration-300 translate-y-[120%] h-[150px] mt-5 list-disc ml-5 hover:flex">
+          <ul className="flex flex-col flex-wrap group-hover:translate-y-0 duration-300 translate-y-[120%] h-[170px] mt-5 list-disc ml-5 hover:flex pb-10">
             {section1Data?.map((item) => (
               <li key={item}>{item}</li>
             ))}
@@ -54,10 +56,10 @@ const GalleryItem = ({
           className="w-full h-full object-cover"
           unoptimized
         />
-        <div className="absolute bottom-0 w-full px-5 pb-3 bg-black/30 flex flex-col justify-end min-h-full translate-y-[20%] hover:translate-y-0 duration-500 pt-[480px]">
-          <h5 className="font-semibold text-3xl">{heading}</h5>
+        <div className="absolute bottom-0 w-full px-5 pb-3 bg-black/30 flex flex-col justify-end min-h-full translate-y-[20%] hover:translate-y-0 duration-500 pt-[550px]">
+          <h5 className="font-semibold text-3xl">{heading2}</h5>
           <p className="text-sm mt-2">{desc}</p>
-          <ul className="flex flex-col flex-wrap group-hover:translate-y-0 duration-300 translate-y-[10%] hover:translate-y-0 h-[150px] mt-5 list-disc ml-5 hover:flex">
+          <ul className="flex flex-col flex-wrap group-hover:translate-y-0 duration-300 translate-y-[10%] hover:translate-y-0 h-[170px] mt-5 list-disc ml-5 hover:flex pb-10">
             {section2Data?.map((item) => (
               <li key={item}>{item}</li>
             ))}
@@ -77,10 +79,10 @@ const GalleryItem = ({
             className="w-full h-full object-cover"
             unoptimized
           />
-          <div className="absolute bottom-0 w-full px-5 pb-3 bg-black/30 flex flex-col justify-end min-h-full translate-y-[20%] hover:translate-y-0 duration-500 pt-[480px]">
-            <h5 className="font-semibold text-3xl">{heading}</h5>
+          <div className="absolute bottom-0 w-full px-5 pb-3 bg-black/30 flex flex-col justify-end min-h-full translate-y-[20%] hover:translate-y-0 duration-500 pt-[550px]">
+            <h5 className="font-semibold text-3xl">{heading3}</h5>
             <p className="text-sm mt-2">{desc}</p>
-            <ul className="flex flex-col flex-wrap group-hover:translate-y-0 duration-300 translate-y-[10%] h-[150px] mt-5 list-disc ml-5 hover:flex hover:translate-y-0">
+            <ul className="flex flex-col flex-wrap group-hover:translate-y-0 duration-300 translate-y-[10%] h-[170px] mt-5 list-disc ml-5 hover:flex hover:translate-y-0 pb-10">
               {section3Data.map((item) => (
                 <li key={item}>{item}</li>
               ))}

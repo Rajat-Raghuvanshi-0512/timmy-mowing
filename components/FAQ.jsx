@@ -39,9 +39,9 @@ const FAQ = ({ openModal }) => {
             className={`
               ${
                 selected === 'General' &&
-                'md:font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-4 md:text-green-base border-transparent'
+                'bg-green-base text-white md:bg-transparent duration-300 md:translate-x-4 md:text-green-base border-transparent'
               }
-                px-3 rounded-lg text-lg border border-black md:border-none md:text-2xl lg:text-3xl
+                px-3 rounded-lg text-lg border border-black md:border-none md:text-2xl lg:text-3xl md:font-bold
             `}
             onClick={() => setSelected('General')}
           >
@@ -52,9 +52,9 @@ const FAQ = ({ openModal }) => {
             className={`
            ${
              selected === 'Service' &&
-             'md:font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-4 md:text-green-base border-none'
+             'bg-green-base text-white md:bg-transparent duration-300 md:translate-x-4 md:text-green-base border-none'
            }
-             px-3 rounded-lg text-lg border border-black md:border-none md:text-2xl lg:text-3xl
+             px-3 rounded-lg text-lg border border-black md:border-none md:text-2xl lg:text-3xl md:font-bold
          `}
             onClick={() => setSelected('Service')}
           >
@@ -66,9 +66,9 @@ const FAQ = ({ openModal }) => {
             className={`
             ${
               selected === 'Pricing' &&
-              'md:font-bold bg-green-base text-white md:bg-transparent duration-300 md:translate-x-4 md:text-green-base border-none'
+              'bg-green-base text-white md:bg-transparent duration-300 md:translate-x-4 md:text-green-base border-none'
             }
-              px-3 rounded-lg text-lg border border-black md:border-none md:text-2xl lg:text-3xl
+              px-3 rounded-lg text-lg border border-black md:border-none md:text-2xl lg:text-3xl md:font-bold
           `}
             onClick={() => setSelected('Pricing')}
           >

@@ -39,37 +39,39 @@ const AboutUs = ({ openModal }) => {
             that&apos;s precisely what we offer
           </p>
           <div className=" ml-6 md:ml-20 lg:ml-40 md:mt-5 lg:mt-14 text-green-base md:flex items-center font-semibold lg:text-xl gap-5 leading-5">
-            <div className="flex gap-3 text-xs md:text-base">
+            <div className="flex gap-3 items-center text-xs md:text-xl">
               <Image
                 src={'/trees.png'}
                 alt="tree"
                 width={45}
                 height={85}
                 className="w-[20px] lg:w-[45px] object-contain"
+                unoptimized
               />
               <p>
                 Best gardening <br /> services
               </p>
             </div>
             <div className="w-[2px] bg-black h-16 hidden md:block"></div>
-            <div className="flex gap-3 text-xs md:text-base mt-3">
+            <div className="flex gap-3 text-xs md:text-xl mt-3">
               <Image
                 src={'/trees.png'}
                 alt="tree"
                 width={25}
                 height={85}
                 className="w-[15px] lg:w-[25px] object-contain"
+                unoptimized
               />
               <p>
                 With 5+ years of <br /> expertise{' '}
-                <span className="hidden md:block">
+                <span className="hidden md:inline">
                   in lawn care <br /> and gardening,
                 </span>
               </p>
             </div>
           </div>
           <Button
-            className="uppercase text-white bg-green-base md:ml-20 lg:ml-40 md:mt-5 lg:mt-14 md:px-10 lg:px-20 rounded-3xl md:py-2 lg:py-4 hidden md:flex"
+            className="uppercase text-white bg-green-base md:ml-20 lg:ml-40 md:mt-5 lg:mt-14 md:px-10 lg:px-16 rounded-3xl md:py-2 hidden md:flex"
             onClick={openModal}
           >
             get a quote

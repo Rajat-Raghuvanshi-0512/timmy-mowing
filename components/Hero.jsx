@@ -22,16 +22,16 @@ const HeroLg = ({ setShowThankyou }) => {
           gardening needs are taken care of.
         </p>
       </div>
-      <div className="relative">
+      <div className="relative h-[455px]">
         <Image
           src={'/home-banner.png'}
-          className="object-contain w-full"
+          className="object-cover w-full h-full rounded-3xl"
           alt="banner"
           height={550}
           width={1200}
           loading="eager"
         />
-        <div className="absolute right-0 top-0">
+        <div className="absolute right-0 h-full top-0">
           <Form setShowThankyou={setShowThankyou} />
         </div>
       </div>

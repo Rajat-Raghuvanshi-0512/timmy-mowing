@@ -20,6 +20,7 @@ const Form = ({
   bgImg,
   btnText = 'get a free quote',
   setShowThankyou,
+  className,
 }) => {
   const [data, setData] = useState({
     name: '',
@@ -63,7 +64,7 @@ const Form = ({
   }, []);
   return (
     <div
-      className={`drop-shadow bg-black/50 w-[33vw] text-white z-20 rounded-3xl px-7 lg:px-10 relative py-10 min-h-[455px]`}
+      className={`drop-shadow bg-black/50 w-[33vw] text-white z-20 rounded-3xl px-7 lg:px-10 relative py-10 min-h-[455px] ${className}`}
     >
       {bgImg && (
         <>
@@ -73,8 +74,8 @@ const Form = ({
             width={40}
             height={40}
             className="absolute w-full -z-20 h-full left-0 top-0"
+            unoptimized
           />
-          <div className="bg-black/50 absolute w-full h-full -z-10 top-0 left-0 rounded-3xl"></div>
         </>
       )}
       <h5 className="uppercase text-xl font-semibold mt-5">{title}</h5>

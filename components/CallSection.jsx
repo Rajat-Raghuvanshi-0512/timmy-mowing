@@ -1,4 +1,5 @@
 import { sendMail } from '@/helpers/sendMail';
+import Image from 'next/image';
 import React, { useState } from 'react';
 
 const CallSection = ({ setShowThankyou }) => {
@@ -58,7 +59,10 @@ const CallSection = ({ setShowThankyou }) => {
           Request a call
         </button>
       </form>
-      <p className="text-xs w-[40%] ml-auto mt-3 md:font-light">
+      <p className="text-xs ml-auto w-40 md:ml-[450px] mt-3 md:font-light md:flex md:justify-center gap-2">
+        <span className="hidden md:block">
+          <Image src={'/tick-circle.svg'} alt="tick" width={25} height={25} />
+        </span>
         I agree to terms and conditions.
       </p>
     </section>
