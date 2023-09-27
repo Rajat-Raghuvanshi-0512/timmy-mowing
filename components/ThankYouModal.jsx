@@ -31,7 +31,7 @@ const ThankYouModal = ({ showThankyou = false, setShowThankyou }) => {
             className="w-full h-full"
             unoptimized
           />
-          <div className="flex h-full absolute top-0 left-0 px-10 py-28 text-white text-3xl flex-col justify-between">
+          <div className="flex h-full absolute top-0 left-0 px-10 py-16 md:py-28 text-white text-lg md:text-2xl lg:text-3xl flex-col justify-between">
             <h3>Thank you for choosing Timmy’s Mowing.</h3>
             <h3>Your form has been successfully submitted.</h3>
           </div>
