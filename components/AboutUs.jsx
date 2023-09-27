@@ -27,7 +27,7 @@ const AboutUs = ({ openModal }) => {
           />
         </div>
         <div className="flex-[0.6] md:flex-[1.2] relative">
-          <div className="bg-green-base h-16 w-[3.3px] absolute top-2 -left-2"></div>
+          <div className="bg-green-base h-16 md:h-36 w-[3.3px] md:w-[5.3px] absolute top-2 -left-2 md:-left-4"></div>
           <h3 className="text-2xl md:text-3xl font-bold lg:text-5xl md:w-[70%]">
             We&apos;re passionate cultivators of green beauty.
           </h3>

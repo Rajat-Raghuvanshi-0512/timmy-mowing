@@ -3,7 +3,7 @@ import Button from './custom/Button';
 import { Autocomplete } from '@react-google-maps/api';
 import { sendMail } from '@/helpers/sendMail';
 
-const GetInTouchForm = () => {
+const GetInTouchForm = ({ setShowThankyou }) => {
   const autoCompleteRef = useRef();
   const [data, setData] = useState({
     name: '',
@@ -25,6 +25,7 @@ const GetInTouchForm = () => {
       from_address: data.address,
       from_reason: 'Request for free quote',
     });
+    setShowThankyou(true);
     setData((prev) => ({ ...prev, name: '', address: '', phone: '' }));
   };
   useEffect(() => {
@@ -33,7 +34,6 @@ const GetInTouchForm = () => {
     );
     autoCompleteRef.current.addListener('place_changed', async function () {
       const place = await autoCompleteRef.current.getPlace();
-      console.log({ place });
       setData((prev) => ({ ...prev, address: inputRef.current.value }));
       setShowInputs(true);
     });
@@ -53,6 +53,7 @@ const GetInTouchForm = () => {
             placeholder="address and pincode"
             ref={inputRef}
             onChange={onChange}
+            value={data.address}
             name="address"
             className="outline-none mt-2 border-[1.5px] rounded-md md:rounded-xl placeholder:uppercase w-full placeholder:text-green-base/90 border-green-base bg-transparent p-2 text-sm placeholder:text-xs"
           />
@@ -64,6 +65,7 @@ const GetInTouchForm = () => {
               placeholder="name"
               name="name"
               onChange={onChange}
+              value={data.name}
               className="outline-none mt-2 border-[1.5px] rounded-md md:rounded-xl placeholder:uppercase w-full placeholder:text-green-base/90 border-green-base bg-transparent p-2 text-sm placeholder:text-xs"
             />
             <input
@@ -71,6 +73,7 @@ const GetInTouchForm = () => {
               placeholder="phone number"
               name="phone"
               onChange={onChange}
+              value={data.phone}
               className="outline-none mt-2 border-[1.5px] rounded-md md:rounded-xl placeholder:uppercase w-full placeholder:text-green-base/90 border-green-base bg-transparent p-2 text-sm placeholder:text-xs"
             />
           </>

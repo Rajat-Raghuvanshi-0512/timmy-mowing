@@ -1,27 +1,13 @@
 import Image from 'next/image';
-import React from 'react';
-import Form, { Input } from './Form';
+import Form from './Form';
 import Button from './custom/Button';
 
-const MapForm = () => {
+const MapForm = ({ setShowThankyou }) => {
   return (
     <section className="m-3 md:m-6 bg-green-base md:bg-white lg:m-10 md:border-2 md:border-green-base rounded-2xl lg:rounded-3xl p-5 md:p-0 md:pr-5">
       <div className="flex gap-5">
         <div className="flex-[0.7] gap-16 hidden md:flex">
-          <Form bgImg={'/form-bg.png'} />
-        </div>
-        <div className="md:hidden">
-          <h3 className="text-white">
-            MELBOURNE LAWN CARE AND GARDENING SPECIALISTS
-          </h3>
-          <form className="mt-5">
-            <Input type={'text'} placeholder={'name'} />
-            <div className="flex gap-3 my-4">
-              <Input type={'phone'} placeholder={'phone'} />
-              <Input type={'email'} placeholder={'email'} />
-            </div>
-            <Input type={'text'} placeholder={'address'} />
-          </form>
+          <Form setShowThankyou={setShowThankyou} bgImg={'/form-bg.png'} />
         </div>
         <div className="md:flex-[1.3]">
           <Image

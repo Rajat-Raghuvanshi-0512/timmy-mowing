@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import GetInTouchForm from './GetInTouchForm';
 
-const LastForm = () => {
+const LastForm = ({ setShowThankyou }) => {
   return (
     <section className="md:hidden flex justify-center items-center h-[431px] relative p-10">
       <Image
@@ -13,7 +13,7 @@ const LastForm = () => {
         className="w-full h-full object-cover -z-10 absolute top-0 left-0"
         unoptimized
       />
-      <GetInTouchForm />
+      <GetInTouchForm setShowThankyou={setShowThankyou} />
     </section>
   );
 };

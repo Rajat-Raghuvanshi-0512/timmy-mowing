@@ -16,12 +16,13 @@ import Modal from '@/components/Modal';
 import Navbar from '@/components/Navbar';
 import PricePage from '@/components/PricePage';
 import Reviews from '@/components/Reviews';
+import ThankYouModal from '@/components/ThankYouModal';
 import { useModal } from '@/helpers/custom-hooks';
 import { sendMail } from '@/helpers/sendMail';
 import { useJsApiLoader, Autocomplete } from '@react-google-maps/api';
 import { useState } from 'react';
 
-const PopUpModal = ({ isOpen, closeModal }) => {
+const PopUpModal = ({ isOpen, closeModal, setShowThankyou }) => {
   const [data, setData] = useState({
     name: '',
     phone: '',
@@ -43,6 +44,13 @@ const PopUpModal = ({ isOpen, closeModal }) => {
       from_reason: 'Request for free quote',
     });
     closeModal();
+    setData({
+      name: '',
+      phone: '',
+      email: '',
+      address: '',
+    });
+    setShowThankyou(true);
   };
   return (
     <Modal isOpen={isOpen} closeModal={closeModal} title={'Timmy’s MOWING'}>
@@ -102,6 +110,8 @@ const PopUpModal = ({ isOpen, closeModal }) => {
 const Home = () => {
   const { isOpen, closeModal, openModal } = useModal();
 
+  const [showThankyou, setShowThankyou] = useState(false);
+
   const { isLoaded } = useJsApiLoader({
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_API_KEY,
     libraries: ['places'],
@@ -111,12 +121,20 @@ const Home = () => {
   }
   return (
     <>
+      <ThankYouModal
+        setShowThankyou={setShowThankyou}
+        showThankyou={showThankyou}
+      />
       <Navbar openModal={openModal} />
-      <PopUpModal isOpen={isOpen} closeModal={closeModal} />
+      <PopUpModal
+        isOpen={isOpen}
+        closeModal={closeModal}
+        setShowThankyou={setShowThankyou}
+      />
       <main className="2xl:px-32">
-        <Hero />
+        <Hero setShowThankyou={setShowThankyou} />
         <ImageGallery />
-        <CallSection />
+        <CallSection setShowThankyou={setShowThankyou} />
         <AboutUs openModal={openModal} />
         <PricePage openModal={openModal} />
         <Reviews />
@@ -127,10 +145,10 @@ const Home = () => {
           <MobileSlider />
         </div>
         <div className="hidden md:block">
-          <MapForm />
+          <MapForm setShowThankyou={setShowThankyou} />
         </div>
         <LawnGallery />
-        <LastForm />
+        <LastForm setShowThankyou={setShowThankyou} />
       </main>
       <Footer />
     </>

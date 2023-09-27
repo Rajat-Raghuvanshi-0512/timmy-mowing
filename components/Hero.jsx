@@ -3,7 +3,7 @@ import React from 'react';
 import Form from './Form';
 import GetInTouchForm from './GetInTouchForm';
 
-const HeroLg = () => {
+const HeroLg = ({ setShowThankyou }) => {
   return (
     <section className="p-5 md:px-10 lg:px-14 md:pt-10 relative">
       <Image
@@ -32,14 +32,14 @@ const HeroLg = () => {
           loading="eager"
         />
         <div className="absolute right-0 top-0">
-          <Form />
+          <Form setShowThankyou={setShowThankyou} />
         </div>
       </div>
     </section>
   );
 };
 
-const HeroSm = () => {
+const HeroSm = ({ setShowThankyou }) => {
   return (
     <section className="h-[90svh] pt-20 px-5">
       <Image
@@ -82,19 +82,19 @@ const HeroSm = () => {
           <div>SECOND SERVICE FREE</div>
         </li>
       </ul>
-      <GetInTouchForm />
+      <GetInTouchForm setShowThankyou={setShowThankyou} />
     </section>
   );
 };
 
-const Hero = () => {
+const Hero = ({ setShowThankyou }) => {
   return (
     <div>
       <div className="md:hidden">
-        <HeroSm />
+        <HeroSm setShowThankyou={setShowThankyou} />
       </div>
       <div className="hidden md:block">
-        <HeroLg />
+        <HeroLg setShowThankyou={setShowThankyou} />
       </div>
     </div>
   );

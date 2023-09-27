@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Autocomplete } from '@react-google-maps/api';
 import { sendMail } from '@/helpers/sendMail';
 
@@ -19,7 +19,7 @@ const Form = ({
   desc = 'Request A Free Quote Today & Get 10% Discount',
   bgImg,
   btnText = 'get a free quote',
-  openModal,
+  setShowThankyou,
 }) => {
   const [data, setData] = useState({
     name: '',
@@ -27,6 +27,8 @@ const Form = ({
     email: '',
     address: '',
   });
+  const autoCompleteRef = useRef();
+  const inputRef = useRef();
 
   const onChange = (e) => {
     setData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -47,7 +49,18 @@ const Form = ({
       email: '',
       address: '',
     });
+    setShowThankyou(true);
   };
+
+  useEffect(() => {
+    autoCompleteRef.current = new window.google.maps.places.Autocomplete(
+      inputRef.current
+    );
+    autoCompleteRef.current.addListener('place_changed', async function () {
+      const place = await autoCompleteRef.current.getPlace();
+      setData((prev) => ({ ...prev, address: inputRef.current.value }));
+    });
+  }, []);
   return (
     <div
       className={`drop-shadow bg-black/50 w-[33vw] text-white z-20 rounded-3xl px-7 lg:px-10 relative py-10 min-h-[455px]`}
@@ -94,12 +107,14 @@ const Form = ({
           />
         </div>
         <Autocomplete>
-          <Input
+          <input
+            className="outline-none border-[1.5px] rounded-md md:rounded-xl placeholder:uppercase w-full placeholder:text-white/90 border-white bg-transparent p-2 text-sm placeholder:text-xs"
             type="text"
             placeholder={'address and pin code'}
             name="address"
             onChange={onChange}
             value={data.address}
+            ref={inputRef}
             required
           />
         </Autocomplete>
