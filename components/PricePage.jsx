@@ -66,7 +66,7 @@ const PricePage = ({ openModal }) => {
           <h4 className="md:text-center lg:-ml-10 text-green-base font-bold text-2xl lg:text-3xl">
             Get things done the right way.
           </h4>
-          <ul className="text-[#455330] lg:mt-10 font-bold md:font-semibold  md:text-xs lg:text-lg flex flex-col gap-3 mt-5 lg:gap-5 md:ml-10">
+          <ul className="text-[#455330] lg:mt-10 font-bold md:font-semibold  md:text-xs lg:text-lg flex flex-col gap-3 mt-5 lg:gap-5 lg:font-bold md:ml-10">
             <li className="flex items-center gap-3">
               <Image
                 src={'/icons/dollar.svg'}

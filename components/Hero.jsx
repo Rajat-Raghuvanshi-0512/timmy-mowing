@@ -8,7 +8,7 @@ const HeroLg = ({ setShowThankyou }) => {
     <section className="p-5 md:px-10 lg:px-14 md:pt-10 relative overflow-x-hidden">
       <Image
         src={'/stamp.png'}
-        className="object-contain absolute -right-10 top-10 -z-10 md:w-[180px] lg:w-[240px]"
+        className="object-contain absolute lg:-right-10 2xl:right-0 top-10 z-10 md:w-[180px] lg:w-[240px]"
         alt="banner"
         height={240}
         width={240}

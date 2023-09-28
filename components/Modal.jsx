@@ -23,7 +23,7 @@ const Modal = ({
           }`}
         >
           <div className="px-10 py-4 rounded-t flex justify-between">
-            <h3 className="text-4xl lg:text-5xl uppercase font-bold !leading-snug text-white">
+            <h3 className="text-4xl lg:text-5xl uppercase font-medium md:font-bold !leading-snug text-white font-futura">
               {title}
             </h3>
             <div>

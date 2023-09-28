@@ -77,7 +77,7 @@ const FAQ = ({ openModal }) => {
 
           <div className="w-full h-[2px] bg-green-base hidden md:block" />
           <Button
-            className="text-base mt-0 hidden md:block"
+            className="text-base mt-0 md:w-full hidden md:block"
             onClick={openModal}
           >
             get a quote

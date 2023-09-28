@@ -120,7 +120,7 @@ const Navbar = ({ openModal }) => {
         <button
           style={{
             filter:
-              'drop-shadow(0.9375px 5.625px 4.6875px rgba(0, 0, 0, 0.35))',
+              'drop-shadow(0.9375px 5.625px 4.6875px rgba(0, 0, 0, 0.15))',
           }}
           onClick={openModal}
           className=" bg-green-base text-white px-5 rounded-2xl uppercase text-xs md:py-2 lg:py-3 hover:scale-95 hover:duration-300"

@@ -27,11 +27,16 @@ const LawnGallerySm = () => {
 
 const LawnGalleryLg = () => {
   return (
-    <section className="m-10 hidden md:block" id="gallery">
-      <div className="grid grid-cols-4 gap-1 md:gap-3">
-        <div className="capitalize text-green-base text-3xl md:text-4xl lg:text-5xl font-semibold !leading-snug col-span-2 md:col-span-1">
-          We love it <br /> when <br /> you love it
-        </div>
+    <section className="m-10 hidden md:block relative" id="gallery">
+      <h2 className="capitalize absolute text-green-base text-3xl md:text-4xl lg:text-6xl col-span-2 md:col-span-1 left-2 -top-2 w-[70%] !leading-snug font-semibold">
+        We love it <br /> when <br /> you love it
+      </h2>
+      <p className="mb-5 left-2 absolute top-64 w-[35vw] text-xl lg:text-2xl">
+        Keep Your Property Looking Beautiful with Our professional Lawn Care &
+        Gardening Services.
+      </p>
+      <div className="grid grid-cols-4 gap-1 md:gap-3 relative">
+        <div className="capitalize text-green-base text-3xl md:text-4xl lg:text-5xl font-semibold !leading-snug col-span-2 md:col-span-1"></div>
         <div className="hidden md:block"></div>
         <div></div>
         <div>
@@ -45,13 +50,7 @@ const LawnGalleryLg = () => {
             loading="eager"
           />
         </div>
-        <div>
-          <p className="mb-5 col-span-2">
-            Keep Your Property Looking Beautiful with Our professional Lawn Care
-            & Gardening Services.
-          </p>
-          <Navigation />
-        </div>
+        <div></div>
         <div className="flex items-end">
           <Image
             src={'/lawn-gallery/layer1img2.webp'}

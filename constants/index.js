@@ -2,7 +2,7 @@ export const galleryInfo = [
   {
     id: 1,
     link1: '/gallery/img1.webp',
-    link2: '/gallery/img2.webp',
+    link2: '/gallery/img2.png',
     heading1: 'Lawn Care',
     heading2: 'Garden Design',
     desc: 'Keep your garden looking beautiful without having to lift a finger With Reliable Gardening Professionals',
@@ -35,7 +35,7 @@ export const galleryInfo = [
   },
   {
     id: 3,
-    link1: '/gallery/img2.webp',
+    link1: '/gallery/img5.webp',
     link2: '/gallery/img1.webp',
     heading1: 'Seasonal Cleanup',
     heading2: 'Hedge & Tree Care',
@@ -52,7 +52,7 @@ export const galleryInfo = [
   },
   {
     id: 4,
-    link1: '/gallery/img7.webp',
+    link1: '/gallery/img7.png',
     link2: '/gallery/img8.webp',
     link3: '/gallery/img9.webp',
     heading1: 'Consultation & Maintenance',

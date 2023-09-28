@@ -64,7 +64,9 @@ const Form = ({
   }, []);
   return (
     <div
-      className={`drop-shadow bg-black/50 w-[33vw] text-white z-20 rounded-3xl px-7 lg:px-10 relative py-10 min-h-[455px] ${className}`}
+      className={`drop-shadow ${
+        bgImg ? 'bg-transparent' : 'bg-black/50'
+      } w-[33vw] text-white z-20 rounded-3xl px-7 lg:px-10 relative py-10 min-h-[455px] ${className}`}
     >
       {bgImg && (
         <>

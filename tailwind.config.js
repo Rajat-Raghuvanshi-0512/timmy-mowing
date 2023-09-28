@@ -12,6 +12,7 @@ module.exports = {
       },
       fontFamily: {
         acid: ['acid Grotesk'],
+        futura: ['Futura Bold'],
       },
     },
   },

@@ -6,7 +6,7 @@ import Navigation from './custom/Navigation';
 
 const ReviewCard = ({ imageUrl, name, type, desc }) => {
   return (
-    <div className="border border-green-base min-w-[280px] p-5 rounded-2xl flex-1">
+    <div className="border border-green-base min-w-[280px] md:min-w-[320px] p-5 rounded-2xl flex-1">
       <div className="flex gap-3 p-1 !w-full">
         <Image src={imageUrl} alt="review" width={50} height={50} />
         <div>
@@ -14,7 +14,10 @@ const ReviewCard = ({ imageUrl, name, type, desc }) => {
           <p className="text-xs capitalize">{type}</p>
         </div>
       </div>
-      <p className=" text-lg md:text-sm md:font-normal py-2">
+      <p className="hidden md:block text-lg md:text-sm md:font-normal py-2">
+        {desc}
+      </p>
+      <p className="md:hidden text-lg md:text-sm md:font-normal py-2">
         {desc.slice(0, 160)}
       </p>
       <div className="flex w-full">
@@ -39,13 +42,13 @@ const Reviews = () => {
   //   console.log(ref.current.style);
   // };
   return (
-    <section className="sm:px-5 md:px-10">
-      <div className="flex justify-between px-3 py-4 md:py-0">
+    <section className="sm:px-5 ">
+      <div className="flex justify-between px-3 py-4 md:py-0 md:px-10">
         <Heading content={'What do our clients say?'} />
         <Navigation />
       </div>
       <div
-        className={`review-box duration-300 px-5 flex gap-6 md:gap-[50px] md:w-[90vw] 2xl:w-[75vw] !overflow-x-auto`}
+        className={`review-box md:pl-10 duration-300 px-5 flex gap-6 md:gap-[50px] md:w-full 2xl:w-[75vw] !overflow-x-auto`}
         ref={ref}
       >
         {reviews.map((item) => (

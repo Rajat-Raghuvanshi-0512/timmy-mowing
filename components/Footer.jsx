@@ -5,7 +5,9 @@ const FooterSm = () => {
   return (
     <div className="md:hidden">
       <div className="flex justify-between items-center">
-        <h2 className="uppercase text-5xl text-center font-extrabold">TM</h2>
+        <h2 className="uppercase text-5xl text-center font-extrabold font-futura">
+          TM
+        </h2>
         <div>
           <Image src={'/socials.svg'} alt="socials" width={160} height={30} />
         </div>
@@ -29,7 +31,7 @@ const FooterSm = () => {
           <li>Pricing</li>
         </ul>
         <div className="flex flex-col gap-4">
-          <h2 className="uppercase font-extrabold text-3xl">
+          <h2 className="uppercase font-bold text-3xl font-futura">
             Timmy&apos;s <br /> MOWing{' '}
           </h2>
           <p className="w-40 text-xs font-light">
@@ -45,7 +47,7 @@ const FooterLg = () => {
   return (
     <div className="hidden md:grid md:grid-cols-3">
       <div className="flex flex-col gap-4 py-5">
-        <h2 className="uppercase font-bold">
+        <h2 className="uppercase font-bold font-futura">
           Timmy&apos;s <br /> MOWing{' '}
         </h2>
         <p className="text-xs font-extralight">

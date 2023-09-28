@@ -26,13 +26,20 @@ const CallSection = ({ setShowThankyou }) => {
     setShowThankyou(true);
   };
   return (
-    <section className="m-5 md:m-10 bg-green-base rounded-lg md:rounded-2xl flex flex-col justify-center items-center h-[330px] text-white px-5 md:p-0">
+    <section className="m-5 md:m-10 bg-green-base rounded-lg md:rounded-2xl flex flex-col justify-center items-center h-[330px] text-white px-5 md:p-0 relative">
+      <Image
+        src={'/texture.png'}
+        alt="texture"
+        width={100}
+        height={100}
+        className="w-full h-full absolute top-0 left-0"
+      />
       <h3 className="text-2xl md:text-4xl lg:text-5xl !leading-snug text-center md:text-left font-semibold md:w-[60%]">
         Let us cultivate beauty right at your doorstep.
       </h3>
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col md:flex-row gap-5 w-full md:w-fit mt-5"
+        className="flex flex-col z-10 md:flex-row gap-5 w-full md:w-fit mt-5"
       >
         <input
           type="text"
@@ -59,7 +66,7 @@ const CallSection = ({ setShowThankyou }) => {
           Request a call
         </button>
       </form>
-      <p className="text-xs ml-auto w-28 md:w-40 md:ml-[450px] mt-3 md:font-light flex justify-center gap-1 md:gap-2">
+      <p className="text-xs ml-auto w-28 md:w-40 md:ml-[450px] mt-3 md:font-light flex justify-center gap-1 md:gap-2 z-10">
         <span className="">
           <Image
             src={'/tick-circle.svg'}

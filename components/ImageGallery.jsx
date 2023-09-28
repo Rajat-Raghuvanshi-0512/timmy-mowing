@@ -23,7 +23,7 @@ const GalleryItem = ({
   return (
     <div className="flex gap-5 mb-5">
       <div
-        className={`relative h-[300px] peer hover:z-10 hover:!w-full group duration-300 rounded-xl overflow-clip`}
+        className={`relative h-[300px] hover:z-10 hover:!w-full group duration-300 rounded-xl overflow-clip`}
         style={{ width: `${width1}%` }}
       >
         <Image
