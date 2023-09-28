@@ -22,13 +22,13 @@ const AboutUs = ({ openModal }) => {
             alt="greenside"
             width={200}
             height={200}
-            className="absolute w-[100px]  md:w-[120px] lg:w-[200px] md:bottom-16 lg:bottom-0 bottom-0 right-0 translate-x-[30%] translate-y-[-5%] md:translate-x-[50%] md:translate-y-[30%]"
+            className="absolute w-[100px] md:w-[120px] lg:w-[200px] md:bottom-16 lg:bottom-0 bottom-0 right-0 translate-x-[30%] translate-y-2 md:translate-x-[50%] md:translate-y-[30%]"
             unoptimized
           />
         </div>
         <div className="flex-[0.6] md:flex-[1.2] relative">
           <div className="bg-green-base h-16 md:h-36 w-[3.3px] md:w-[5.3px] absolute top-2 -left-2 md:-left-4"></div>
-          <h3 className="text-2xl md:text-3xl font-bold lg:text-5xl md:w-[70%]">
+          <h3 className="text-2xl md:text-3xl leading-[1.15] font-bold lg:text-5xl md:w-[70%]">
             We&apos;re passionate cultivators of green beauty.
           </h3>
           <p className="py-5 text-xs md:text-lg lg:text-xl hidden md:block">

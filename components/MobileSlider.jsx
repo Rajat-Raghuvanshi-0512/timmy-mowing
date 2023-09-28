@@ -33,13 +33,13 @@ const MobileSlider = () => {
 
   const getScrollOffset = () => {
     firstSlideRef.current.style.transform = `translateX(${
-      window.scrollY.toFixed(1) / 3
+      window.scrollY.toFixed(1) / 2.9
     }px)`;
     secondSlideRef.current.style.transform = `translateX(-${
-      window.scrollY.toFixed(1) / 3
+      window.scrollY.toFixed(1) / 2.9
     }px)`;
     thirdSlideRef.current.style.transform = `translateX(${
-      window.scrollY.toFixed(1) / 3
+      window.scrollY.toFixed(1) / 2.9
     }px)`;
     firstSlideRef.current.style.transition = ' all 0.4s';
     secondSlideRef.current.style.transition = ' all 0.4s';
@@ -55,7 +55,7 @@ const MobileSlider = () => {
       <div className="bg-green-base flex flex-col gap-5 pt-10 pb-14 text-white/70">
         <div className="animate-infinite">
           <div
-            className="flex items-center justify-center relative -left-[400vw]"
+            className="flex items-center justify-center relative -left-[425vw]"
             ref={firstSlideRef}
           >
             {firstSlide.map((item, idx) => (
@@ -66,7 +66,10 @@ const MobileSlider = () => {
           </div>
         </div>
         <div className=" animate-infinite-2">
-          <div className="flex justify-center" ref={secondSlideRef}>
+          <div
+            className="flex justify-center -left-[70vw]"
+            ref={secondSlideRef}
+          >
             {secondSlide.map((item, idx) => (
               <div className="w-[120vw]" key={item + idx}>
                 <span className={`text-5xl md:text-7xl px-5`}>{item}</span>

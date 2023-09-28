@@ -42,8 +42,8 @@ const GetInTouchForm = ({ setShowThankyou, setIncreaseSize = () => {} }) => {
 
   return (
     <div className="bg-white rounded-lg p-3">
-      <h2 className="text-green-base font-semibold text-3xl">Get in touch</h2>
-      <p className="w-[80%] text-xs leading-3 font-light my-2">
+      <h2 className="text-green-base font-bold text-3xl">Get in touch</h2>
+      <p className="leading-[1.15] text-[#636363] font-normal my-2">
         Keep Your Property Looking Beautiful with Our professional Lawn Care &
         Gardening Services.
       </p>
@@ -82,7 +82,7 @@ const GetInTouchForm = ({ setShowThankyou, setIncreaseSize = () => {} }) => {
             />
           </>
         )}
-        <Button className={'!mt-1 py-2 md:py-3 w-full'} type="submit">
+        <Button className={'!mt-2 py-2 md:py-3 w-full'} type="submit">
           get a free quote
         </Button>
       </form>

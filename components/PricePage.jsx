@@ -8,13 +8,13 @@ const PricePage = ({ openModal }) => {
   const [selected, setSelected] = useState('Experience');
   return (
     <section>
-      <div className="bg-green-base mx-3 md:mx-6 lg:mx-10 mt-4 md:mt-20 rounded-lg md:rounded-xl lg:rounded-3xl p-4 md:p-7 lg:p-10">
-        <div className="flex justify-between md:justify-center  lg:gap-20 w-full items-start md:items-center text-white md:text-2xl lg:text-4xl uppercase min-h-[200px] md:min-h-0">
+      <div className="bg-green-base mx-5 md:mx-6 lg:mx-10 mt-4 md:mt-20 rounded-lg md:rounded-xl lg:rounded-3xl p-4 md:p-7 lg:p-10">
+        <div className="flex justify-between md:justify-center  lg:gap-20 w-full items-start md:items-center text-white text-xs md:text-2xl lg:text-4xl uppercase min-h-[200px] md:min-h-0">
           <button
             className={`${
               selected === 'Experience' &&
               'md:font-bold bg-white text-green-base md:bg-transparent md:text-white'
-            } border md:border-none px-2 py-1 rounded-lg w-28 md:w-[30%] lg:w-[20%]`}
+            } border md:border-none px-2 py-1 rounded-lg w-24 md:w-[30%] lg:w-[20%]`}
             onClick={() => setSelected('Experience')}
           >
             EXPERIENCE
@@ -24,7 +24,7 @@ const PricePage = ({ openModal }) => {
             className={`${
               selected === 'Reliability' &&
               'md:font-bold bg-white text-green-base md:bg-transparent md:text-white'
-            } border md:border-none px-2 py-1 rounded-lg w-28 md:w-[30%] lg:w-[20%]`}
+            } border md:border-none px-2 py-1 rounded-lg w-24 md:w-[30%] lg:w-[20%]`}
             onClick={() => setSelected('Reliability')}
           >
             RELIABILITY
@@ -34,7 +34,7 @@ const PricePage = ({ openModal }) => {
             className={`${
               selected === 'Quality' &&
               'md:font-bold bg-white text-green-base md:bg-transparent md:text-white'
-            } border md:border-none px-2 py-1 rounded-lg w-28 md:w-[30%] lg:w-[20%]`}
+            } border md:border-none px-2 py-1 rounded-lg w-24 md:w-[30%] lg:w-[20%]`}
             onClick={() => setSelected('Quality')}
           >
             QUALITY
@@ -44,9 +44,9 @@ const PricePage = ({ openModal }) => {
           {pricePageData[selected]}
         </div>
       </div>
-      <div className="md:mx-14 flex flex-col md:flex-row">
+      <div className="mx-3 md:mx-14 flex flex-col md:flex-row">
         <div className="md:flex-1 lg:flex-[1.2]">
-          <div className="flex justify-center md:justify-normal -mt-36 md:mt-0">
+          <div className="flex justify-center md:justify-normal -mt-40 md:mt-0">
             <Image
               src={
                 selected === 'Experience'
@@ -63,10 +63,10 @@ const PricePage = ({ openModal }) => {
           </div>
         </div>
         <div className="flex flex-[1] mt-10 flex-col mx-3">
-          <h4 className="md:text-center lg:-ml-10 text-green-base font-bold text-xl lg:text-3xl">
+          <h4 className="md:text-center lg:-ml-10 text-green-base font-bold text-2xl lg:text-3xl">
             Get things done the right way.
           </h4>
-          <ul className="text-[#455330] lg:mt-10 font-semibold md:text-xs lg:text-lg flex flex-col gap-3 mt-5 lg:gap-5 md:ml-10">
+          <ul className="text-[#455330] lg:mt-10 font-bold md:font-semibold  md:text-xs lg:text-lg flex flex-col gap-3 mt-5 lg:gap-5 md:ml-10">
             <li className="flex items-center gap-3">
               <Image
                 src={'/icons/dollar.svg'}

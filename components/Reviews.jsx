@@ -45,7 +45,7 @@ const Reviews = () => {
         <Navigation />
       </div>
       <div
-        className={`review-box duration-300 px-3 flex gap-[50px] md:w-[90vw] 2xl:w-[75vw] !overflow-x-auto`}
+        className={`review-box duration-300 px-5 flex gap-6 md:gap-[50px] md:w-[90vw] 2xl:w-[75vw] !overflow-x-auto`}
         ref={ref}
       >
         {reviews.map((item) => (

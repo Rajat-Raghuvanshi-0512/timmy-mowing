@@ -59,9 +59,15 @@ const CallSection = ({ setShowThankyou }) => {
           Request a call
         </button>
       </form>
-      <p className="text-xs ml-auto w-40 md:ml-[450px] mt-3 md:font-light md:flex md:justify-center gap-2">
-        <span className="hidden md:block">
-          <Image src={'/tick-circle.svg'} alt="tick" width={25} height={25} />
+      <p className="text-xs ml-auto w-28 md:w-40 md:ml-[450px] mt-3 md:font-light flex justify-center gap-1 md:gap-2">
+        <span className="">
+          <Image
+            src={'/tick-circle.svg'}
+            alt="tick"
+            width={25}
+            height={25}
+            className="mt-[2px]"
+          />
         </span>
         I agree to terms and conditions.
       </p>

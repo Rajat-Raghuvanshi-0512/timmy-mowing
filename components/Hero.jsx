@@ -5,10 +5,10 @@ import GetInTouchForm from './GetInTouchForm';
 
 const HeroLg = ({ setShowThankyou }) => {
   return (
-    <section className="p-5 md:px-10 lg:px-14 md:pt-10 relative">
+    <section className="p-5 md:px-10 lg:px-14 md:pt-10 relative overflow-x-hidden">
       <Image
         src={'/stamp.png'}
-        className="object-contain absolute right-0 top-10 -z-10 md:w-[180px] lg:w-[240px]"
+        className="object-contain absolute -right-10 top-10 -z-10 md:w-[180px] lg:w-[240px]"
         alt="banner"
         height={240}
         width={240}
@@ -43,7 +43,7 @@ const HeroSm = ({ setShowThankyou }) => {
   const [increaseSize, setIncreaseSize] = useState(false);
   return (
     <section
-      className={`${increaseSize ? 'h-[105svh]' : 'h-[90svh]'} pt-20 px-5`}
+      className={`${increaseSize ? 'h-[105svh]' : 'h-[93svh]'} pt-16 px-5`}
     >
       <Image
         src={'/mobile-banner-bg.png'}
@@ -51,12 +51,12 @@ const HeroSm = ({ setShowThankyou }) => {
         width={100}
         height={400}
         className={`w-full ${
-          increaseSize ? 'h-[105svh]' : 'h-[90svh]'
+          increaseSize ? 'h-[105svh]' : 'h-[93svh]'
         } object-cover -z-20 absolute left-0 top-0`}
       />
       <div
         className={`bg-black/50 w-full ${
-          increaseSize ? 'h-[105svh]' : 'h-[90svh]'
+          increaseSize ? 'h-[105svh]' : 'h-[93svh]'
         } absolute top-0 left-0 -z-10`}
       ></div>
       <h1 className="text-[2.5rem] !leading-tight font-bold mt-3 text-[#FFFADE] uppercase">
