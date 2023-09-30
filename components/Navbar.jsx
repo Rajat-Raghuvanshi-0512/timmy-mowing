@@ -1,17 +1,18 @@
 'use client';
 import Image from 'next/image';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState, forwardRef } from 'react';
 import LoadingPage from './Loader';
 import Link from 'next/link';
 import { useMotionValueEvent, useScroll } from 'framer-motion';
 import Button from './custom/Button';
 
-const NavModal = ({ isOpen, setIsOpen, openModal }) => {
+const NavModal = forwardRef(({ isOpen, setIsOpen, openModal }, ref) => {
   return (
     <div
       className={`fixed duration-500 top-0 left-0 h-[65svh] bg-[#324A23] w-full text-white px-5 py-2 ${
         isOpen ? 'opacity-100' : 'opacity-0 invisible -z-50'
       }`}
+      ref={ref}
     >
       <div className="flex justify-between">
         <Image
@@ -82,7 +83,8 @@ const NavModal = ({ isOpen, setIsOpen, openModal }) => {
       </ul>
     </div>
   );
-};
+});
+NavModal.displayName = 'MyComponent';
 
 const Navbar = ({ openModal }) => {
   const [showLoading, setShowLoading] = useState(true);
@@ -109,6 +111,19 @@ const Navbar = ({ openModal }) => {
     }
     setPrevScroll(currScroll);
   });
+
+  const ref = useRef();
+  useEffect(() => {
+    const checkIfClickedOutside = (e) => {
+      if (ref.current && !ref.current.contains(e.target)) {
+        setOpenMenu(false);
+      }
+    };
+    document.addEventListener('mousedown', checkIfClickedOutside);
+    return () => {
+      document.removeEventListener('mousedown', checkIfClickedOutside);
+    };
+  }, [setOpenMenu]);
   useEffect(() => {
     setTimeout(() => {
       setShowLoading(false);
@@ -229,6 +244,7 @@ const Navbar = ({ openModal }) => {
         isOpen={openMenu}
         setIsOpen={setOpenMenu}
         openModal={openModal}
+        ref={ref}
       />
     </nav>
   );
