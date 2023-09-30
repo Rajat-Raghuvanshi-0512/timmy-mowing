@@ -84,7 +84,10 @@ const FooterSm = () => {
             <a href="#about"> About</a>
           </li>
           <li>
-            <a href="#prices"> Pricing</a>
+            <a href="#prices"> FAQ</a>
+          </li>
+          <li>
+            <a href="#city"> Suburps</a>
           </li>
         </ul>
         <div className="flex flex-col gap-4">
@@ -92,7 +95,7 @@ const FooterSm = () => {
             Timmy&apos;s <br /> MOWing{' '}
           </h2>
           <p className="w-40 text-xs font-light">
-            © 2023 Copyright Bloom Design and Landscaping Website by PixySquare.
+            © 2023 Copyright Timmy’s gardening and Mowing Website by PixySquare.
           </p>
         </div>
       </div>
@@ -134,7 +137,10 @@ const FooterLg = () => {
               <a href="#about"> About</a>
             </li>
             <li>
-              <a href="#prices"> Pricing</a>
+              <a href="#prices"> FAQ</a>
+            </li>
+            <li>
+              <a href="#city"> Suburps</a>
             </li>
           </ul>
           <button className="bg-white px-4 uppercase text-xs rounded-2xl text-green-base mx-5 -mr-10">

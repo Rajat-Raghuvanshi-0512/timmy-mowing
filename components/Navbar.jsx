@@ -10,7 +10,7 @@ const NavModal = ({ isOpen, setIsOpen, openModal }) => {
   return (
     <div
       className={`fixed duration-500 top-0 left-0 h-[65svh] bg-[#324A23] w-full text-white px-5 py-2 ${
-        isOpen ? 'opacity-100' : 'opacity-0 -z-50'
+        isOpen ? 'opacity-100' : 'opacity-0 invisible -z-50'
       }`}
     >
       <div className="flex justify-between">
@@ -90,7 +90,7 @@ const Navbar = ({ openModal }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [hide, setHide] = useState(false);
   const [prevScroll, setPrevScroll] = useState(0);
-  const [openMenu, setOpenMenu] = useState(true);
+  const [openMenu, setOpenMenu] = useState(false);
   useMotionValueEvent(scrollY, 'change', (currScroll) => {
     if (currScroll <= 0) {
       setHide(false);
