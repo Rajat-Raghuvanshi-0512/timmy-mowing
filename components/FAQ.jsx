@@ -31,7 +31,7 @@ const FAQ = ({ openModal }) => {
   const [selected, setSelected] = useState('General');
   const [active, setActive] = useState(0);
   return (
-    <section className="px-5 md:px-14">
+    <section className="px-5 md:px-14" id="faq">
       <Heading content={'How it works?'} />
       <div className="md:mx-5 mt-5 flex flex-col md:flex-row gap-5 pr-5 md:mt-10 md:gap-10 md:pr-10 lg:gap-20 lg:pr-20 2xl:pr-40">
         <div className="md:text-2xl lg:text-4xl justify-center md:justify-normal flex md:flex-col items-start gap-5 md:gap-6 lg:gap-10 font-semibold md:flex-[0.6] mt-5">

@@ -4,6 +4,85 @@ import React, { useEffect, useState } from 'react';
 import LoadingPage from './Loader';
 import Link from 'next/link';
 import { useMotionValueEvent, useScroll } from 'framer-motion';
+import Button from './custom/Button';
+
+const NavModal = ({ isOpen, setIsOpen, openModal }) => {
+  return (
+    <div
+      className={`fixed duration-500 top-0 left-0 h-[65svh] bg-[#324A23] w-full text-white px-5 py-2 ${
+        isOpen ? 'opacity-100' : 'opacity-0 -z-50'
+      }`}
+    >
+      <div className="flex justify-between">
+        <Image
+          src={'/logo-white.webp'}
+          alt="logo"
+          height={55}
+          width={100}
+          className="w-[80px] object-contain md:w-[70px] lg:w-[100px]"
+          unoptimized
+        />
+        <Image
+          src={'/cross.svg'}
+          alt="cross"
+          width={40}
+          height={40}
+          className="mt-4 cursor-pointer"
+          onClick={() => setIsOpen(false)}
+        />
+      </div>
+      <Button
+        className={'!bg-white !text-green-base w-full py-2 !my-4'}
+        onClick={() => {
+          setIsOpen(false);
+          openModal(true);
+        }}
+      >
+        get a free quote
+      </Button>
+      <ul className="text-3xl flex flex-col gap-6 mt-3 justify-center">
+        <li>
+          <Link onClick={() => setIsOpen(false)} href={'#'}>
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link onClick={() => setIsOpen(false)} href={'#services'}>
+            Services
+          </Link>
+        </li>
+        <li>
+          <Link onClick={() => setIsOpen(false)} href={'#about'}>
+            About
+          </Link>
+        </li>
+        <li>
+          <Link onClick={() => setIsOpen(false)} href={'#faq'}>
+            FAQ
+          </Link>
+        </li>
+        <li className="flex justify-between">
+          <Link onClick={() => setIsOpen(false)} href={'#city'}>
+            Suburps
+          </Link>
+          <div className="flex gap-3">
+            <Image
+              src={'/call-icon.webp'}
+              alt="call"
+              width={20}
+              height={20}
+              className="object-contain"
+            />
+            <div>
+              <p className="text-xs">Call us today !</p>
+              <p className="text-base font-semibold">+61 466 283 630</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  );
+};
 
 const Navbar = ({ openModal }) => {
   const [showLoading, setShowLoading] = useState(true);
@@ -11,6 +90,7 @@ const Navbar = ({ openModal }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [hide, setHide] = useState(false);
   const [prevScroll, setPrevScroll] = useState(0);
+  const [openMenu, setOpenMenu] = useState(true);
   useMotionValueEvent(scrollY, 'change', (currScroll) => {
     if (currScroll <= 0) {
       setHide(false);
@@ -95,6 +175,7 @@ const Navbar = ({ openModal }) => {
             height={30}
             className="object-contain"
             unoptimized
+            onClick={() => setOpenMenu(true)}
           />
         ) : (
           <Image
@@ -104,6 +185,7 @@ const Navbar = ({ openModal }) => {
             height={30}
             className="object-contain"
             unoptimized
+            onClick={() => setOpenMenu(true)}
           />
         )}
       </div>
@@ -143,6 +225,11 @@ const Navbar = ({ openModal }) => {
           <p className="md:text-lg font-semibold">+61 466 283 630</p>
         </div>
       </div>
+      <NavModal
+        isOpen={openMenu}
+        setIsOpen={setOpenMenu}
+        openModal={openModal}
+      />
     </nav>
   );
 };

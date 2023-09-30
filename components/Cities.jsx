@@ -5,7 +5,10 @@ import Heading from './custom/Heading';
 
 const Cities = () => {
   return (
-    <section className="px-5 md:px-7 lg:mx-10 md:bg-green-base relative text-green-base md:text-white rounded-2xl">
+    <section
+      className="px-5 md:px-7 lg:mx-10 md:bg-green-base relative text-green-base md:text-white rounded-2xl"
+      id="city"
+    >
       <div className="md:hidden">
         <Heading content={'Popular Suburbs'} />
       </div>
