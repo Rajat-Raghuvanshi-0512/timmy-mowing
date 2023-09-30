@@ -6,7 +6,7 @@ const LastForm = ({ setShowThankyou }) => {
   return (
     <section className="md:hidden flex justify-center items-center h-[431px] relative p-10">
       <Image
-        src={'/last-form-bg.png'}
+        src={'/last-form-bg.webp'}
         alt="form-bg"
         width={100}
         height={100}

@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import React from 'react';
 
 const FooterSm = () => {
@@ -8,27 +10,82 @@ const FooterSm = () => {
         <h2 className="uppercase text-5xl text-center font-extrabold font-futura">
           TM
         </h2>
-        <div>
-          <Image src={'/socials.svg'} alt="socials" width={160} height={30} />
+        <div className="flex gap-3">
+          <Link
+            href="https://www.instagram.com/timmysmowing.au/"
+            target="_blank"
+          >
+            <Image
+              src={'/fb-icon.webp'}
+              alt="socials"
+              width={30}
+              height={30}
+              className="w-[20px] h-[20px] object-contain"
+            />
+          </Link>
+          <Link
+            href="https://www.instagram.com/timmysmowing.au/"
+            target="_blank"
+          >
+            <Image
+              src={'/insta.webp'}
+              alt="socials"
+              width={30}
+              height={30}
+              className="w-[20px] h-[20px] object-contain"
+            />
+          </Link>
+          <Link
+            href="https://www.instagram.com/timmysmowing.au/"
+            target="_blank"
+          >
+            <Image
+              src={'/yt.webp'}
+              alt="socials"
+              width={30}
+              height={30}
+              className="w-[20px] h-[20px] object-contain"
+            />
+          </Link>
+          <a href="tel:+61 466 283 630">
+            <Image
+              src={'/call-icon.webp'}
+              alt="socials"
+              width={30}
+              height={30}
+              className="w-[20px] h-[20px] object-contain"
+            />
+          </a>
         </div>
       </div>
-      <div className="flex justify-between my-5">
+      <div className="flex gap-1 justify-between my-5">
         <div>
-          <p>SYDNEY | Wetherill Park</p>
-          <p>02 9725 1990</p>
+          2/183 porter road
+          <br />
+          Heidelberg heights
+          <br />
+          Vic - 3081
         </div>
         <div>
-          <p>hello@rabenrifaie.com</p>
-          <p>+ 48 697 404 323</p>
+          <p>timmysmowingau@gmail.com</p>
+          <p>+61 466 283 630</p>
         </div>
       </div>
       <div className="h-[1px] w-full bg-white"></div>
       <div className="justify-between flex my-5">
         <ul className="flex flex-col gap-3 justify-evenly my-5">
-          <li>Home</li>
-          <li>Services</li>
-          <li>About</li>
-          <li>Pricing</li>
+          <li>
+            <a href="#"> Home</a>
+          </li>
+          <li>
+            <a href="#services"> Services</a>
+          </li>
+          <li>
+            <a href="#about"> About</a>
+          </li>
+          <li>
+            <a href="#prices"> Pricing</a>
+          </li>
         </ul>
         <div className="flex flex-col gap-4">
           <h2 className="uppercase font-bold text-3xl font-futura">
@@ -44,6 +101,7 @@ const FooterSm = () => {
   );
 };
 const FooterLg = () => {
+  const router = useRouter();
   return (
     <div className="hidden md:grid md:grid-cols-3">
       <div className="flex flex-col gap-4 py-5">
@@ -51,21 +109,33 @@ const FooterLg = () => {
           Timmy&apos;s <br /> MOWing{' '}
         </h2>
         <p className="text-xs font-extralight">
-          16767 Bernardo Center <br /> Dr. San Diego, CA 92198
+          2/183 porter road
+          <br />
+          Heidelberg heights
+          <br />
+          Vic - 3081
         </p>
         <p className="uppercase text-xs">Let&apos;s Team Up!</p>
         <div className="flex lg:flex-row flex-col gap-4 lg:gap-10 text-sm">
-          <div>hello@rabenrifaie.com</div> <div>+ 48 697 404 323</div>
+          <div>timmysmowingau@gmail.com</div> <div>+61 466 283 630</div>
         </div>
       </div>
       <div className="flex flex-col justify-end py-5">
         <h6 className="text-xs my-3 uppercase font-light">Navigation</h6>
         <div className="flex">
           <ul className="flex gap-5 text-sm">
-            <li>Home</li>
-            <li>Pricing</li>
-            <li>Services</li>
-            <li>About</li>
+            <li>
+              <a href="#"> Home</a>
+            </li>
+            <li>
+              <a href="#services"> Services</a>
+            </li>
+            <li>
+              <a href="#about"> About</a>
+            </li>
+            <li>
+              <a href="#prices"> Pricing</a>
+            </li>
           </ul>
           <button className="bg-white px-4 uppercase text-xs rounded-2xl text-green-base mx-5 -mr-10">
             get a quote
@@ -73,10 +143,20 @@ const FooterLg = () => {
         </div>
       </div>
       <div className="py-5 flex gap-4 justify-end">
-        <button className="rounded-2xl border border-white uppercase px-3 py-1 text-xs h-min">
+        <button
+          className="rounded-2xl border border-white hover:text-green-base hover:bg-white duration-300 uppercase px-3 py-1 text-xs h-min"
+          onClick={() =>
+            router.push('https://www.instagram.com/timmysmowing.au/')
+          }
+        >
           instagram
         </button>
-        <button className="rounded-2xl border border-white uppercase px-3 py-1 text-xs h-min">
+        <button
+          className="rounded-2xl border border-white hover:text-green-base hover:bg-white duration-300 uppercase px-3 py-1 text-xs h-min"
+          onClick={() =>
+            router.push('https://www.instagram.com/timmysmowing.au/')
+          }
+        >
           facebook
         </button>
       </div>

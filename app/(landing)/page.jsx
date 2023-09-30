@@ -107,6 +107,8 @@ const PopUpModal = ({ isOpen, closeModal, setShowThankyou }) => {
   );
 };
 
+const libraries = ['places'];
+
 const Home = () => {
   const { isOpen, closeModal, openModal } = useModal();
 
@@ -114,7 +116,7 @@ const Home = () => {
 
   const { isLoaded } = useJsApiLoader({
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_API_KEY,
-    libraries: ['places'],
+    libraries,
   });
   if (!isLoaded) {
     return;

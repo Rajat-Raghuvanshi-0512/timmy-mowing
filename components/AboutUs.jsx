@@ -10,7 +10,7 @@ const AboutUs = ({ openModal }) => {
       <div className="mt-5 md:mt-10 flex gap-5 md:gap-10">
         <div className="w-full flex-[1.4] md:flex-[0.8] relative md:h-[350px] lg:h-[490px]">
           <Image
-            src={'/aboutus.png'}
+            src={'/aboutus.webp'}
             alt="green"
             width={470}
             height={500}
@@ -18,7 +18,7 @@ const AboutUs = ({ openModal }) => {
             unoptimized
           />
           <Image
-            src={'/aboutus-side.png'}
+            src={'/aboutus-side.webp'}
             alt="greenside"
             width={200}
             height={200}
@@ -41,7 +41,7 @@ const AboutUs = ({ openModal }) => {
           <div className=" ml-6 md:ml-20 lg:ml-40 md:mt-5 lg:mt-14 text-green-base md:flex items-center font-semibold lg:text-xl gap-5 leading-5">
             <div className="flex gap-3 items-center text-xs md:text-xl">
               <Image
-                src={'/trees.png'}
+                src={'/trees.webp'}
                 alt="tree"
                 width={45}
                 height={85}
@@ -55,7 +55,7 @@ const AboutUs = ({ openModal }) => {
             <div className="w-[2px] bg-black h-16 hidden md:block"></div>
             <div className="flex gap-3 text-xs md:text-xl mt-3">
               <Image
-                src={'/trees.png'}
+                src={'/trees.webp'}
                 alt="tree"
                 width={25}
                 height={85}

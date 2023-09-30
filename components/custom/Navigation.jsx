@@ -11,13 +11,13 @@ const Navigation = ({
   return (
     <div className=" items-center gap-5 hidden md:flex">
       <button onClick={prevClick}>
-        <Image src={'/left-arrow.png'} alt="larrow" width={45} height={10} />
+        <Image src={'/left-arrow.webp'} alt="larrow" width={45} height={10} />
       </button>
       <div className="text-2xl md:text-3xl font-light text-green-base">
         {currSlide}/{totalSlide}
       </div>
       <button onClick={nextClick}>
-        <Image src={'/right-arrow.png'} alt="larrow" width={45} height={10} />
+        <Image src={'/right-arrow.webp'} alt="larrow" width={45} height={10} />
       </button>
     </div>
   );

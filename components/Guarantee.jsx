@@ -50,7 +50,7 @@ const Guarantee = () => {
               Bonded & Insured
             </h5>
             <p className="text-xs md:text-base lg:text-lg lg:w-[80%] pb-3">
-              We carry a multimillion dollar liability insurance policy so
+              We carry a 20 Million AUD liability insurance policy so
               you&apos;re fully covered.
             </p>
           </div>

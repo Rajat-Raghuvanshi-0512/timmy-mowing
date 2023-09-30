@@ -41,7 +41,7 @@ const Cities = () => {
         </div>
         <div className="flex-[1] hidden md:block absolute -right-7 top-0">
           <Image
-            src={'/map-top.png'}
+            src={'/map-top.webp'}
             alt="map"
             width={100}
             height={100}
@@ -51,7 +51,7 @@ const Cities = () => {
         </div>
         <div className=" md:hidden -mt-10 absolute -right-5 -top-3">
           <Image
-            src={'/mobile-map.png'}
+            src={'/mobile-map.webp'}
             alt="map"
             width={180}
             height={170}

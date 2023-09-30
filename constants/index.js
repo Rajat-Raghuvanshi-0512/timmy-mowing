@@ -2,7 +2,7 @@ export const galleryInfo = [
   {
     id: 1,
     link1: '/gallery/img1.webp',
-    link2: '/gallery/img2.png',
+    link2: '/gallery/img2.webp',
     heading1: 'Lawn Care',
     heading2: 'Garden Design',
     desc: 'Keep your garden looking beautiful without having to lift a finger With Reliable Gardening Professionals',
@@ -52,7 +52,7 @@ export const galleryInfo = [
   },
   {
     id: 4,
-    link1: '/gallery/img7.png',
+    link1: '/gallery/img7.webp',
     link2: '/gallery/img8.webp',
     link3: '/gallery/img9.webp',
     heading1: 'Consultation & Maintenance',
@@ -76,35 +76,35 @@ export const galleryInfo = [
 export const reviews = [
   {
     id: 1,
-    imageUrl: '/reviews/review1.png',
+    imageUrl: '/reviews/review1.webp',
     name: 'EMILY',
     type: 'toorak',
     desc: "I'm absolutely thrilled with the impeccable lawn mowing service provided by Timmy's's! Living in Toorak, maintaining our garden's elegance is essential, and they've exceeded all expectations. From precise mowing to expert garden care, Timmy's's is a cut above the rest.",
   },
   {
     id: 2,
-    imageUrl: '/reviews/review1.png',
+    imageUrl: '/reviews/review1.webp',
     name: 'EMILY',
     type: 'toorak',
     desc: "I'm absolutely thrilled with the impeccable lawn mowing service provided by Timmy's's! Living in Toorak, maintaining our garden's elegance is essential, and they've exceeded all expectations. From precise mowing to expert garden care, Timmy's's is a cut above the rest.",
   },
   {
     id: 3,
-    imageUrl: '/reviews/review1.png',
+    imageUrl: '/reviews/review1.webp',
     name: 'EMILY',
     type: 'toorak',
     desc: "I'm absolutely thrilled with the impeccable lawn mowing service provided by Timmy's's! Living in Toorak, maintaining our garden's elegance is essential, and they've exceeded all expectations. From precise mowing to expert garden care, Timmy's's is a cut above the rest.",
   },
   {
     id: 4,
-    imageUrl: '/reviews/review1.png',
+    imageUrl: '/reviews/review1.webp',
     name: 'EMILY',
     type: 'toorak',
     desc: "I'm absolutely thrilled with the impeccable lawn mowing service provided by Timmy's's! Living in Toorak, maintaining our garden's elegance is essential, and they've exceeded all expectations. From precise mowing to expert garden care, Timmy's's is a cut above the rest.",
   },
   {
     id: 5,
-    imageUrl: '/reviews/review1.png',
+    imageUrl: '/reviews/review1.webp',
     name: 'EMILY',
     type: 'toorak',
     desc: "I'm absolutely thrilled with the impeccable lawn mowing service provided by Timmy's's! Living in Toorak, maintaining our garden's elegance is essential, and they've exceeded all expectations. From precise mowing to expert garden care, Timmy's's is a cut above the rest.",
@@ -147,9 +147,9 @@ export const pricePageData = {
 
   Quality:
     'We understand each participants needs are different and will work with you to provide the gardening you require.3',
-  img1: '/price.png',
-  img2: '/price1.png',
-  img3: '/price2.png',
+  img1: '/price.webp',
+  img2: '/price1.webp',
+  img3: '/price2.webp',
 };
 
 export const galleryInfoSm = [

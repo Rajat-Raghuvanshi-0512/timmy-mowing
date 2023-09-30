@@ -26,9 +26,12 @@ const CallSection = ({ setShowThankyou }) => {
     setShowThankyou(true);
   };
   return (
-    <section className="m-5 md:m-10 bg-green-base rounded-lg md:rounded-2xl flex flex-col justify-center items-center h-[330px] text-white px-5 md:p-0 relative">
+    <section
+      className="m-5 md:m-10 bg-green-base rounded-lg md:rounded-2xl flex flex-col justify-center items-center h-[330px] text-white px-5 md:p-0 relative"
+      id="prices"
+    >
       <Image
-        src={'/texture.png'}
+        src={'/texture.webp'}
         alt="texture"
         width={100}
         height={100}

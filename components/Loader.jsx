@@ -14,7 +14,7 @@ const LoadingPage = () => {
             alt="loader"
             width={50}
             height={50}
-            className="loader-animation"
+            className="loader-animation w-[50px] h-[40px] object-contain"
           />
           <div className="w-full h-1 bg-green-base"></div>
         </div>

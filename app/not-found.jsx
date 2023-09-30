@@ -5,7 +5,7 @@ export default function NotFound() {
   return (
     <div className="flex justify-start pt-40 gap-10 items-center flex-col relative h-screen text-white bg-black/30">
       <Image
-        src={'/error-bg.png'}
+        src={'/error-bg.webp'}
         alt="err"
         width={100}
         height={100}

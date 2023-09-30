@@ -45,18 +45,18 @@ const Navbar = ({ openModal }) => {
     >
       <div className="hidden md:flex items-center">
         <Image
-          src={'/logo.png'}
+          src={'/logo.webp'}
           alt="logo"
           unoptimized
           height={55}
           width={100}
-          className="w-[80px] md:w-[70px] lg:w-[100px]"
+          className="w-[80px] md:w-[70px] object-contain lg:w-[100px]"
         />
       </div>
       <div className="flex md:invisible items-center">
         {isScrolled ? (
           <Image
-            src={'/logo.png'}
+            src={'/logo.webp'}
             alt="logo"
             height={55}
             width={100}
@@ -65,7 +65,7 @@ const Navbar = ({ openModal }) => {
           />
         ) : (
           <Image
-            src={'/logo-white.png'}
+            src={'/logo-white.webp'}
             alt="logo"
             height={55}
             width={100}
@@ -77,13 +77,15 @@ const Navbar = ({ openModal }) => {
       <div className="flex gap-5 md:hidden">
         <div className="flex items-center gap-2 bg-green-base px-2 rounded-md">
           <Image
-            src={'/call-white.png'}
+            src={'/call-white.webp'}
             alt="menu"
             width={20}
             height={20}
             unoptimized
           />
-          <div className="text-xs text-white">CALL US</div>
+          <div className="text-xs text-white">
+            <a href="tel:+61 466 283 630">CALL US</a>
+          </div>
         </div>
         {isScrolled ? (
           <Image
@@ -96,7 +98,7 @@ const Navbar = ({ openModal }) => {
           />
         ) : (
           <Image
-            src={'/burger-menu.png'}
+            src={'/burger-menu.webp'}
             alt="menu"
             width={30}
             height={30}
@@ -130,7 +132,7 @@ const Navbar = ({ openModal }) => {
       </div>
       <div className="hidden md:flex gap-3">
         <Image
-          src={'/call.png'}
+          src={'/call.webp'}
           className="object-contain w-[20px] lg:w-[35px]"
           alt="phone"
           height={15}
@@ -138,7 +140,7 @@ const Navbar = ({ openModal }) => {
         />
         <div className="text-green-base">
           <p className="text-xs">Call us today !</p>
-          <p className="md:text-lg font-semibold">1800 975 432</p>
+          <p className="md:text-lg font-semibold">+61 466 283 630</p>
         </div>
       </div>
     </nav>

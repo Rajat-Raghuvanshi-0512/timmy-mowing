@@ -10,14 +10,14 @@ const MapForm = ({ setShowThankyou }) => {
           <Form
             className="min-w-[460px]"
             setShowThankyou={setShowThankyou}
-            bgImg={'/thankyou-bg.png'}
+            bgImg={'/thankyou-bg.webp'}
             title="MELBOURNE LAWN CARE AND GARDENING SPECIALISTS"
             desc="Let us create your Stunning Garden."
           />
         </div>
         <div className="md:flex-[1.3]">
           <Image
-            src={'/map-bottom.png'}
+            src={'/map-bottom.webp'}
             alt="map"
             width={100}
             height={100}

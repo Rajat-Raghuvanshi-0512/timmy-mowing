@@ -6,7 +6,7 @@ const LawnGallerySm = () => {
   return (
     <section className="md:hidden relative pb-5" id="gallery">
       <Image
-        src={'/mobile-lawn-gallery.png'}
+        src={'/mobile-lawn-gallery.webp'}
         alt="gallery"
         width={100}
         height={100}
