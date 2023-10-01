@@ -43,7 +43,7 @@ const ServiceFaqData = [
   },
   {
     heading: 'How do I report damage caused during the service?',
-    body: 'If any damage occurs during our service, please report it to us immediately. We take full responsibility for any damages caused by our team and we will promptly assess the damage and take appropriate measures to repair or replace the affected items.',
+    body: 'If any damage occurs during our service, please report it to us immediately. We want to assure you that we carry a 20 Million AUD public liability insurance policy, ensuring that you are fully covered in the unlikely event of any damage.',
   },
   {
     heading: 'Do you charge extra for after-service support or follow-up?',
@@ -64,6 +64,15 @@ const PricingFaqData = [
     heading:
       'Do you offer refunds or discounts if I am not satisfied with the service?',
     body: 'If you are not satisfied with our service, please contact us within 24 hours and we will assess the situation. While refunds are issued on a case-by-case basis, we are committed to addressing any concerns and ensuring your satisfaction. Refunds or discounts may be offered based on the nature of the issue.',
+  },
+  {
+    heading: 'Is there a minimum service charge?',
+    body: 'Yes, there is a minimum service charge to cover our operational costs which is just 35AUD. This ensures that we can maintain our high-quality service standards even for smaller jobs. Please contact us for specific details on the minimum service charge.',
+  },
+  {
+    heading:
+      'Do you offer package deals or discounts for regular maintenance services?',
+    body: 'Yes, we offer package deals and discounts for customers who opt for regular maintenance services. Our packages are designed to provide cost savings and added convenience for our customers. Contact us to learn more about our package deals and discounts.',
   },
 ];
 
