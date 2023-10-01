@@ -1,5 +1,4 @@
 'use client';
-import { useState } from 'react';
 import Image from 'next/image';
 
 const Accordion = ({ heading, body, active, setActive, id }) => {
@@ -8,7 +7,7 @@ const Accordion = ({ heading, body, active, setActive, id }) => {
       <div className="md:py-10 py-5">
         <div className="flex justify-between gap-5">
           <h3
-            className={`font-metropolis text-base md:text-xl lg:text-2xl text-green-base font-semibold hover:cursor-pointer flex-[1.8] md:flex-none`}
+            className={`font-metropolis text-base md:text-xl lg:text-2xl text-green-base font-semibold hover:cursor-pointer flex-[1.8]`}
             onClick={() => setActive(id)}
           >
             {heading}
