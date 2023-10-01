@@ -5,7 +5,9 @@ export const galleryInfo = [
     link2: '/gallery/img2.webp',
     heading1: 'Lawn Care',
     heading2: 'Garden Design',
-    desc: 'Keep your garden looking beautiful without having to lift a finger With Reliable Gardening Professionals',
+    desc1:
+      'Keep your garden looking beautiful without having to lift a finger With Reliable Gardening Professionals',
+    desc2: 'Turn Your Patch Of Green Into A Work Of Art',
     width1: 60,
     width2: 40,
     section1Data: [
@@ -27,7 +29,10 @@ export const galleryInfo = [
     link2: '/gallery/img4.webp',
     heading1: 'Weed Control',
     heading2: 'Planting, Grassing & Bedding',
-    desc: 'Keep your garden looking beautiful without having to lift a finger With Reliable Gardening Professionals',
+    desc1:
+      'Not sure what has your grass struggling? We can identify and handle it with the right product for you.',
+    desc2:
+      'Not sure what has your grass struggling? We can identify and handle it with the right product for you.',
     width1: 50,
     width2: 50,
     section1Data: ['Weeding', 'Herbicide', 'Application'],
@@ -39,7 +44,7 @@ export const galleryInfo = [
     link2: '/gallery/img1.webp',
     heading1: 'Seasonal Cleanup',
     heading2: 'Hedge & Tree Care',
-    desc: 'Keep your garden looking beautiful without having to lift a finger With Reliable Gardening Professionals',
+    desc: 'Whether you need seasonal cleanup or lawn care on a regular basis, we are here to help.',
     width1: 30,
     width2: 70,
     section1Data: ['Fall Clean up', 'Spring Clean up'],
@@ -58,7 +63,10 @@ export const galleryInfo = [
     heading1: 'Consultation & Maintenance',
     heading2: 'Pest Management',
     heading3: 'Waste removal services',
-    desc: 'Keep your garden looking beautiful without having to lift a finger With Reliable Gardening Professionals',
+    desc1:
+      'Keep your garden blooming all year long with our Professional Lawn Care and Gardening services.',
+    desc2:
+      'Keep your garden looking beautiful without having to lift a finger With Reliable Gardening Professionals',
     width1: 33,
     width2: 33,
     width3: 33,
@@ -77,37 +85,37 @@ export const reviews = [
   {
     id: 1,
     imageUrl: '/reviews/review1.webp',
-    name: 'EMILY',
-    type: 'toorak',
-    desc: "I'm absolutely thrilled with the impeccable lawn mowing service provided by Timmy's's! Living in Toorak, maintaining our garden's elegance is essential, and they've exceeded all expectations. From precise mowing to expert garden care, Timmy's's is a cut above the rest.",
+    name: 'Lachlan Mitchell',
+    type: 'Reservoir',
+    desc: 'Extremely professionally run Company. Team Timmy called me in the morning to confirm timings and further in the afternoon when he had been delayed. Extremely customer centric.',
   },
   {
     id: 2,
     imageUrl: '/reviews/review1.webp',
-    name: 'EMILY',
-    type: 'toorak',
-    desc: "I'm absolutely thrilled with the impeccable lawn mowing service provided by Timmy's's! Living in Toorak, maintaining our garden's elegance is essential, and they've exceeded all expectations. From precise mowing to expert garden care, Timmy's's is a cut above the rest.",
+    name: 'Amelia Davies',
+    type: 'Heidelberg heights',
+    desc: "Timmy Mowing has been taking care of my lawn for almost a year and I'm genuinely pleased with their professional and friendly service. Everything has been excellent so far. It's truly refreshing to work with a company that provides such exceptional service.",
   },
   {
     id: 3,
     imageUrl: '/reviews/review1.webp',
-    name: 'EMILY',
-    type: 'toorak',
-    desc: "I'm absolutely thrilled with the impeccable lawn mowing service provided by Timmy's's! Living in Toorak, maintaining our garden's elegance is essential, and they've exceeded all expectations. From precise mowing to expert garden care, Timmy's's is a cut above the rest.",
+    name: 'Cameron Foster',
+    type: 'Preston',
+    desc: 'We are extremely satisfied with the service Timmy’s Mowing offers us. The operator is consistently punctual and knowledgeable, ensuring our lawn remains in excellent condition after their regular treatments. We wholeheartedly recommend their services without any reservations.',
   },
   {
     id: 4,
     imageUrl: '/reviews/review1.webp',
-    name: 'EMILY',
-    type: 'toorak',
-    desc: "I'm absolutely thrilled with the impeccable lawn mowing service provided by Timmy's's! Living in Toorak, maintaining our garden's elegance is essential, and they've exceeded all expectations. From precise mowing to expert garden care, Timmy's's is a cut above the rest.",
+    name: 'Matilda Harper',
+    type: 'Eaglemont',
+    desc: "Timmy’s Mowing consistently providing a friendly, reliable and professional service. I've been their satisfied customer for quite a while now and I wholeheartedly recommend their services",
   },
   {
     id: 5,
     imageUrl: '/reviews/review1.webp',
-    name: 'EMILY',
-    type: 'toorak',
-    desc: "I'm absolutely thrilled with the impeccable lawn mowing service provided by Timmy's's! Living in Toorak, maintaining our garden's elegance is essential, and they've exceeded all expectations. From precise mowing to expert garden care, Timmy's's is a cut above the rest.",
+    name: 'Finnegan Sullivan',
+    type: 'Kew',
+    desc: "Timmy’s Mowing team did an exceptional job and the entire process from start to finish was incredibly smooth. I'm highly impressed with the team's expertise and knowledge and we're thrilled with the final outcome. Thank you!",
   },
 ];
 
@@ -140,13 +148,13 @@ export const cities = {
 
 export const pricePageData = {
   Experience:
-    'We understand each participants needs are different and will work with you to provide the gardening you require.',
+    "We're a trusted family-owned business dedicated to nurturing Melbourne's outdoor spaces. With generations of expertise, we're committed to top-notch service and reliability",
 
   Reliability:
-    'We understand each participants needs are different and will work with you to provide the gardening you require.2',
+    'We understand each participants needs are different and will work with you to provide the gardening you require.',
 
   Quality:
-    'We understand each participants needs are different and will work with you to provide the gardening you require.3',
+    'We take pride in our cobber like approach to garden care, treating each garden as a unique canvas that deserves nothing but the best.',
   img1: '/price.webp',
   img2: '/price1.webp',
   img3: '/price2.webp',

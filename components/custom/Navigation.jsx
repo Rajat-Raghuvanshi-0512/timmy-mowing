@@ -5,8 +5,8 @@ import React from 'react';
 const Navigation = ({
   prevClick,
   nextClick,
-  currSlide = 11,
-  totalSlide = 24,
+  currSlide = 3,
+  totalSlide = 5,
 }) => {
   return (
     <div className=" items-center gap-5 hidden md:flex">

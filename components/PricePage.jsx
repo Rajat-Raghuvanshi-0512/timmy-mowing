@@ -8,8 +8,8 @@ const PricePage = ({ openModal }) => {
   const [selected, setSelected] = useState('Experience');
   return (
     <section>
-      <div className="bg-green-base mx-5 md:mx-6 lg:mx-10 mt-4 md:mt-20 rounded-lg md:rounded-xl lg:rounded-3xl p-4 md:p-7 lg:p-10">
-        <div className="flex justify-between md:justify-center  lg:gap-20 w-full items-start md:items-center text-white text-xs md:text-2xl lg:text-4xl uppercase min-h-[200px] md:min-h-0">
+      <div className="bg-green-base mx-5 md:mx-6 lg:mx-10 mt-4 md:mt-20 rounded-lg md:rounded-xl lg:rounded-3xl p-4 md:p-7 lg:p-10 md:min-h-[300px]">
+        <div className="flex justify-between md:justify-center  lg:gap-20 w-full items-start text-white text-xs md:text-2xl lg:text-4xl uppercase min-h-[200px] md:min-h-0">
           <button
             className={`${
               selected === 'Experience' &&
@@ -58,7 +58,7 @@ const PricePage = ({ openModal }) => {
               alt="price"
               width={550}
               height={400}
-              className="md:ml-7 md:-mt-14 lg:-mt-24 w-[330px] md:w-[400px] lg:w-[550px]"
+              className="md:ml-7 md:-mt-14 lg:-mt-28 w-[330px] md:w-[400px] lg:w-[550px]"
             />
           </div>
         </div>

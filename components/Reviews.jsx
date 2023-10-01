@@ -10,7 +10,7 @@ const ReviewCard = ({ imageUrl, name, type, desc }) => {
       <div className="flex gap-3 p-1 !w-full">
         <Image src={imageUrl} alt="review" width={50} height={50} />
         <div>
-          <h6 className="font-semibold">{name}</h6>
+          <h6 className="font-bold uppercase">{name}</h6>
           <p className="text-xs capitalize">{type}</p>
         </div>
       </div>
@@ -30,22 +30,34 @@ const ReviewCard = ({ imageUrl, name, type, desc }) => {
 
 const Reviews = () => {
   const [xPos, setXpos] = useState(0);
+  const [currSlide, setCurrSlide] = useState(3);
+  const slidesLen = reviews.length;
+
   const ref = useRef();
-  // const nextFn = (e) => {
-  //   setXpos((prev) => prev + 300);
-  //   ref.current.style.transform = `translateX(-${xPos}px)`;
-  //   console.log(ref.current.style);
-  // };
-  // const prevFn = (e) => {
-  //   setXpos((prev) => prev - 300);
-  //   ref.current.style.transform = `translateX(-${xPos}px)`;
-  //   console.log(ref.current.style);
-  // };
+  const prevFn = (e) => {
+    if (currSlide < 4) {
+      return;
+    }
+    setCurrSlide(currSlide - 1);
+    ref.current.scrollLeft -= 310;
+  };
+  const nextFn = (e) => {
+    if (currSlide >= slidesLen) {
+      return;
+    }
+    setCurrSlide(currSlide + 1);
+    ref.current.scrollLeft += 310;
+  };
   return (
     <section className="sm:px-5 ">
       <div className="flex justify-between px-3 py-4 md:py-0 md:px-10">
         <Heading content={'What do our clients say?'} />
-        <Navigation />
+        <Navigation
+          prevClick={prevFn}
+          nextClick={nextFn}
+          currSlide={currSlide}
+          totalSlide={slidesLen}
+        />
       </div>
       <div
         className={`review-box md:pl-10 duration-300 px-5 flex gap-6 md:gap-[50px] md:w-full 2xl:w-[75vw] !overflow-x-auto`}
