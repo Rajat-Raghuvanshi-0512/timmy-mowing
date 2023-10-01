@@ -155,3 +155,26 @@ input[type='number'] {
     font-size: 16px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    display: none;
+    width: 0px !important;
+    height: 0px !important;
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar-track {
+    -webkit-appearance: none;
+    display: none;
+    width: 0px !important;
+    height: 0px !important;
+  }
+  ::-webkit-scrollbar-thumb {
+    -webkit-appearance: none;
+    display: none;
+    width: 0px !important;
+    height: 0px !important;
+    background-color: transparent;
+  }
+}
