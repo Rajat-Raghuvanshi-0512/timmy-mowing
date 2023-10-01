@@ -44,7 +44,9 @@ export const galleryInfo = [
     link2: '/gallery/img1.webp',
     heading1: 'Seasonal Cleanup',
     heading2: 'Hedge & Tree Care',
-    desc: 'Whether you need seasonal cleanup or lawn care on a regular basis, we are here to help.',
+    desc1:
+      'Keep your garden looking beautiful without having to lift a finger With Reliable Gardening Professionals',
+    desc2: 'Turn Your Patch Of Green Into A Work Of Art',
     width1: 30,
     width2: 70,
     section1Data: ['Fall Clean up', 'Spring Clean up'],
