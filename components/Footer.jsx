@@ -179,7 +179,9 @@ const Footer = () => {
       <div className="w-full h-[2px] md:bg-white" />
       <div className="flex justify-center md:justify-between font-extralight md:font-normal text-xs pt-5">
         <div>© 2023 website by PixySquare.</div>
-        <div className="hidden md:block">Privacy Policy</div>
+        <div className="hidden md:block">
+          <Link href="/privacy">Privacy Policy</Link>
+        </div>
       </div>
     </footer>
   );
