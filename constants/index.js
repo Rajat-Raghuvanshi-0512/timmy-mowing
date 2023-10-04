@@ -86,7 +86,7 @@ export const galleryInfo = [
 export const reviews = [
   {
     id: 1,
-    imageUrl: '/reviews/review1.png',
+    imageUrl: '/reviews/review1.webp',
     name: 'Lachlan Mitchell',
     type: 'Reservoir',
     desc: 'Extremely professionally run Company. Team Timmy called me in the morning to confirm timings and further in the afternoon when he had been delayed. Extremely customer centric.',
