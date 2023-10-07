@@ -12,8 +12,8 @@ const AboutUs = ({ openModal }) => {
           <Image
             src={'/aboutus.webp'}
             alt="green"
-            width={270}
-            height={300}
+            width={200}
+            height={200}
             className="relative w-full"
           />
           <Image

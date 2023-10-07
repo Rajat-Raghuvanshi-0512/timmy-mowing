@@ -8,8 +8,8 @@ const LawnGallerySm = () => {
       <Image
         src={'/mobile-lawn-gallery.webp'}
         alt="gallery"
-        width={150}
-        height={150}
+        width={250}
+        height={250}
         className="w-full h-full p-2 object-contain -mt-150"
       />
       <h2 className="capitalize absolute left-2 -top-2 w-[70%] text-green-base text-[2.3rem] leading-snug font-semibold">
@@ -63,8 +63,8 @@ const LawnGalleryLg = () => {
           <Image
             src={'/lawn-gallery/layer1img3.webp'}
             alt="lawn"
-            width={150}
-            height={150}
+            width={80}
+            height={120}
             className="w-full"
             loading="eager"
           />

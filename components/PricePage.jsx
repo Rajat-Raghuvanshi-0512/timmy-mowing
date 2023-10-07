@@ -56,8 +56,8 @@ const PricePage = ({ openModal }) => {
                   : pricePageData.img3
               }
               alt="price"
-              width={330}
-              height={300}
+              width={200}
+              height={200}
               className="md:ml-7 md:-mt-14 lg:-mt-28 w-[330px] md:w-[400px] lg:w-[550px]"
             />
           </div>
