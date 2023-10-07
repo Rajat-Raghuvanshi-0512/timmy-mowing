@@ -68,7 +68,9 @@ const FooterSm = () => {
         </div>
         <div>
           <p>timmysmowingau@gmail.com</p>
-          <p>+61 466 283 630</p>
+          <p>
+            <a href="tel:+61 466 283 630">+61 466 283 630</a>
+          </p>
         </div>
       </div>
       <div className="h-[1px] w-full bg-white"></div>
@@ -95,7 +97,15 @@ const FooterSm = () => {
             Timmy&apos;s <br /> MOWing{' '}
           </h2>
           <p className="w-40 text-xs font-light">
-            © 2023 Copyright Timmy’s gardening and Mowing Website by PixySquare.
+            © 2023 Copyright Timmy’s gardening and Mowing{' '}
+            <a
+              href="https://pixysquare.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {' '}
+              Website by PixySquare.
+            </a>
           </p>
         </div>
       </div>
@@ -103,7 +113,7 @@ const FooterSm = () => {
     </div>
   );
 };
-const FooterLg = () => {
+const FooterLg = ({ openModal }) => {
   const router = useRouter();
   return (
     <div className="hidden md:grid md:grid-cols-3">
@@ -143,7 +153,10 @@ const FooterLg = () => {
               <a href="#city"> Suburps</a>
             </li>
           </ul>
-          <button className="bg-white px-4 uppercase text-xs rounded-2xl text-green-base mx-5 -mr-10">
+          <button
+            className="bg-white px-4 uppercase text-xs rounded-2xl text-green-base mx-5 -mr-10"
+            onClick={() => openModal()}
+          >
             get a quote
           </button>
         </div>
@@ -170,15 +183,23 @@ const FooterLg = () => {
   );
 };
 
-const Footer = () => {
+const Footer = ({ openModal }) => {
   return (
     <footer className="bg-green-base text-white p-5 md:p-10 lg:p-16">
       <div className="w-full h-[2px] md:bg-white" />
       <FooterSm />
-      <FooterLg />
+      <FooterLg openModal={openModal} />
       <div className="w-full h-[2px] md:bg-white" />
       <div className="flex justify-center md:justify-between font-extralight md:font-normal text-xs pt-5">
-        <div>© 2023 website by PixySquare.</div>
+        <div>
+          <a
+            href="https://pixysquare.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            © 2023 website by PixySquare.
+          </a>
+        </div>
         <div className="hidden md:block">
           <Link href="/privacy">Privacy Policy</Link>
         </div>

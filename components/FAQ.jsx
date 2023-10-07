@@ -81,10 +81,12 @@ const FAQ = ({ openModal }) => {
   const [FaqData, setFaqData] = useState(GeneralFaqData);
   const [active, setActive] = useState(0);
   return (
-    <section className="px-5 md:px-14" id="faq">
-      <Heading content={'How it works?'} />
-      <div className="md:mx-5 mt-5 flex flex-col md:flex-row gap-5 pr-5 md:mt-10 md:gap-10 md:pr-10 lg:gap-20 lg:pr-20 2xl:pr-40">
-        <div className="md:text-2xl lg:text-4xl justify-center md:justify-normal flex md:flex-col items-start gap-5 md:gap-6 lg:gap-10 font-semibold md:flex-[0.6] mt-5">
+    <section className=" md:px-14" id="faq">
+      <div className="px-5">
+        <Heading content={'How it works?'} />
+      </div>
+      <div className="md:mx-5 mt-5 flex flex-col md:flex-row gap-5 md:mt-10 md:gap-10 md:pr-10 lg:gap-20 lg:pr-20 2xl:pr-40">
+        <div className="md:text-2xl lg:text-4xl justify-center md:justify-normal flex md:flex-col items-start gap-5 md:gap-6 lg:gap-10 font-semibold md:flex-[0.6] mt-5 px-2">
           <button
             className={`
               ${
@@ -142,7 +144,7 @@ const FAQ = ({ openModal }) => {
             get a quote
           </Button>
         </div>
-        <div className="w-full flex-[1.4]">
+        <div className="w-full flex-[1.4] px-5">
           {FaqData.map((item, id) => (
             <Accordion
               key={item.heading}
@@ -154,12 +156,14 @@ const FAQ = ({ openModal }) => {
           ))}
         </div>
       </div>
-      <Button
-        className="text-base mt-0 md:hidden w-full py-3"
-        onClick={openModal}
-      >
-        get a quote
-      </Button>
+      <div className="px-5">
+        <Button
+          className="text-base mt-0 md:hidden w-full py-3"
+          onClick={openModal}
+        >
+          get a quote
+        </Button>
+      </div>
     </section>
   );
 };

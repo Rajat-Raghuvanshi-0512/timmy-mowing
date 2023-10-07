@@ -152,7 +152,7 @@ const Home = () => {
         <LawnGallery />
         <LastForm setShowThankyou={setShowThankyou} />
       </main>
-      <Footer />
+      <Footer openModal={openModal} />
     </>
   );
 };

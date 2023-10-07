@@ -76,7 +76,9 @@ const NavModal = forwardRef(({ isOpen, setIsOpen, openModal }, ref) => {
             />
             <div>
               <p className="text-xs">Call us today !</p>
-              <p className="text-base font-semibold">+61 466 283 630</p>
+              <p className="text-base font-semibold">
+                <a href="tel:+61 466 283 630">+61 466 283 630</a>
+              </p>
             </div>
           </div>
         </li>
@@ -233,7 +235,9 @@ const Navbar = ({ openModal }) => {
         />
         <div className="text-green-base">
           <p className="text-xs">Call us today !</p>
-          <p className="md:text-lg font-semibold">+61 466 283 630</p>
+          <p className="md:text-lg font-semibold">
+            <a href="tel:+61 466 283 630">+61 466 283 630</a>
+          </p>
         </div>
       </div>
       <NavModal
