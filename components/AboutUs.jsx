@@ -12,15 +12,15 @@ const AboutUs = ({ openModal }) => {
           <Image
             src={'/aboutus.webp'}
             alt="green"
-            width={470}
-            height={500}
+            width={270}
+            height={300}
             className="relative w-full"
           />
           <Image
             src={'/aboutus-side.webp'}
             alt="greenside"
-            width={200}
-            height={200}
+            width={100}
+            height={100}
             className="absolute w-[100px] md:w-[120px] lg:w-[200px] md:bottom-16 lg:bottom-0 bottom-0 right-0 translate-x-[30%] translate-y-2 md:translate-x-[50%] md:translate-y-[30%]"
           />
         </div>

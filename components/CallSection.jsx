@@ -35,7 +35,7 @@ const CallSection = ({ setShowThankyou }) => {
         alt="texture"
         width={100}
         height={100}
-        className="w-full h-full absolute top-0 left-0"
+        className="w-full h-full absolute top-0 left-0 md:object-cover"
       />
       <h3 className="text-2xl md:text-4xl lg:text-5xl !leading-snug text-center md:text-left font-semibold md:w-[60%]">
         Let us cultivate beauty right at your doorstep.

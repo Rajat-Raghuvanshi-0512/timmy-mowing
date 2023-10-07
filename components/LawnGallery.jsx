@@ -81,8 +81,8 @@ const LawnGalleryLg = () => {
           <Image
             src={'/lawn-gallery/layer1img5.webp'}
             alt="lawn"
-            width={150}
-            height={150}
+            width={100}
+            height={100}
             className="w-full"
             loading="eager"
           />
