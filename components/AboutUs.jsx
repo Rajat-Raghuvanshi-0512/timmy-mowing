@@ -15,7 +15,6 @@ const AboutUs = ({ openModal }) => {
             width={470}
             height={500}
             className="relative w-full"
-            unoptimized
           />
           <Image
             src={'/aboutus-side.webp'}
@@ -23,7 +22,6 @@ const AboutUs = ({ openModal }) => {
             width={200}
             height={200}
             className="absolute w-[100px] md:w-[120px] lg:w-[200px] md:bottom-16 lg:bottom-0 bottom-0 right-0 translate-x-[30%] translate-y-2 md:translate-x-[50%] md:translate-y-[30%]"
-            unoptimized
           />
         </div>
         <div className="flex-[0.6] md:flex-[1.2] relative">
@@ -46,7 +44,6 @@ const AboutUs = ({ openModal }) => {
                 width={45}
                 height={85}
                 className="w-[20px] lg:w-[45px] object-contain"
-                unoptimized
               />
               <p>
                 Best gardening <br /> services
@@ -60,7 +57,6 @@ const AboutUs = ({ openModal }) => {
                 width={25}
                 height={85}
                 className="w-[15px] lg:w-[25px] object-contain"
-                unoptimized
               />
               <p>
                 With 5+ years of <br /> expertise{' '}

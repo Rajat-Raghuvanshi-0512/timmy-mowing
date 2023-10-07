@@ -8,10 +8,9 @@ const LawnGallerySm = () => {
       <Image
         src={'/mobile-lawn-gallery.webp'}
         alt="gallery"
-        width={100}
-        height={100}
-        className="w-full h-full p-2 object-contain -mt-10"
-        unoptimized
+        width={150}
+        height={150}
+        className="w-full h-full p-2 object-contain -mt-150"
       />
       <h2 className="capitalize absolute left-2 -top-2 w-[70%] text-green-base text-[2.3rem] leading-snug font-semibold">
         <span className="text-white">We love it</span> <br /> when <br /> you
@@ -43,9 +42,8 @@ const LawnGalleryLg = () => {
           <Image
             src={'/lawn-gallery/layer1img1.webp'}
             alt="lawn"
-            width={50}
-            unoptimized
-            height={50}
+            width={150}
+            height={150}
             className="w-full"
             loading="eager"
           />
@@ -55,9 +53,8 @@ const LawnGalleryLg = () => {
           <Image
             src={'/lawn-gallery/layer1img2.webp'}
             alt="lawn"
-            width={50}
-            unoptimized
-            height={50}
+            width={150}
+            height={150}
             className="w-full"
             loading="eager"
           />
@@ -66,9 +63,8 @@ const LawnGalleryLg = () => {
           <Image
             src={'/lawn-gallery/layer1img3.webp'}
             alt="lawn"
-            width={50}
-            unoptimized
-            height={50}
+            width={150}
+            height={150}
             className="w-full"
             loading="eager"
           />
@@ -77,18 +73,16 @@ const LawnGalleryLg = () => {
           <Image
             src={'/lawn-gallery/layer1img4.webp'}
             alt="lawn"
-            width={50}
-            unoptimized
-            height={50}
+            width={150}
+            height={150}
             className="w-full"
             loading="eager"
           />
           <Image
             src={'/lawn-gallery/layer1img5.webp'}
             alt="lawn"
-            width={50}
-            unoptimized
-            height={50}
+            width={150}
+            height={150}
             className="w-full"
             loading="eager"
           />
@@ -97,9 +91,8 @@ const LawnGalleryLg = () => {
           <Image
             src={'/lawn-gallery/layer1img6.webp'}
             alt="lawn"
-            width={50}
-            unoptimized
-            height={50}
+            width={150}
+            height={150}
             className="w-full"
             loading="eager"
           />
@@ -108,9 +101,8 @@ const LawnGalleryLg = () => {
           <Image
             src={'/lawn-gallery/layer1img7.webp'}
             alt="lawn"
-            width={50}
-            unoptimized
-            height={50}
+            width={150}
+            height={150}
             className="w-full"
             loading="eager"
           />
@@ -119,9 +111,8 @@ const LawnGalleryLg = () => {
           <Image
             src={'/lawn-gallery/layer1img8.webp'}
             alt="lawn"
-            width={50}
-            unoptimized
-            height={50}
+            width={300}
+            height={150}
             className="w-full"
             loading="eager"
           />

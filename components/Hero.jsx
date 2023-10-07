@@ -30,7 +30,7 @@ const HeroLg = ({ setShowThankyou }) => {
           height={550}
           width={1200}
           loading="eager"
-          priority
+          priority={true}
         />
         <div className="absolute right-0 h-full top-0">
           <Form setShowThankyou={setShowThankyou} />

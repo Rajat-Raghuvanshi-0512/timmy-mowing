@@ -73,10 +73,9 @@ const Form = ({
           <Image
             src={bgImg}
             alt="bg"
-            width={40}
-            height={40}
+            width={300}
+            height={300}
             className="absolute w-full -z-20 h-full left-0 top-0"
-            unoptimized
           />
         </>
       )}
