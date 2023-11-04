@@ -18,6 +18,7 @@ export default function RootLayout({ children }) {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preload" href="/home-banner.webp" as="image" />
+        <link rel="preload" href="/mobile-banner-bg.webp" as="image" />
       </head>
       <body className={myFont.className}>
         {children}

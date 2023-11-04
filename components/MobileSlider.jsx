@@ -32,6 +32,12 @@ const MobileSlider = () => {
   const thirdSlideRef = useRef();
 
   const getScrollOffset = () => {
+    if (
+      !firstSlideRef.current ||
+      !secondSlideRef.current ||
+      !thirdSlideRef.current
+    )
+      return;
     firstSlideRef.current.style.transform = `translateX(${
       window.scrollY.toFixed(1) / 2.9
     }px)`;

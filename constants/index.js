@@ -215,3 +215,27 @@ export const galleryInfoSm = [
     list: ['Green waste removal', 'Other waste removal', 'Leaf blowing'],
   },
 ];
+
+export const blogsData = [
+  {
+    id: 1,
+    title: 'How to improve the grass health of your lawn?',
+    imageUrl: '/blogs/blog-img1.png',
+    mainImg: '/blogs/blog1-main.png',
+  },
+  {
+    id: 2,
+    title: 'The Benefits of professional lawn mowing services in Melbourne',
+    imageUrl: '/blogs/blog-img2.png',
+  },
+  {
+    id: 3,
+    title: 'When to prune hedges and how often?',
+    imageUrl: '/blogs/blog-img3.png',
+  },
+  {
+    id: 4,
+    title: 'Ride-On Mowers vs. Traditional Push Mowers',
+    imageUrl: '/blogs/blog-img4.png',
+  },
+];

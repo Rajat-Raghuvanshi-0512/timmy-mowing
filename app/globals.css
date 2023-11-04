@@ -100,6 +100,22 @@ input[type='number'] {
   transition: max-height 0.25s ease-in !important;
 }
 
+.custom__carousel {
+  position: relative;
+  width: 90vw;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  transition: all 0.2s;
+  will-change: transform;
+  user-select: none;
+  padding: 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 30px;
+}
+
 .animate-infinite {
   width: 900vw;
 }

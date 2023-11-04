@@ -1,5 +1,6 @@
 'use client';
 import AboutUs from '@/components/AboutUs';
+import Blogs from '@/components/Blogs';
 import CallSection from '@/components/CallSection';
 import Cities from '@/components/Cities';
 import FAQ from '@/components/FAQ';
@@ -22,7 +23,7 @@ import { sendMail } from '@/helpers/sendMail';
 import { useJsApiLoader, Autocomplete } from '@react-google-maps/api';
 import { useState } from 'react';
 
-const PopUpModal = ({ isOpen, closeModal, setShowThankyou }) => {
+export const PopUpModal = ({ isOpen, closeModal, setShowThankyou }) => {
   const [data, setData] = useState({
     name: '',
     phone: '',
@@ -149,6 +150,7 @@ const Home = () => {
         <div className="hidden md:block">
           <MapForm setShowThankyou={setShowThankyou} />
         </div>
+        <Blogs />
         <LawnGallery />
         <LastForm setShowThankyou={setShowThankyou} />
       </main>

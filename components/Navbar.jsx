@@ -43,27 +43,27 @@ const NavModal = forwardRef(({ isOpen, setIsOpen, openModal }, ref) => {
       </Button>
       <ul className="text-3xl flex flex-col gap-6 mt-3 justify-center">
         <li>
-          <Link onClick={() => setIsOpen(false)} href={'#'}>
+          <Link onClick={() => setIsOpen(false)} href={'/#'}>
             Home
           </Link>
         </li>
         <li>
-          <Link onClick={() => setIsOpen(false)} href={'#services'}>
+          <Link onClick={() => setIsOpen(false)} href={'/#services'}>
             Services
           </Link>
         </li>
         <li>
-          <Link onClick={() => setIsOpen(false)} href={'#about'}>
+          <Link onClick={() => setIsOpen(false)} href={'/#about'}>
             About
           </Link>
         </li>
         <li>
-          <Link onClick={() => setIsOpen(false)} href={'#faq'}>
+          <Link onClick={() => setIsOpen(false)} href={'/#faq'}>
             FAQ
           </Link>
         </li>
         <li className="flex justify-between">
-          <Link onClick={() => setIsOpen(false)} href={'#city'}>
+          <Link onClick={() => setIsOpen(false)} href={'/#city'}>
             Suburps
           </Link>
           <div className="flex gap-3">
