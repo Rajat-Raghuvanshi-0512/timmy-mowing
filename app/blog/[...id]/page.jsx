@@ -47,8 +47,8 @@ const BlogPage = () => {
       <p className="uppercase text-center pt-5 md:pt-10 text-gray-400 md:text-gray-600">
         GARDENING InsightS
       </p>
-      <h1 className="px-7 py-4 md:px-10 lg:px-20 text-4xl md:!leading-snug lg:text-5xl text-green-base text-center font-semibold">
-        HOW TO IMPROVE THE GRASS HEALTH OF YOUR LAWN?
+      <h1 className="px-7 py-4 md:px-10 lg:px-20 text-4xl md:!leading-snug lg:text-5xl text-green-base text-center font-semibold uppercase">
+        {blogsData[id - 1].title}
       </h1>
       <div className="flex gap-3 justify-center items-center pb-5 md:pb-10 text-gray-400 md:text-gray-600">
         <p className="uppercase text-center">October 12, 2023</p>
