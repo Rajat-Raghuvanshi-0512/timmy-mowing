@@ -150,8 +150,13 @@ const Home = () => {
         <div className="hidden md:block">
           <MapForm setShowThankyou={setShowThankyou} />
         </div>
-        <Blogs />
+        <div className="hidden md:block">
+          <Blogs />
+        </div>
         <LawnGallery />
+        <div className="md:hidden">
+          <Blogs />
+        </div>
         <LastForm setShowThankyou={setShowThankyou} />
       </main>
       <Footer openModal={openModal} />

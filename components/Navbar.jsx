@@ -64,7 +64,7 @@ const NavModal = forwardRef(({ isOpen, setIsOpen, openModal }, ref) => {
         </li>
         <li className="flex justify-between">
           <Link onClick={() => setIsOpen(false)} href={'/#city'}>
-            Suburps
+            Suburbs
           </Link>
           <div className="flex gap-3">
             <Image

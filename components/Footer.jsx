@@ -89,7 +89,7 @@ const FooterSm = () => {
             <a href="#prices"> FAQ</a>
           </li>
           <li>
-            <a href="#city"> Suburps</a>
+            <a href="#city"> Suburbs</a>
           </li>
         </ul>
         <div className="flex flex-col gap-4">
@@ -150,7 +150,7 @@ const FooterLg = ({ openModal }) => {
               <a href="#prices"> FAQ</a>
             </li>
             <li>
-              <a href="#city"> Suburps</a>
+              <a href="#city"> Suburbs</a>
             </li>
           </ul>
           <button
