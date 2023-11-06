@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-export default function CustomCarousel(props) {
+export default function CustomCarousel({ className, ...props }) {
   const slider = useRef(null);
   let isDown = useRef(false);
   let startX = useRef(null);
@@ -54,7 +54,7 @@ export default function CustomCarousel(props) {
   }
 
   return (
-    <div className="custom__carousel" ref={slider}>
+    <div className={`custom__carousel ${className}`} ref={slider}>
       {props.children}
     </div>
   );

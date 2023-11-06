@@ -90,7 +90,7 @@ const HeroSm = ({ setShowThankyou }) => {
             width={30}
             height={30}
           />
-          <div>SECOND SERVICE FREE</div>
+          <div>FULLY INSURED UPTO 20 MILLION</div>
         </li>
       </ul>
       <GetInTouchForm

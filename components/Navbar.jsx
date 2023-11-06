@@ -209,13 +209,13 @@ const Navbar = ({ openModal }) => {
       <div className="hidden md:flex gap-10 items-center">
         <ul className="flex gap-10 md:text-sm lg:text-xl text-[#757575]">
           <li className="cursor-pointer">
-            <Link href="#services">Services</Link>
+            <Link href="/#services">Services</Link>
           </li>
           <li className="cursor-pointer">
-            <Link href="#about">About</Link>
+            <Link href="/#about">About</Link>
           </li>
           <li className="cursor-pointer">
-            <Link href="#gallery">Gallery</Link>
+            <Link href="/#gallery">Gallery</Link>
           </li>
         </ul>
         <button

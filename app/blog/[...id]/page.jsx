@@ -11,6 +11,7 @@ import ThankYouModal from '@/components/ThankYouModal';
 import { PopUpModal } from '@/app/(landing)/page';
 import { BlogInfo } from '@/components/Blogs';
 import { useJsApiLoader } from '@react-google-maps/api';
+import LatestPosts from '@/components/custom/LatestPosts';
 const libraries = ['places'];
 
 const BlogPage = () => {
@@ -74,6 +75,9 @@ const BlogPage = () => {
       </section>
       <div className="hidden md:block">
         <MapForm setShowThankyou={setShowThankyou} />
+      </div>
+      <div className="p-5 md:px-10 lg:px-14">
+        <LatestPosts id={id} />
       </div>
       <Footer />
     </main>
