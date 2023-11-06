@@ -220,15 +220,15 @@ export const blogsData = [
   {
     id: 1,
     title: 'How to improve the grass health of your lawn?',
-    imageUrl: '/blogs/blog-img1.png',
-    mainImg: '/blogs/blog1-main.png',
+    imageUrl: '/blogs/blog-img1.webp',
+    mainImg: '/blogs/blog1-main.webp',
     sections: [
       {
         desc1:
           'Australia is home to a wide variety of climates, from the tropical north to the temperate south. This means that there are also a wide variety of grasses that can be grown in the lawns of the country. However, all grasses need regular care along with lawn maintenance to stay healthy and look their best.',
         desc2:
           'In this blog, we will discuss some of the key things you can do to improve the health of your lawn and have a better lawn care routine. A lot of aspects come into play when it comes to improving the lawn’s grass health, some of which are- lawn mowing, watering, fertilising, weed control, and pest and disease management.',
-        imgUrl: '/blogs/blog-page-img1.png',
+        imgUrl: '/blogs/blog-page-img1.webp',
         s_id: 1,
       },
       {
@@ -250,7 +250,7 @@ export const blogsData = [
           "Avoid lawn mowing when the grass is wet: Mowing wet grass can lead to uneven cuts, clumping of clippings, and potential damage to the turf. It's best to mow when the grass is dry, usually in the late morning or early afternoon when any morning dew has evaporated.",
           " Collect the clippings: Grass clippings can be beneficial when left on the lawn (known as mulching), as they return nutrients to the soil. However, if the grass is too long or damp, it's better to collect the clippings to prevent them from smothering the healthy grass underneath. Additionally, if you have a weed problem, collecting clippings can help prevent the spread of weeds.",
         ],
-        imgUrl: '/blogs/blog-page-img6.png',
+        imgUrl: '/blogs/blog-page-img6.webp',
         s_id: 2,
       },
       {
@@ -259,7 +259,7 @@ export const blogsData = [
           'Watering is another important aspect of lawn care that improves grass health. Lawns need regular watering to stay healthy, but it is important to avoid overwatering. Overwatering can lead to root rot and other problems.',
         desc2:
           'The amount of water your lawn needs will depend on the type of grass you have, the climate in which you live, and the time of year. In general, you should water your lawn deeply once a week for better lawn maintenance.',
-        imgUrl: '/blogs/blog-page-img2.png',
+        imgUrl: '/blogs/blog-page-img2.webp',
         s_id: 3,
       },
       {
@@ -268,7 +268,7 @@ export const blogsData = [
           'Fertilising your lawn is another important way to take good care of the grass growing in the lawn. Fertiliser provides the grass with the nutrients it needs to grow thick and green.',
         desc2:
           'You should fertilise your lawn 3-4 times per year, during the growing season. Be sure to use a fertiliser that is specifically designed for lawns.',
-        imgUrl: '/blogs/blog-page-img3.png',
+        imgUrl: '/blogs/blog-page-img3.webp',
         s_id: 4,
       },
       {
@@ -281,7 +281,7 @@ export const blogsData = [
           'Apply a pre-emergent herbicide: Pre-emergent herbicides are specifically designed to prevent weed seeds from germinating. They create a barrier in the soil that inhibits the growth of new weeds. This is a proactive approach to weed control and is particularly effective for preventing annual weeds.',
         ],
         desc2: 'There are a number of ways to control this problem. You can:',
-        imgUrl: '/blogs/blog-page-img4.png',
+        imgUrl: '/blogs/blog-page-img4.webp',
         s_id: 5,
       },
       {
@@ -299,7 +299,7 @@ export const blogsData = [
           ' Topdress your lawn with compost or other organic matter. Topdressing helps to improve the soil quality and add nutrients to the lawn.',
           ' Overseed your lawn with new grass seed. Overseeding helps to thicken the lawn and fill in any bare patches.',
         ],
-        imgUrl: '/blogs/blog-page-img5.png',
+        imgUrl: '/blogs/blog-page-img5.webp',
         s_id: 6,
       },
       {
@@ -318,15 +318,15 @@ export const blogsData = [
   {
     id: 2,
     title: 'The Benefits of professional lawn mowing services in Melbourne',
-    imageUrl: '/blogs/blog-img2.png',
-    mainImg: '/blogs/blog2-main.png',
+    imageUrl: '/blogs/blog-img2.webp',
+    mainImg: '/blogs/blog2-main.webp',
     sections: [
       {
         desc1:
           "Your lawn is one of the most important features of your home. It's the first thing people see when they arrive, and it can make a big difference in the overall curb appeal of your property. But keeping your lawn looking its best can be a lot of work, especially in a city like Melbourne, where the weather can be unpredictable.",
         desc2:
           "That's where professional lawn mowing services come in. By hiring a professional lawn care company, you can take the hassle out of lawn maintenance and enjoy a beautiful, healthy lawn year-round.",
-        imgUrl: '/blogs/blog-page2-img1.png',
+        imgUrl: '/blogs/blog-page2-img1.webp',
         s_id: 1,
       },
       {
@@ -339,7 +339,7 @@ export const blogsData = [
           'Improve the curb appeal of your home. A well-maintained lawn is one of the best ways to improve the overall look of your home. Professional lawn mowing services can help you achieve a professional-looking lawn that will turn heads.',
           'Enjoy more of your free time. With a professional lawn mowing service taking care of your lawn, you can spend your free time doing the things you enjoy instead of mowing the lawn.',
         ],
-        imgUrl: '/blogs/blog-page2-img2.png',
+        imgUrl: '/blogs/blog-page2-img2.webp',
         s_id: 2,
       },
       {
@@ -351,7 +351,7 @@ export const blogsData = [
           'Services offered. Make sure the company offers the services you need, such as mowing, edging, trimming, and weed control.',
           'Pricing and payment options. Be sure to get quotes from multiple companies before choosing a service. And ask about different payment options, such as monthly contracts or one-time services.',
         ],
-        imgUrl: '/blogs/blog-page2-img3.png',
+        imgUrl: '/blogs/blog-page2-img3.webp',
         s_id: 3,
       },
       {
@@ -365,7 +365,7 @@ export const blogsData = [
           'Water your lawn regularly- Watering your lawn regularly is important for its overall health and appearance. A well-watered lawn will be more resistant to weeds and pests, and it will also recover more quickly from stress, such as heat or drought. The amount of water your lawn needs will vary depending on the climate and the type of grass you have. However, a good general rule of thumb is to water your lawn once a week for about an hour.',
           'Fertilize your lawn- Fertilizing your lawn on a regular basis will help it to grow and thrive. Fertilizers provide your lawn with the essential nutrients it needs to produce thick, green grass. Professional lawn care companies can recommend the best fertilizer for your particular lawn type and climate. They can also apply the fertilizer for you, ensuring that it is applied evenly and correctly.',
         ],
-        imgUrl: '/blogs/blog-page2-img4.png',
+        imgUrl: '/blogs/blog-page2-img4.webp',
         s_id: 4,
       },
       {
@@ -377,7 +377,7 @@ export const blogsData = [
           'Get multiple estimates. Before you choose a lawn care company,be sure to get multiple estimates from different companies. This will help you to compare prices and services.',
           'Read reviews. Before you hire a lawn care company, be sure to read reviews from other customers. This can give you a good idea of the quality of service that the company provides.',
         ],
-        imgUrl: '/blogs/blog-page2-img5.png',
+        imgUrl: '/blogs/blog-page2-img5.webp',
         s_id: 5,
       },
     ],
@@ -387,15 +387,15 @@ export const blogsData = [
   {
     id: 3,
     title: 'When to prune hedges and how often?',
-    imageUrl: '/blogs/blog-img3.png',
-    mainImg: '/blogs/blog3-main.png',
+    imageUrl: '/blogs/blog-img3.webp',
+    mainImg: '/blogs/blog3-main.webp',
     closingText:
       'We offer a variety of services to help you with lawn mowing, lawn care and overall lawn maintenance, which will keep your lawn looking as green and healthy as it can get.',
     sections: [
       {
         desc1:
           'Hedges are a popular way to add privacy, structure, and beauty to your lawn. However, they need regular pruning to keep them looking their best and to maintain their desired shape. Pruning these hedges is an important part of lawn care.',
-        imgUrl: '/blogs/blog-page3-img1.png',
+        imgUrl: '/blogs/blog-page3-img1.webp',
         s_id: 1,
       },
       {
@@ -405,7 +405,7 @@ export const blogsData = [
         ],
         desc1:
           'You can also prune hedges during the summer for enhancing lawn maintenance, if needed. However, it is important to avoid pruning them during hot, dry weather, as this can stress the plants.',
-        imgUrl: '/blogs/blog-page3-img2.png',
+        imgUrl: '/blogs/blog-page3-img2.webp',
         s_id: 2,
       },
       {
@@ -415,7 +415,7 @@ export const blogsData = [
         ],
         desc1:
           'In general, you should prune deciduous hedges at least twice a year, once in the spring and once in the summer, to offer the required lawn care to your lawn. Evergreen hedges can be pruned once or twice a year, depending on the desired shape.',
-        imgUrl: '/blogs/blog-page3-img3.png',
+        imgUrl: '/blogs/blog-page3-img3.webp',
         s_id: 3,
       },
       {
@@ -425,7 +425,7 @@ export const blogsData = [
           'Another mistake revolves around pruning at the wrong time. Timing is paramount in hedge maintenance. Pruning during periods when the hedge is actively growing or in adverse weather conditions can send the plant into shock. This shock can impede growth and increase the likelihood of die-back, undermining the vitality of the hedge and, consequently, the overall lawn care process.',
           "Additionally, the choice of tools plays a pivotal role in ensuring effective and proper hedge care. Not using the right tools can not only make the pruning process more difficult but can also inflict harm on the hedge itself. Ill-suited tools may result in uneven cuts, tears, or even damage to the plant's structure. Using the appropriate tools tailored to the specific type and size of the hedge is integral to preserving its health and enhancing the overall appearance of your lawn.",
         ],
-        imgUrl: '/blogs/blog-page3-img4.png',
+        imgUrl: '/blogs/blog-page3-img4.webp',
         s_id: 4,
       },
       {
@@ -437,7 +437,7 @@ export const blogsData = [
           "Use appropriate and clean pruning tools: The choice of pruning tools significantly impacts the outcome of your hedge and lawn maintenance efforts. It's imperative to use sharp, clean pruning shears or a hedge trimmer. Sharp blades ensure clean, precise cuts, minimizing trauma to the plant. Dull blades, on the other hand, can lead to jagged, uneven cuts that make the hedge more susceptible to diseases and pests. Regularly sharpening your tools is a simple yet crucial aspect of effective hedge care.",
           "Adhere to Manufacturer's Guidelines: Whether you're using pruning shears or a hedge trimmer, it's imperative to follow the instructions provided by the manufacturer. Each tool may have specific features and usage recommendations that are essential for safe and effective operation. Understanding and adhering to these guidelines not only ensures your safety but also maximizes the efficiency and efficacy of your pruning efforts.",
         ],
-        imgUrl: '/blogs/blog-page3-img5.png',
+        imgUrl: '/blogs/blog-page3-img5.webp',
         s_id: 5,
       },
       {
@@ -445,7 +445,7 @@ export const blogsData = [
         paragraphs: [
           'Adhering to these best practices in hedge pruning yields a host of benefits for your lawn. Well-pruned hedges exhibit a tidy, manicured appearance that enhances the overall aesthetic of your lawn. Additionally, judicious pruning promotes healthy growth, allowing for better air circulation and sunlight penetration during lawn maintenance. This, in turn, fosters vibrant hedges that serve as a striking backdrop to your lawn care efforts.',
         ],
-        imgUrl: '/blogs/blog-page3-img6.png',
+        imgUrl: '/blogs/blog-page3-img6.webp',
         s_id: 6,
       },
       {
@@ -461,8 +461,8 @@ export const blogsData = [
   {
     id: 4,
     title: 'Ride-On Mowers vs. Traditional Push Mowers',
-    imageUrl: '/blogs/blog-img4.png',
-    mainImg: '/blogs/blog4-main.png',
+    imageUrl: '/blogs/blog-img4.webp',
+    mainImg: '/blogs/blog4-main.webp',
     closingText:
       'You can contact us and we’ll provide you the required lawn care, as per your convenience. Let us take charge of your lawn maintenance so you can relax and enjoy your free time!',
     sections: [
@@ -472,7 +472,7 @@ export const blogsData = [
           'Ride-on mowers are also known as lawn tractors. They are larger and more powerful than traditional push mowers, and they can handle larger lawns more efficiently. Ride-on mowers also typically have wider cutting decks, which means you can cover more ground in less time.',
           'Traditional push mowers are smaller and less expensive than ride-on mowers. They are also easier to maneuver, which makes them a good choice for lawns with obstacles, such as trees and flower beds.',
         ],
-        imgUrl: '/blogs/blog-page4-img1.png',
+        imgUrl: '/blogs/blog-page4-img1.webp',
         s_id: 2,
       },
       {
@@ -491,7 +491,7 @@ export const blogsData = [
           'Requires more storage space: Ride-on mowers require more storage space than traditional push mowers. This is due to their larger size.',
           'May require more maintenance: Ride-on mowers may require more maintenance than traditional push mowers. This is due to their more complex engines and transmissions.',
         ],
-        imgUrl: '/blogs/blog-page4-img2.png',
+        imgUrl: '/blogs/blog-page4-img2.webp',
         s_id: 3,
       },
       {
@@ -511,7 +511,7 @@ export const blogsData = [
           'Can be tiring to operate, especially on large lawns: Traditional push mowers can be tiring to operate, especially if you have a large lawn. This is because you have to push the mower yourself.',
           'May not have additional features, such as bagging and mulching systems: Many traditional push mowers do not have additional features, such as bagging and mulching systems. This can be a disadvantage if you want to save time and effort.',
         ],
-        imgUrl: '/blogs/blog-page4-img3.png',
+        imgUrl: '/blogs/blog-page4-img3.webp',
         s_id: 4,
       },
       {
@@ -520,7 +520,7 @@ export const blogsData = [
           'The best type of lawn mower for you will depend on a number of factors, including the size of your lawn, the terrain of your lawn, and your budget.',
           'If you have a large lawn, a ride-on mower is a good choice. Ride-on mowers are also a good choice if you have a lot of obstacles on your lawn, such as trees and flower beds. However, ride-on mowers can be expensive and difficult to maneuver in tight spaces.',
           'If you have a small lawn or a lawn with a lot of obstacles, a traditional push mower is a good choice. Push mowers are also less expensive and easier to maintain than ride-on mowers. However, push mowers can be tiring to operate, especially on large lawns',
-          'f you’re looking for a professional lawn mowing service provider to make sure that your lawn mowing needs are catered to, contact us! At Timmy’s mowing, we offer a variety of lawn care services, which allows our customers to take advantage of effective"Lawn Care on Demand"',
+          'If you’re looking for a professional lawn mowing service provider to make sure that your lawn mowing needs are catered to, contact us! At Timmy’s mowing, we offer a variety of lawn care services, which allows our customers to take advantage of effective"Lawn Care on Demand"',
         ],
         s_id: 5,
       },

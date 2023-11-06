@@ -85,7 +85,7 @@ input[type='number'] {
 }
 * {
   font-family: 'acid Grotesk';
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }
 
 .review-box::-webkit-scrollbar {

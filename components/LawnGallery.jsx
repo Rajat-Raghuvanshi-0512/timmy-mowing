@@ -4,7 +4,7 @@ import Navigation from './custom/Navigation';
 
 const LawnGallerySm = () => {
   return (
-    <section className="md:hidden relative pb-5" id="gallery">
+    <section className="md:hidden relative -my-10 pb-5" id="gallery">
       <Image
         src={'/mobile-lawn-gallery.webp'}
         alt="gallery"

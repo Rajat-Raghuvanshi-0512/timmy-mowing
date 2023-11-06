@@ -217,6 +217,9 @@ const Navbar = ({ openModal }) => {
           <li className="cursor-pointer">
             <Link href="/#gallery">Gallery</Link>
           </li>
+          <li className="cursor-pointer">
+            <Link href="/#blogs">Blogs</Link>
+          </li>
         </ul>
         <button
           onClick={openModal}

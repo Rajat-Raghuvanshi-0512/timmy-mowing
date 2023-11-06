@@ -69,7 +69,7 @@ const BlogPage = () => {
         {blogsData[id - 1]?.sections?.map((item) => (
           <BlogInfo key={item.s_id} {...item} />
         ))}
-        <p className="text-green-base text-center mt-5 font-semibold lg:text-2xl">
+        <p className="text-green-base mt-2 font-bold lg:text-2xl">
           {blogsData[id - 1].closingText}
         </p>
       </section>
