@@ -12,6 +12,9 @@ import { PopUpModal } from '@/app/(landing)/page';
 import { BlogInfo } from '@/components/Blogs';
 import { useJsApiLoader } from '@react-google-maps/api';
 import LatestPosts from '@/components/custom/LatestPosts';
+import MobileSlider from '@/components/MobileSlider';
+import GetInTouchForm from '@/components/GetInTouchForm';
+import LastForm from '@/components/LastForm';
 const libraries = ['places'];
 
 const BlogPage = () => {
@@ -79,6 +82,10 @@ const BlogPage = () => {
       <div className="p-5 md:px-10 lg:px-14">
         <LatestPosts id={id} />
       </div>
+      <div className="md:hidden">
+        <MobileSlider />
+      </div>
+      <LastForm setShowThankyou={setShowThankyou} />
       <Footer />
     </main>
   );

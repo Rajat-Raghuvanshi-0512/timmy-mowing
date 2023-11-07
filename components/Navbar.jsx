@@ -5,6 +5,7 @@ import LoadingPage from './Loader';
 import Link from 'next/link';
 import { useMotionValueEvent, useScroll } from 'framer-motion';
 import Button from './custom/Button';
+import { useRouter } from 'next/navigation';
 
 const NavModal = forwardRef(({ isOpen, setIsOpen, openModal }, ref) => {
   return (
@@ -89,6 +90,7 @@ const NavModal = forwardRef(({ isOpen, setIsOpen, openModal }, ref) => {
 NavModal.displayName = 'MyComponent';
 
 const Navbar = ({ openModal }) => {
+  const router = useRouter();
   const [showLoading, setShowLoading] = useState(true);
   const { scrollY } = useScroll();
   const [isScrolled, setIsScrolled] = useState(false);
@@ -147,7 +149,8 @@ const Navbar = ({ openModal }) => {
           unoptimized
           height={55}
           width={100}
-          className="w-[80px] md:w-[70px] object-contain lg:w-[100px]"
+          className="w-[80px] md:w-[70px] object-contain lg:w-[100px] hover:cursor-pointer"
+          onClick={() => router.push('/')}
         />
       </div>
       <div className="flex md:invisible items-center">
@@ -159,6 +162,7 @@ const Navbar = ({ openModal }) => {
             width={100}
             className="w-[80px] object-contain md:w-[70px] lg:w-[100px]"
             unoptimized
+            onClick={() => router.push('/')}
           />
         ) : (
           <Image
@@ -168,6 +172,7 @@ const Navbar = ({ openModal }) => {
             width={100}
             className="w-[80px] object-contain md:w-[70px] lg:w-[100px]"
             unoptimized
+            onClick={() => router.push('/')}
           />
         )}
       </div>
